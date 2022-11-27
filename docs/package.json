@@ -1,0 +1,15 @@
+{
+  "name": "vitepress-plugins-monorepo-docs",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "serve": "vitepress serve"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.29",
+    "vitepress-plugin-tabs": "workspace:*",
+    "vue": "^3.2.45"
+  }
+}
