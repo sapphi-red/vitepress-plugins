@@ -4,26 +4,11 @@
 
 ## Installation
 
-:::=tabs=pkgManager
-::npm
-
 ```sh
-npm i -D vitepress-plugin-tabs
+npm i -D vitepress-plugin-tabs // [!=npm npm]
+yarn add -D vitepress-plugin-tabs // [!=npm yarn]
+pnpm add -D vitepress-plugin-tabs // [!=npm pnpm]
 ```
-
-::yarn
-
-```sh
-yarn add -D vitepress-plugin-tabs
-```
-
-::pnpm
-
-```sh
-pnpm add -D vitepress-plugin-tabs
-```
-
-:::
 
 ## Usage
 

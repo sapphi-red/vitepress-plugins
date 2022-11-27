@@ -24,13 +24,25 @@ importers:
 
   docs:
     specifiers:
-      vitepress: 1.0.0-alpha.29
+      vitepress: ^1.0.0-alpha.29
+      vitepress-plugin-npm-commands: workspace:*
       vitepress-plugin-tabs: workspace:*
       vue: ^3.2.45
     devDependencies:
       vitepress: 1.0.0-alpha.29
+      vitepress-plugin-npm-commands: link:../packages/vitepress-plugin-npm-commands
       vitepress-plugin-tabs: link:../packages/vitepress-plugin-tabs
       vue: 3.2.45
+
+  packages/vitepress-plugin-npm-commands:
+    specifiers:
+      '@types/markdown-it': ^12.2.3
+      markdown-it: ^13.0.1
+      tsup: ^6.5.0
+    devDependencies:
+      '@types/markdown-it': 12.2.3
+      markdown-it: 13.0.1
+      tsup: 6.5.0
 
   packages/vitepress-plugin-tabs:
     specifiers:

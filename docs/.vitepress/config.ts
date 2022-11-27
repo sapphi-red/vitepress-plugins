@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
+import { npmCommandsMarkdownPlugin } from 'vitepress-plugin-npm-commands'
 
 export default defineConfig({
   title: 'Vitepress Plugins',
@@ -20,6 +21,7 @@ export default defineConfig({
   markdown: {
     config(md) {
       md.use(tabsMarkdownPlugin)
+      md.use(npmCommandsMarkdownPlugin)
     }
   }
 })
