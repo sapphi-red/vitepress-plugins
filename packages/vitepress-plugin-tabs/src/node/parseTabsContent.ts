@@ -1,5 +1,5 @@
 const tabBreakRE = /^\s*::(.+)$/
-const forbiddenCharsInSlotNames = / '"/
+const forbiddenCharsInSlotNames = /[ '"]/
 const parseTabBreakLine = (line: string) => {
   const m = line.match(tabBreakRE)
   if (!m) return null
