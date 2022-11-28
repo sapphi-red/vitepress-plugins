@@ -5,9 +5,7 @@
 ## Installation
 
 ```sh
-npm i -D vitepress-plugin-npm-commands vitepress-plugin-tabs // [!=npm npm]
-yarn add -D vitepress-plugin-npm-commands vitepress-plugin-tabs // [!=npm yarn]
-pnpm add -D vitepress-plugin-npm-commands vitepress-plugin-tabs // [!=npm pnpm]
+npm i -D vitepress-plugin-npm-commands vitepress-plugin-tabs // [!=npm auto]
 ```
 
 `vitepress-plugin-npm-commands` requires [`vitepress-plugin-tabs`](../tabs/) to be installed.
@@ -47,50 +45,46 @@ export default {
 
 ## Syntax
 
-**An example with single command.**
+### Auto conversion
 
-````=npm-disable
+Adding the `// [!=npm auto]` comment on a line will convert that npm command to other package manager commands.
+Note that this is a simple string replacement and only works with simple cases.
+
+````md=npm-disable
 ```sh
-npm i vite // [!=npm npm]
-yarn add vite // [!=npm yarn]
-pnpm add vite // [!=npm pnpm]
+npm i // [!=npm auto]
+npm run build // [!=npm auto]
+npm run test // [!=npm auto]
 ```
 ````
 
 ```sh
-npm i vite // [!=npm npm]
-yarn add vite // [!=npm yarn]
-pnpm add vite // [!=npm pnpm]
+npm i // [!=npm auto]
+npm run build // [!=npm auto]
+npm run test // [!=npm auto]
 ```
+### Manual declaration
 
-**An example with multiple command.**
+Adding the `// [!=npm npm]`/`// [!=npm yarn]`/`// [!=npm pnpm]` comment on a line will limit that line to be shown only in that package manager tab.
 
-````=npm-disable
-```sh
+````md{2-4}=npm-disable
+```sh{1}
 npx degit user/project my-project // [!=npm npm]
 yarn dlx degit user/project my-project // [!=npm yarn]
 pnpm dlx degit user/project my-project // [!=npm pnpm]
 cd my-project
 
-npm install // [!=npm npm]
-yarn install // [!=npm yarn]
-pnpm install // [!=npm pnpm]
-npm run dev // [!=npm npm]
-yarn run dev // [!=npm yarn]
-pnpm run dev // [!=npm pnpm]
+npm install // [!=npm auto]
+npm run dev // [!=npm auto]
 ```
 ````
 
-```sh
+```sh{1}
 npx degit user/project my-project // [!=npm npm]
 yarn dlx degit user/project my-project // [!=npm yarn]
 pnpm dlx degit user/project my-project // [!=npm pnpm]
 cd my-project
 
-npm install // [!=npm npm]
-yarn install // [!=npm yarn]
-pnpm install // [!=npm pnpm]
-npm run dev // [!=npm npm]
-yarn run dev // [!=npm yarn]
-pnpm run dev // [!=npm pnpm]
+npm install // [!=npm auto]
+npm run dev // [!=npm auto]
 ```

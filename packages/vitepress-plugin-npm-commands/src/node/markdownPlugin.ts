@@ -1,11 +1,10 @@
 import type MarkdownIt from 'markdown-it'
-
-const packageManagers = ['npm', 'yarn', 'pnpm'] as const
-type PackageManager = typeof packageManagers[number]
+import { autoConverter } from './autoConverter'
+import { PackageManager, packageManagers } from './packageManager'
 
 const tabsShareStateKey = '\0npm-commands'
 const npmCommandsCommandRE = new RegExp(
-  `(?://\\s*\\[!=npm\\s+(${packageManagers.join('|')})\\])+$`,
+  `(?://\\s*\\[!=npm\\s+(${packageManagers.join('|')}|auto)\\])+$`,
   'm'
 )
 
@@ -34,8 +33,11 @@ export const npmCommandsPlugin = (md: MarkdownIt) => {
     const codes = generateEachPackageManagerCode(token.content)
 
     const slots = codes.map(([pkgManger, code]) => {
+      const attrStr = token.attrs
+        ? `{${token.attrs.map(attr => attr[0]).join(',')}}`
+        : ''
       const codeWithFence =
-        `${token.markup}${token.info}\n` + code + token.markup
+        `${token.markup}${token.info}${attrStr}\n` + code + token.markup
       return `<template #${pkgManger}>${md.render(
         codeWithFence,
         env
@@ -51,7 +53,7 @@ export const npmCommandsPlugin = (md: MarkdownIt) => {
 const parseNpmCommandsCommandFromLine = (line: string) => {
   const m = line.match(npmCommandsCommandRE)
   if (!m) return null
-  return m[1] as PackageManager
+  return m[1] as PackageManager | 'auto'
 }
 
 const generateEachPackageManagerCode = (input: string) => {
@@ -63,6 +65,14 @@ const generateEachPackageManagerCode = (input: string) => {
     if (!pkgManager) {
       for (const key of packageManagers) {
         codes[key].push(line)
+      }
+    } else if (pkgManager === 'auto') {
+      for (const key of packageManagers) {
+        const convertedCommand = autoConverter(
+          line.replace(npmCommandsCommandRE, '').trimEnd(),
+          key
+        )
+        codes[key].push(convertedCommand)
       }
     } else {
       codes[pkgManager].push(line.replace(npmCommandsCommandRE, ''))

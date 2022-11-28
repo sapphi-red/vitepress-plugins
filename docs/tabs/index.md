@@ -5,9 +5,7 @@
 ## Installation
 
 ```sh
-npm i -D vitepress-plugin-tabs // [!=npm npm]
-yarn add -D vitepress-plugin-tabs // [!=npm yarn]
-pnpm add -D vitepress-plugin-tabs // [!=npm pnpm]
+npm i -D vitepress-plugin-tabs // [!=npm auto]
 ```
 
 ## Usage
@@ -45,7 +43,7 @@ export default {
 
 ### Tabs with non-shared selection state
 
-```
+```md
 :::=tabs
 ::a
 a content
@@ -81,7 +79,7 @@ b content 2
 
 ### Tabs with shared selection state
 
-```
+```md
 :::=tabs=ab
 ::a
 a content
