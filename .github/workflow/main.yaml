@@ -1,0 +1,72 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+
+jobs:
+  lint:
+    name: run lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2
+      - name: setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          cache: pnpm
+      - run: pnpm i
+      - name: run lint
+        run: pnpm run lint --max-warnings=0
+  format:
+    name: run format
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2
+      - name: setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          cache: pnpm
+      - run: pnpm i
+      - name: run format
+        run: pnpm exec prettier --check .
+  type-check:
+    name: run type-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2
+      - name: setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          cache: pnpm
+      - run: pnpm i
+      - name: run type-check
+        run: pnpm run type-check
+  build:
+    name: run build
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2
+      - name: setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          cache: pnpm
+      - run: pnpm i
+      - run: pnpm -r --stream build
