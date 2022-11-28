@@ -9,7 +9,19 @@ type ConverterInfo = {
   ) => string
 }
 
-const npmInstall = new Set(['add', 'i', 'in', 'ins', 'inst', 'insta', 'instal', 'isnt', 'isnta', 'isntal', 'isntall'])
+const npmInstall = new Set([
+  'add',
+  'i',
+  'in',
+  'ins',
+  'inst',
+  'insta',
+  'instal',
+  'isnt',
+  'isnta',
+  'isntal',
+  'isntall'
+])
 const npmUpdate = new Set(['up', 'upgrade', 'udpate'])
 const npmUninstall = new Set(['unlink', 'remove', 'rm', 'r', 'un'])
 const npmRebuild = new Set(['rebuild', 'rb'])
@@ -27,9 +39,7 @@ const converterList: ConverterInfo[] = [
         return `${pkgm} add ${arg}`
       }
       if (npmUpdate.has(subCommand)) {
-        return pkgm === 'yarn'
-          ? `yarn up ${arg}`
-          : `pnpm update ${arg}`
+        return pkgm === 'yarn' ? `yarn up ${arg}` : `pnpm update ${arg}`
       }
       if (npmUninstall.has(subCommand)) {
         return `${pkgm} remove ${arg}`

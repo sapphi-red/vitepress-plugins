@@ -63,6 +63,7 @@ npm i // [!=npm auto]
 npm run build // [!=npm auto]
 npm run test // [!=npm auto]
 ```
+
 ### Manual declaration
 
 Adding the `// [!=npm npm]`/`// [!=npm yarn]`/`// [!=npm pnpm]` comment on a line will limit that line to be shown only in that package manager tab.
