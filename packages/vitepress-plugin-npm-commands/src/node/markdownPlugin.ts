@@ -21,9 +21,10 @@ export const npmCommandsPlugin = (md: MarkdownIt) => {
   md.renderer.rules.fence = (...args) => {
     const [tokens, idx, , env] = args
     const token = tokens[idx]
-    if (token.info.endsWith('=npm-disable')) {
+    if (token.attrGet('----npm-disable') !== null) {
       // escape hatch to disable this feature
-      token.info = token.info.replace(/=npm-disable$/, '')
+      const pos = token.attrIndex('----npm-disable')
+      token.attrs?.splice(pos, 1)
       return originalFence(...args)
     }
     if (!npmCommandsCommandRE.test(token.content)) {
@@ -34,7 +35,9 @@ export const npmCommandsPlugin = (md: MarkdownIt) => {
 
     const slots = codes.map(([pkgManger, code]) => {
       const attrStr = token.attrs
-        ? `{${token.attrs.map(attr => attr[0]).join(',')}}`
+        ? `{${token.attrs
+            .map(([key, val]) => (val ? `${key}=${val}` : key))
+            .join(' ')}}`
         : ''
       const codeWithFence =
         `${token.markup}${token.info}${attrStr}\n` + code + token.markup

@@ -50,7 +50,7 @@ export default {
 Adding the `// [!=npm auto]` comment on a line will convert that npm command to other package manager commands.
 Note that this is a simple string replacement and only works with simple cases.
 
-````md=npm-disable
+````md{----npm-disable}
 ```sh
 npm i // [!=npm auto]
 npm run build // [!=npm auto]
@@ -67,7 +67,7 @@ npm run test // [!=npm auto]
 
 Adding the `// [!=npm npm]`/`// [!=npm yarn]`/`// [!=npm pnpm]` comment on a line will limit that line to be shown only in that package manager tab.
 
-````md{2-4}=npm-disable
+````md{2-4 ----npm-disable}
 ```sh{1}
 npx degit user/project my-project // [!=npm npm]
 yarn dlx degit user/project my-project // [!=npm yarn]
