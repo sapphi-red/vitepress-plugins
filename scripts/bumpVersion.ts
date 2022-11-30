@@ -39,6 +39,11 @@ const assertType = (type: string): type is typeof releaseTypes[number] =>
   if (!assertType(type)) {
     throw new Error(`only supports ${releaseTypes.join(', ')}`)
   }
+  const isMainBranch =
+    (await execa('git branch --show-current')).stdout.trim() === 'main'
+  if (!isMainBranch) {
+    throw new Error('this script cannot run in non-main branch')
+  }
 
   const isDryRun = dryRun === '--dry-run'
 
@@ -60,7 +65,17 @@ const assertType = (type: string): type is typeof releaseTypes[number] =>
   }
 
   if (!isDryRun) {
-    await execa(`git tag vitepress-plugin-${packageShortName}@v${newVersion}`)
+    await execa(
+      `git commit --message ${JSON.stringify(
+        `release(${packageShortName}): v${newVersion}`
+      )} ${JSON.stringify(packageJsonPath)}`
+    )
+  } else {
+    console.log('[dry-run] skipped commit')
+  }
+
+  if (!isDryRun) {
+    await execa(`git tag -a vitepress-plugin-${packageShortName}@v${newVersion}`)
   } else {
     console.log('[dry-run] skipped creating tag')
   }
