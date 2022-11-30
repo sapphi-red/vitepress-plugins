@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`render correctly 1`] = `
+"<PluginTabs :tabLabels=\\"[&quot;a&quot;,&quot;b&quot;]\\" ><template #a><p>a</p>
+</template><template #b><p>b</p>
+</template></PluginTabs>"
+`;
