@@ -2,6 +2,8 @@
 
 > A plugin that adds syntax for showing `npm`, `yarn`, `pnpm` commands in tabs.
 
+[![NPM version](https://img.shields.io/npm/v/vitepress-plugin-tabs.svg)](https://www.npmjs.com/package/vitepress-plugin-npm-commands)
+
 ## Installation
 
 ```sh
