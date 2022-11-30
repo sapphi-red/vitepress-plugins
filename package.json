@@ -5,11 +5,11 @@
   "scripts": {
     "lint": "eslint --cache .",
     "format": "prettier --write --cache .",
-    "type-check": "vue-tsc --noEmit",
-    "bump-version": "tsx scripts/bumpVersion.ts"
+    "type-check": "vue-tsc --noEmit"
   },
   "packageManager": "pnpm@7.17.1",
   "devDependencies": {
+    "@changesets/cli": "^2.25.2",
     "@types/node": "^18.11.9",
     "@types/semver": "^7.3.13",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
