@@ -2,7 +2,7 @@ import type MarkdownIt from 'markdown-it'
 import { autoConverter } from './autoConverter'
 import { PackageManager, packageManagers } from './packageManager'
 
-const tabsShareStateKey = '\0npm-commands'
+const tabsShareStateKey = '~npm-commands'
 const npmCommandsCommandRE = new RegExp(
   `(?://\\s*\\[!=npm\\s+(${packageManagers.join('|')}|auto)\\])+$`,
   'm'

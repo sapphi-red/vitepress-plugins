@@ -82,7 +82,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return (_openBlock(), _createElementBlock(\\"div\\", null, [
     _createVNode(_component_PluginTabs, {
       tabLabels: [\\"ts\\",\\"js\\"],
-      sharedStateKey: \\"\\\\u0000detype\\"
+      sharedStateKey: \\"~detype\\"
     }, {
       ts: _withCtx(() => [
         _hoisted_1
@@ -193,7 +193,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return (_openBlock(), _createElementBlock(\\"div\\", null, [
     _createVNode(_component_PluginTabs, {
       tabLabels: [\\"ts\\",\\"js\\"],
-      sharedStateKey: \\"\\\\u0000detype\\"
+      sharedStateKey: \\"~detype\\"
     }, {
       ts: _withCtx(() => [
         _hoisted_1
