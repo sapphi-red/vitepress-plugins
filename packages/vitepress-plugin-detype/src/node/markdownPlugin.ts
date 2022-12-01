@@ -3,7 +3,7 @@ import { transform, removeMagicComments } from 'detype'
 import type { PrettierOptions } from 'detype'
 import type { ContentMap } from './contentMap'
 
-const tabsShareStateKey = '\0detype'
+const tabsShareStateKey = '~detype'
 const langs = ['ts', 'js'] as const
 const detypeInfoRE = /^ts({[^}]*})?,=detype({[^}]*})?=$/
 
