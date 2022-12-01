@@ -12,6 +12,7 @@
   },
   "packageManager": "pnpm@7.17.1",
   "devDependencies": {
+    "@changesets/changelog-github": "^0.4.7",
     "@changesets/cli": "^2.25.2",
     "@types/node": "^18.11.9",
     "@types/semver": "^7.3.13",
