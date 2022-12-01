@@ -38,7 +38,10 @@ export const detypePlugin = (
           const content =
             lang === 'ts'
               ? removeMagicComments(token.content, 'foo.ts', prettierOptions)
-              : await transform(token.content, 'foo.ts', { prettierOptions, removeTsComments: true })
+              : await transform(token.content, 'foo.ts', {
+                  prettierOptions,
+                  removeTsComments: true
+                })
           const codeWithFence =
             `${token.markup}${lang}${attrs}\n` + content + token.markup
           return { result: md.render(codeWithFence, env) }
@@ -46,7 +49,11 @@ export const detypePlugin = (
           return { error: e }
         }
       })()
-      const key = contentMap.add(`${token.markup}_${lang}_${attrs}`, token.content, output)
+      const key = contentMap.add(
+        `${token.markup}_${lang}_${attrs}`,
+        token.content,
+        output
+      )
       return `<template #${lang}>${key}</template>`
     })
 

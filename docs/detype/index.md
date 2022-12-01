@@ -51,7 +51,9 @@ export default {
 ```
 
 ## Syntax
+
 ### Simple
+
 ````md
 ```ts,=detype=
 type Foo = {
@@ -87,6 +89,7 @@ for (let i = 0; i < 100; i++) {
 ```
 
 ### With highlight line
+
 ````md
 ```ts{1-3,5},=detype{1}=
 type Foo = {
