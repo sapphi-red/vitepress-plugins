@@ -10,6 +10,7 @@ type ConverterInfo = {
 }
 
 const npmInstall = new Set([
+  'install',
   'add',
   'i',
   'in',
@@ -22,8 +23,8 @@ const npmInstall = new Set([
   'isntal',
   'isntall'
 ])
-const npmUpdate = new Set(['up', 'upgrade', 'udpate'])
-const npmUninstall = new Set(['unlink', 'remove', 'rm', 'r', 'un'])
+const npmUpdate = new Set(['update', 'up', 'upgrade', 'udpate'])
+const npmUninstall = new Set(['uninstall', 'unlink', 'remove', 'rm', 'r', 'un'])
 const npmRebuild = new Set(['rebuild', 'rb'])
 const npmRun = new Set(['run-script', 'run', 'rum', 'urn'])
 const npmInit = new Set(['init', 'create', 'innit'])
@@ -31,7 +32,10 @@ const npmInit = new Set(['init', 'create', 'innit'])
 const converterList: ConverterInfo[] = [
   {
     match: /npm (?:([-\w]+)(?: ([^# ][^#]*))?)/,
-    replacer: (pkgm, original, subCommand, arg) => {
+    replacer: (pkgm, original, subCommand, _arg) => {
+      const arg: string | undefined = _arg // undefined when not matched
+      const argStr = arg !== undefined ? ` ${arg}` : ''
+
       if (npmInstall.has(subCommand)) {
         if (arg === undefined) {
           return `${pkgm} install`
@@ -39,24 +43,25 @@ const converterList: ConverterInfo[] = [
         return `${pkgm} add ${arg}`
       }
       if (npmUpdate.has(subCommand)) {
-        return pkgm === 'yarn' ? `yarn up ${arg}` : `pnpm update ${arg}`
+        return pkgm === 'yarn' ? `yarn up${argStr}` : `pnpm update${argStr}`
       }
-      if (npmUninstall.has(subCommand)) {
+      if (npmUninstall.has(subCommand) && arg !== undefined) {
         return `${pkgm} remove ${arg}`
       }
       if (npmRebuild.has(subCommand)) {
-        return `${pkgm} rebuild ${arg}`
+        return `${pkgm} rebuild${argStr}`
       }
-      if (npmRun.has(subCommand)) {
+      if (npmRun.has(subCommand) && arg !== undefined) {
         return `${pkgm} run ${arg}`
       }
-      if (npmInit.has(subCommand)) {
+      if (npmInit.has(subCommand) && arg !== undefined) {
         if (arg === undefined) {
           return original
         }
         return `${pkgm} create ${arg}`
       }
-      return `${pkgm} ${subCommand} ${arg}`
+
+      return `${pkgm} ${subCommand}${argStr}`
     }
   }
 ]
