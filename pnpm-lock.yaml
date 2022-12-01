@@ -55,7 +55,6 @@ importers:
   packages/vitepress-plugin-detype:
     specifiers:
       '@types/markdown-it': ^12.2.3
-      '@types/prettier': ^2.7.1
       detype: ^0.6.1
       markdown-it: ^13.0.1
       tsup: ^6.5.0
@@ -65,7 +64,6 @@ importers:
       detype: 0.6.1
     devDependencies:
       '@types/markdown-it': 12.2.3
-      '@types/prettier': 2.7.1
       markdown-it: 13.0.1
       tsup: 6.5.0
       vite: 3.2.4
@@ -1014,10 +1012,6 @@ packages:
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
-    dev: true
-
-  /@types/prettier/2.7.1:
-    resolution: {integrity: sha512-ri0UmynRRvZiiUJdiz38MmIblKK+oH30MztdBVR95dv/Ubw6neWSb8u1XpRb72L4qsZOhz+L+z9JD40SJmfWow==}
     dev: true
 
   /@types/semver/6.2.3:
