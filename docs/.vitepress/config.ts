@@ -1,6 +1,9 @@
 import { defineConfig } from 'vitepress'
+import { createDetypePlugin } from 'vitepress-plugin-detype'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import { npmCommandsMarkdownPlugin } from 'vitepress-plugin-npm-commands'
+
+const { detypeMarkdownPlugin, detypeVitePlugin } = createDetypePlugin()
 
 export default defineConfig({
   title: 'Vitepress Plugins',
@@ -21,7 +24,11 @@ export default defineConfig({
   markdown: {
     config(md) {
       md.use(tabsMarkdownPlugin)
+      md.use(detypeMarkdownPlugin)
       md.use(npmCommandsMarkdownPlugin)
     }
+  },
+  vite: {
+    plugins: [detypeVitePlugin()]
   }
 })
