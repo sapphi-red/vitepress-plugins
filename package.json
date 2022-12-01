@@ -5,6 +5,7 @@
   "scripts": {
     "lint": "eslint --cache .",
     "format": "prettier --write --cache .",
+    "test": "vitest",
     "type-check": "vue-tsc --noEmit",
     "release:version": "changeset version && pnpm install --no-frozen-lockfile",
     "release:publish": "changeset publish"
