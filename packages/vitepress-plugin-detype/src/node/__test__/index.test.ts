@@ -26,7 +26,8 @@ test('with highlight lines', async () => {
   expect(result).toMatchSnapshot()
 })
 
-test.only('vue', async () => {
+// https://github.com/cyco130/detype/issues/6
+test.todo('vue', async () => {
   const result = await transform('/vue.md')
   expect(result).toMatchSnapshot()
 })
