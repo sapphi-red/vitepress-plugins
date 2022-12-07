@@ -1,12 +1,14 @@
 import { nextTick, Ref } from 'vue'
 
-export const useStabilizeScrollPosition =(
+export const useStabilizeScrollPosition = (
   targetEle: Ref<HTMLElement | undefined>
 ) => {
   const scrollableEleVal = document.documentElement
 
   const stabilizeScrollPosition =
-    <Args extends readonly unknown[], Return>(func: (...args: Args) => Return) =>
+    <Args extends readonly unknown[], Return>(
+      func: (...args: Args) => Return
+    ) =>
     async (...args: Args): Promise<Return> => {
       const result = func(...args)
       const eleVal = targetEle.value

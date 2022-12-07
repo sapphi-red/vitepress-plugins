@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, toRef } from 'vue'
-import { useStabilizeScrollPosition } from './useStabilizeScrollPosition';
+import { useStabilizeScrollPosition } from './useStabilizeScrollPosition'
 import { useTabs } from './useTabs'
 import { useUid } from './useUid'
 
