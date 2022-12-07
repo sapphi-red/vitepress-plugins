@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, toRef } from 'vue'
+import { useStabilizeScrollPosition } from './useStabilizeScrollPosition';
 import { useTabs } from './useTabs'
 import { useUid } from './useUid'
 
@@ -12,6 +13,10 @@ const { selected, select } = useTabs(
   toRef(props, 'tabLabels'),
   toRef(props, 'sharedStateKey')
 )
+
+const tablist = ref<HTMLDivElement>()
+const { stabilizeScrollPosition } = useStabilizeScrollPosition(tablist)
+const selectStable = stabilizeScrollPosition(select)
 
 const buttonRefs = ref<HTMLButtonElement[]>([])
 
@@ -28,7 +33,7 @@ const onKeydown = (e: KeyboardEvent) => {
   }
 
   if (selectIndex !== undefined) {
-    select(props.tabLabels[selectIndex])
+    selectStable(props.tabLabels[selectIndex])
     buttonRefs.value[selectIndex]?.focus()
   }
 }
@@ -38,7 +43,7 @@ const uid = useUid()
 
 <template>
   <div class="plugin-tabs">
-    <div role="tablist" @keydown="onKeydown">
+    <div ref="tablist" role="tablist" @keydown="onKeydown">
       <button
         v-for="tabLabel in tabLabels"
         :id="`tab-${tabLabel}-${uid}`"
@@ -49,7 +54,7 @@ const uid = useUid()
         :aria-selected="tabLabel === selected"
         :aria-controls="`panel-${tabLabel}-${uid}`"
         :tabindex="tabLabel === selected ? 0 : -1"
-        @click="() => select(tabLabel)"
+        @click="() => selectStable(tabLabel)"
       >
         {{ tabLabel }}
       </button>
