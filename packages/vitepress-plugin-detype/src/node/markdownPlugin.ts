@@ -2,10 +2,26 @@ import type MarkdownIt from 'markdown-it'
 import { transform, removeMagicComments } from 'detype'
 import type { PrettierOptions } from 'detype'
 import type { ContentMap } from './contentMap'
+import { parseDetypeInfo, SupportedType } from './parseDetypeInfo'
 
 const tabsShareStateKey = '~detype'
 const langs = ['ts', 'js'] as const
-const detypeInfoRE = /^ts({[^}]*})?,=detype({[^}]*})?=$/
+type Lang = typeof langs[number]
+
+const getLangForRender = (type: SupportedType, lang: Lang) => {
+  switch (type) {
+    case 'vue':
+      return 'vue'
+    case 'tsx':
+      return `${lang}x`
+    case 'ts':
+      return lang
+  }
+  exhaustiveCheck(type)
+}
+
+// eslint-disable-next-line @typescript-eslint/no-empty-function
+const exhaustiveCheck = (_p: never) => {}
 
 export const detypePlugin = (
   md: MarkdownIt,
@@ -25,32 +41,38 @@ export const detypePlugin = (
     const [tokens, idx, , env] = args
     const token = tokens[idx]
 
-    const m = token.info.trim().match(detypeInfoRE)
-    if (!m) {
+    const parsed = parseDetypeInfo(token.info)
+    if (parsed === null) {
       return originalFence(...args)
     }
 
-    const [, tsAttrs = '', jsAttrs = ''] = m
+    const { type, tsAttrs, jsAttrs } = parsed
+
     const slots = langs.map(lang => {
       const attrs = lang === 'ts' ? tsAttrs : jsAttrs
       const output = (async () => {
         try {
           const content =
             lang === 'ts'
-              ? removeMagicComments(token.content, 'foo.ts', prettierOptions)
-              : await transform(token.content, 'foo.ts', {
+              ? removeMagicComments(
+                  token.content,
+                  `foo.${type}`,
+                  prettierOptions
+                )
+              : await transform(token.content, `foo.${type}`, {
                   prettierOptions,
                   removeTsComments: true
                 })
+          const langForRender = getLangForRender(type, lang)
           const codeWithFence =
-            `${token.markup}${lang}${attrs}\n` + content + token.markup
+            `${token.markup}${langForRender}${attrs}\n` + content + token.markup
           return { result: md.render(codeWithFence, env) }
         } catch (e) {
           return { error: e }
         }
       })()
       const key = contentMap.add(
-        `${token.markup}_${lang}_${attrs}`,
+        `${type}_${token.markup}_${lang}_${attrs}`,
         token.content,
         output
       )

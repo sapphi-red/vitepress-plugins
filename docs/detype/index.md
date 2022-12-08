@@ -4,6 +4,8 @@
 
 [![NPM version](https://img.shields.io/npm/v/vitepress-plugin-detype.svg)](https://www.npmjs.com/package/vitepress-plugin-detype)
 
+This plugin uses [`detype`](https://github.com/cyco130/detype) to transform TypeScript to JavaScript.
+
 ## Installation
 
 ```sh
@@ -87,6 +89,8 @@ for (let i = 0; i < 100; i++) {
   fooList.push(f2)
 }
 ```
+
+This example uses `ts` but you can also use `tsx` and `vue`.
 
 ### With highlight line
 

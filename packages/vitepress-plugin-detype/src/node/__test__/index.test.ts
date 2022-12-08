@@ -25,3 +25,8 @@ test('with highlight lines', async () => {
   const result = await transform('/with-highlight-lines.md')
   expect(result).toMatchSnapshot()
 })
+
+test('vue', async () => {
+  const result = await transform('/vue.md')
+  expect(result).toMatchSnapshot()
+})

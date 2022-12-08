@@ -44,6 +44,6 @@
     "vue": "^3.2.45"
   },
   "dependencies": {
-    "detype": "^0.6.1"
+    "detype": "^0.6.2"
   }
 }
