@@ -111,6 +111,215 @@ import _export_sfc from '/@id/__x00__plugin-vue:export-helper'
 export default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\\"D:/documents/GitHub/vitepress-plugins/packages/vitepress-plugin-detype/src/node/__test__/fixtures/normal.md\\"]])"
 `;
 
+exports[`vue 1`] = `
+"import { createHotContext as __vite__createHotContext } from \\"/@vite/client\\";import.meta.hot = __vite__createHotContext(\\"/vue.md\\");
+export const __pageData = JSON.parse(\\"{\\\\\\"title\\\\\\":\\\\\\"\\\\\\",\\\\\\"description\\\\\\":\\\\\\"\\\\\\",\\\\\\"frontmatter\\\\\\":{},\\\\\\"headers\\\\\\":[],\\\\\\"relativePath\\\\\\":\\\\\\"vue.md\\\\\\"}\\")
+const _sfc_main = {name:'vue.md'}
+import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \\"/@fs/D:/documents/GitHub/vitepress-plugins/node_modules/.pnpm/vue@3.2.45/node_modules/vue/dist/vue.runtime.esm-bundler.js\\"
+
+const _hoisted_1 = /*#__PURE__*/_createElementVNode(\\"div\\", { class: \\"language-vue\\" }, [
+  /*#__PURE__*/_createElementVNode(\\"button\\", {
+    title: \\"Copy Code\\",
+    class: \\"copy\\"
+  }),
+  /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"lang\\" }, \\"vue\\"),
+  /*#__PURE__*/_createElementVNode(\\"pre\\", { class: \\"shiki\\" }, [
+    /*#__PURE__*/_createElementVNode(\\"code\\", null, [
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"<\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F07178\\"} }, \\"script\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\" \\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#C792EA\\"} }, \\"setup\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\" \\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#C792EA\\"} }, \\"lang\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\"=\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"\\\\\\"\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#C3E88D\\"} }, \\"ts\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"\\\\\\"\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\">\\")
+      ]),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#C792EA\\"} }, \\"type\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\" \\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#FFCB6B\\"} }, \\"Foo\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\" \\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"=\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\" \\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"{\\")
+      ]),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\"  \\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F07178\\"} }, \\"foo\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\":\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\" \\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#FFCB6B\\"} }, \\"string\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\";\\")
+      ]),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"};\\")
+      ]),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#C792EA\\"} }, \\"const\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\" fooList\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\":\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\" \\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#FFCB6B\\"} }, \\"Foo\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\"[] \\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"=\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\" []\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\";\\")
+      ]),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"</\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F07178\\"} }, \\"script\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\">\\")
+      ]),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"<\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F07178\\"} }, \\"template\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\">\\")
+      ]),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\"  \\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"<\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F07178\\"} }, \\"div\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\">{{\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\" fooList\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\".\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#82AAFF\\"} }, \\"join\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\"(\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"\\\\\\"\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#C3E88D\\"} }, \\", \\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"\\\\\\"\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\") \\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"}}</\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F07178\\"} }, \\"div\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\">\\")
+      ]),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"</\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F07178\\"} }, \\"template\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\">\\")
+      ]),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" })
+    ])
+  ])
+], -1 /* HOISTED */)
+const _hoisted_2 = /*#__PURE__*/_createElementVNode(\\"div\\", { class: \\"language-vue\\" }, [
+  /*#__PURE__*/_createElementVNode(\\"button\\", {
+    title: \\"Copy Code\\",
+    class: \\"copy\\"
+  }),
+  /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"lang\\" }, \\"vue\\"),
+  /*#__PURE__*/_createElementVNode(\\"pre\\", { class: \\"shiki\\" }, [
+    /*#__PURE__*/_createElementVNode(\\"code\\", null, [
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"<\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F07178\\"} }, \\"script\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\" \\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#C792EA\\"} }, \\"setup\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\">\\")
+      ]),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#C792EA\\"} }, \\"const\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\" fooList \\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"=\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\" []\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\";\\")
+      ]),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"</\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F07178\\"} }, \\"script\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\">\\")
+      ]),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"<\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F07178\\"} }, \\"template\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\">\\")
+      ]),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\"  \\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"<\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F07178\\"} }, \\"div\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\">{{\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\" fooList\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\".\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#82AAFF\\"} }, \\"join\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\"(\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"\\\\\\"\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#C3E88D\\"} }, \\", \\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"\\\\\\"\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#A6ACCD\\"} }, \\") \\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"}}</\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F07178\\"} }, \\"div\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\">\\")
+      ]),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\"</\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F07178\\"} }, \\"template\\"),
+        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#89DDFF\\"} }, \\">\\")
+      ]),
+      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
+      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" })
+    ])
+  ])
+], -1 /* HOISTED */)
+
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_PluginTabs = _resolveComponent(\\"PluginTabs\\")
+
+  return (_openBlock(), _createElementBlock(\\"div\\", null, [
+    _createVNode(_component_PluginTabs, {
+      tabLabels: [\\"ts\\",\\"js\\"],
+      sharedStateKey: \\"~detype\\"
+    }, {
+      ts: _withCtx(() => [
+        _hoisted_1
+      ]),
+      js: _withCtx(() => [
+        _hoisted_2
+      ]),
+      _: 1 /* STABLE */
+    })
+  ]))
+}
+
+
+_sfc_main.__hmrId = \\"4a58c0b4\\"
+typeof __VUE_HMR_RUNTIME__ !== 'undefined' && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main)
+import.meta.hot.accept(mod => {
+  if (!mod) return
+  const { default: updated, _rerender_only } = mod
+  if (_rerender_only) {
+    __VUE_HMR_RUNTIME__.rerender(updated.__hmrId, updated.render)
+  } else {
+    __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated)
+  }
+})
+import _export_sfc from '/@id/__x00__plugin-vue:export-helper'
+export default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\\"D:/documents/GitHub/vitepress-plugins/packages/vitepress-plugin-detype/src/node/__test__/fixtures/vue.md\\"]])"
+`;
+
 exports[`with highlight lines 1`] = `
 "import { createHotContext as __vite__createHotContext } from \\"/@vite/client\\";import.meta.hot = __vite__createHotContext(\\"/with-highlight-lines.md\\");
 export const __pageData = JSON.parse(\\"{\\\\\\"title\\\\\\":\\\\\\"\\\\\\",\\\\\\"description\\\\\\":\\\\\\"\\\\\\",\\\\\\"frontmatter\\\\\\":{},\\\\\\"headers\\\\\\":[],\\\\\\"relativePath\\\\\\":\\\\\\"with-highlight-lines.md\\\\\\"}\\")
