@@ -1,5 +1,11 @@
 # vitepress-plugin-tabs
 
+## 0.1.2
+
+### Patch Changes
+
+- [#9](https://github.com/sapphi-red/vitepress-plugins/pull/9) [`24cfb5e`](https://github.com/sapphi-red/vitepress-plugins/commit/24cfb5ee76bd0eceb7b70c36c144210e020e80bf) Thanks [@sapphi-red](https://github.com/sapphi-red)! - fix hydration mismatch
+
 ## 0.1.1
 
 ### Patch Changes
