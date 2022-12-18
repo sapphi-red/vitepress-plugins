@@ -1,6 +1,6 @@
 # vitepress-plugin-npm-commands
 
-## 1.0.0
+## 0.3.0
 
 ### Patch Changes
 
