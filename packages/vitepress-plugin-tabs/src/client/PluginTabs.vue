@@ -43,7 +43,12 @@ const uid = useUid()
 
 <template>
   <div class="plugin-tabs">
-    <div ref="tablist" class="plugin-tabs--tab-list" role="tablist" @keydown="onKeydown">
+    <div
+      ref="tablist"
+      class="plugin-tabs--tab-list"
+      role="tablist"
+      @keydown="onKeydown"
+    >
       <button
         v-for="tabLabel in tabLabels"
         :id="`tab-${tabLabel}-${uid}`"
