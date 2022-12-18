@@ -1,3 +1,7 @@
+---
+title: vitepress-plugin-detype
+---
+
 # vitepress-plugin-detype
 
 > A plugin that adds syntax for generating js from ts code snippet.
