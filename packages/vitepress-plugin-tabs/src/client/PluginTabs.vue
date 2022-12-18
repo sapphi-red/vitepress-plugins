@@ -43,7 +43,7 @@ const uid = useUid()
 
 <template>
   <div class="plugin-tabs">
-    <div ref="tablist" role="tablist" @keydown="onKeydown">
+    <div ref="tablist" class="plugin-tabs--tab-list" role="tablist" @keydown="onKeydown">
       <button
         v-for="tabLabel in tabLabels"
         :id="`tab-${tabLabel}-${uid}`"
@@ -81,16 +81,51 @@ const uid = useUid()
   border-radius: 8px;
 }
 
+.plugin-tabs--tab-list {
+  position: relative;
+  padding: 0 12px;
+  overflow: auto;
+}
+.plugin-tabs--tab-list::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--vp-c-divider);
+}
+
 .plugin-tabs--tab {
-  padding: 4px 16px;
+  position: relative;
+  padding: 0 12px;
+  line-height: 48px;
   border-bottom: 2px solid transparent;
-  transition: border-bottom-color 0.25s;
+  color: var(--vp-c-text-dark-2);
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 0.25s;
 }
 .plugin-tabs--tab[aria-selected='true'] {
-  border-bottom-color: var(--vp-c-divider);
+  color: var(--vp-c-text-dark-1);
 }
 .plugin-tabs--tab:hover {
-  border-bottom-color: var(--vp-c-divider-light);
+  color: var(--vp-c-text-dark-1);
+}
+.plugin-tabs--tab::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 8px;
+  right: 8px;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.25s;
+  z-index: 10;
+}
+.plugin-tabs--tab[aria-selected='true']::after {
+  background-color: var(--vp-c-brand);
 }
 
 .plugin-tabs--content {
