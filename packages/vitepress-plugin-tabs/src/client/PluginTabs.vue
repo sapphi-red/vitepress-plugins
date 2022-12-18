@@ -80,9 +80,18 @@ const uid = useUid()
 </template>
 
 <style>
+:root {
+  --vp-plugin-tabs-tab-text-color: var(--vp-c-text-2);
+  --vp-plugin-tabs-tab-active-text-color: var(--vp-c-text-1);
+  --vp-plugin-tabs-tab-hover-text-color: var(--vp-c-text-1);
+  --vp-plugin-tabs-tab-bg: var(--vp-c-bg-soft);
+  --vp-plugin-tabs-tab-divider: var(--vp-c-divider);
+  --vp-plugin-tabs-tab-active-bar-color: var(--vp-c-brand);
+}
+
 .plugin-tabs {
   margin: 16px 0;
-  background-color: var(--vp-c-bg-soft);
+  background-color: var(--vp-plugin-tabs-tab-bg);
   border-radius: 8px;
 }
 
@@ -98,7 +107,7 @@ const uid = useUid()
   left: 0;
   right: 0;
   height: 2px;
-  background-color: var(--vp-c-divider);
+  background-color: var(--vp-plugin-tabs-tab-divider);
 }
 
 .plugin-tabs--tab {
@@ -106,17 +115,17 @@ const uid = useUid()
   padding: 0 12px;
   line-height: 48px;
   border-bottom: 2px solid transparent;
-  color: var(--vp-c-text-dark-2);
+  color: var(--vp-plugin-tabs-tab-text-color);
   font-size: 14px;
   font-weight: 500;
   white-space: nowrap;
   transition: color 0.25s;
 }
 .plugin-tabs--tab[aria-selected='true'] {
-  color: var(--vp-c-text-dark-1);
+  color: var(--vp-plugin-tabs-tab-active-text-color);
 }
 .plugin-tabs--tab:hover {
-  color: var(--vp-c-text-dark-1);
+  color: var(--vp-plugin-tabs-tab-hover-text-color);
 }
 .plugin-tabs--tab::after {
   content: '';
@@ -130,7 +139,7 @@ const uid = useUid()
   z-index: 10;
 }
 .plugin-tabs--tab[aria-selected='true']::after {
-  background-color: var(--vp-c-brand);
+  background-color: var(--vp-plugin-tabs-tab-active-bar-color);
 }
 
 .plugin-tabs--content {
