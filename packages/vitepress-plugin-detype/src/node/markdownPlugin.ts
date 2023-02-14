@@ -6,7 +6,7 @@ import { parseDetypeInfo, SupportedType } from './parseDetypeInfo'
 
 const tabsShareStateKey = '~detype'
 const langs = ['ts', 'js'] as const
-type Lang = typeof langs[number]
+type Lang = (typeof langs)[number]
 
 const getLangForRender = (type: SupportedType, lang: Lang) => {
   switch (type) {
