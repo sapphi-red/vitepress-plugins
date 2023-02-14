@@ -30,12 +30,12 @@
   },
   "homepage": "https://vitepress-plugins.sapphi.red/npm-commands/",
   "peerDependencies": {
-    "vitepress": "^1.0.0-alpha.29",
+    "vitepress": "^1.0.0-alpha.46",
     "vitepress-plugin-tabs": "^0.2.0"
   },
   "devDependencies": {
     "@types/markdown-it": "^12.2.3",
     "markdown-it": "^13.0.1",
-    "tsup": "^6.5.0"
+    "tsup": "^6.6.3"
   }
 }

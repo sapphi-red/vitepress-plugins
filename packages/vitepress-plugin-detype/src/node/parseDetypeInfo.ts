@@ -1,6 +1,6 @@
 const detypeInfoRE = /^(tsx?|vue)({[^}]*})?,=detype({[^}]*})?=$/
 const supportedTypes = ['ts', 'tsx', 'vue'] as const
-export type SupportedType = typeof supportedTypes[number]
+export type SupportedType = (typeof supportedTypes)[number]
 
 function assertType(type: string): asserts type is SupportedType {
   if (!(supportedTypes as readonly string[]).includes(type)) {
