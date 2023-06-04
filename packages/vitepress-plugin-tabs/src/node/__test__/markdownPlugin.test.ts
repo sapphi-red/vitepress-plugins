@@ -12,12 +12,50 @@ const setup = () => {
 test('render correctly', () => {
   const md = setup()
   const result = md.render(dedent`
-    :::=tabs
-    ::a
+    ::::tabs
+    :::tab Tab "A"
     a
-    ::b
+    :::
+    :::tab Tab "B"
     b
     :::
+    ::::
+  `)
+  expect(result).toMatchSnapshot()
+})
+
+test('render tab with nested ::: code correctly', () => {
+  const md = setup()
+  const result = md.render(dedent`
+    ::::tabs
+    :::tab Tab "A"
+    a
+    \`\`\`js
+    const foo = ':::';
+    \`\`\`
+    :::
+    :::tab Tab "B"
+    b
+    :::
+    ::::
+  `)
+  expect(result).toMatchSnapshot()
+})
+
+test('render tab with nested block correctly', () => {
+  const md = setup()
+  const result = md.render(dedent`
+    ::::: tabs
+    :::: tab Tab "A"
+    a
+    :::tip
+    Tip
+    :::
+    ::::
+    :::: tab Tab "B"
+    b
+    ::::
+    :::::
   `)
   expect(result).toMatchSnapshot()
 })

@@ -1,7 +1,42 @@
 // Vitest Snapshot v1
 
 exports[`render correctly 1`] = `
-"<PluginTabs :tabLabels=\\"[&quot;a&quot;,&quot;b&quot;]\\" ><template #a><p>a</p>
-</template><template #b><p>b</p>
-</template></PluginTabs>"
+"<PluginTabs >
+<PluginTabsTab label=\\"Tab &quot;A&quot;\\">
+<p>a</p>
+</PluginTabsTab>
+<PluginTabsTab label=\\"Tab &quot;B&quot;\\">
+<p>b</p>
+</PluginTabsTab>
+</PluginTabs>
+"
+`;
+
+exports[`render tab with nested ::: code correctly 1`] = `
+"<PluginTabs >
+<PluginTabsTab label=\\"Tab &quot;A&quot;\\">
+<p>a</p>
+<pre><code class=\\"language-js\\">const foo = ':::';
+</code></pre>
+</PluginTabsTab>
+<PluginTabsTab label=\\"Tab &quot;B&quot;\\">
+<p>b</p>
+</PluginTabsTab>
+</PluginTabs>
+"
+`;
+
+exports[`render tab with nested block correctly 1`] = `
+"<PluginTabs >
+<PluginTabsTab label=\\"Tab &quot;A&quot;\\">
+<p>a
+:::tip
+Tip
+:::</p>
+</PluginTabsTab>
+<PluginTabsTab label=\\"Tab &quot;B&quot;\\">
+<p>b</p>
+</PluginTabsTab>
+</PluginTabs>
+"
 `;

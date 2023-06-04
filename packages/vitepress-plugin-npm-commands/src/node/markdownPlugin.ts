@@ -9,9 +9,6 @@ const npmCommandsCommandRE = new RegExp(
 )
 
 export const npmCommandsPlugin = (md: MarkdownIt) => {
-  const tabLabelsProp = `:tabLabels="${md.utils.escapeHtml(
-    JSON.stringify(packageManagers)
-  )}"`
   const shareStateKeyProp = `sharedStateKey="${md.utils.escapeHtml(
     tabsShareStateKey
   )}"`
@@ -41,15 +38,13 @@ export const npmCommandsPlugin = (md: MarkdownIt) => {
         : ''
       const codeWithFence =
         `${token.markup}${token.info}${attrStr}\n` + code + token.markup
-      return `<template #${pkgManger}>${md.render(
+      return `<PluginTabsTab label="${pkgManger}">${md.render(
         codeWithFence,
         env
-      )}</template>`
+      )}</PluginTabsTab>`
     })
 
-    return `<PluginTabs ${tabLabelsProp} ${shareStateKeyProp}>${slots.join(
-      ''
-    )}</PluginTabs>`
+    return `<PluginTabs ${shareStateKeyProp}>${slots.join('')}</PluginTabs>`
   }
 }
 

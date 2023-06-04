@@ -3,16 +3,15 @@ import { ref, toRef } from 'vue'
 import { useStabilizeScrollPosition } from './useStabilizeScrollPosition'
 import { useTabs } from './useTabs'
 import { useUid } from './useUid'
+import { useTabLabels } from './UseTabLabels'
+import { provide } from 'vue'
 
-const props = defineProps<{
-  tabLabels: string[]
-  sharedStateKey?: string
-}>()
+const props = defineProps<{ sharedStateKey?: string }>()
 
-const { selected, select } = useTabs(
-  toRef(props, 'tabLabels'),
-  toRef(props, 'sharedStateKey')
-)
+const container = ref<HTMLDivElement | undefined>()
+const tabLabels = useTabLabels(container)
+
+const { selected, select } = useTabs(tabLabels, toRef(props, 'sharedStateKey'))
 
 const tablist = ref<HTMLDivElement>()
 const { stabilizeScrollPosition } = useStabilizeScrollPosition(tablist)
@@ -21,28 +20,31 @@ const selectStable = stabilizeScrollPosition(select)
 const buttonRefs = ref<HTMLButtonElement[]>([])
 
 const onKeydown = (e: KeyboardEvent) => {
-  const currentIndex = props.tabLabels.indexOf(selected.value)
+  const currentIndex = tabLabels.value.indexOf(selected.value)
   let selectIndex: number | undefined
 
   if (e.key === 'ArrowLeft') {
     selectIndex =
-      currentIndex >= 1 ? currentIndex - 1 : props.tabLabels.length - 1
+      currentIndex >= 1 ? currentIndex - 1 : tabLabels.value.length - 1
   } else if (e.key === 'ArrowRight') {
     selectIndex =
-      currentIndex < props.tabLabels.length - 1 ? currentIndex + 1 : 0
+      currentIndex < tabLabels.value.length - 1 ? currentIndex + 1 : 0
   }
 
   if (selectIndex !== undefined) {
-    selectStable(props.tabLabels[selectIndex])
+    selectStable(tabLabels.value[selectIndex])
     buttonRefs.value[selectIndex]?.focus()
   }
 }
 
 const uid = useUid()
+
+provide('tabs-uid', uid)
+provide('tabs-selected', selected)
 </script>
 
 <template>
-  <div class="plugin-tabs">
+  <div ref="container" class="plugin-tabs">
     <div
       ref="tablist"
       class="plugin-tabs--tab-list"
@@ -64,18 +66,7 @@ const uid = useUid()
         {{ tabLabel }}
       </button>
     </div>
-    <template v-for="tabLabel in tabLabels" :key="tabLabel">
-      <div
-        v-if="tabLabel === selected"
-        :id="`panel-${tabLabel}-${uid}`"
-        class="plugin-tabs--content"
-        role="tabpanel"
-        tabindex="0"
-        :aria-labelledby="`tab-${tabLabel}-${uid}`"
-      >
-        <slot :name="tabLabel" />
-      </div>
-    </template>
+    <slot />
   </div>
 </template>
 
@@ -100,6 +91,7 @@ const uid = useUid()
   padding: 0 12px;
   overflow: auto;
 }
+
 .plugin-tabs--tab-list::after {
   content: '';
   position: absolute;
@@ -121,12 +113,15 @@ const uid = useUid()
   white-space: nowrap;
   transition: color 0.25s;
 }
+
 .plugin-tabs--tab[aria-selected='true'] {
   color: var(--vp-plugin-tabs-tab-active-text-color);
 }
+
 .plugin-tabs--tab:hover {
   color: var(--vp-plugin-tabs-tab-hover-text-color);
 }
+
 .plugin-tabs--tab::after {
   content: '';
   position: absolute;
@@ -138,20 +133,8 @@ const uid = useUid()
   transition: background-color 0.25s;
   z-index: 10;
 }
+
 .plugin-tabs--tab[aria-selected='true']::after {
   background-color: var(--vp-plugin-tabs-tab-active-bar-color);
-}
-
-.plugin-tabs--content {
-  padding: 16px;
-}
-.plugin-tabs--content > :first-child {
-  margin-top: 0;
-}
-.plugin-tabs--content > :last-child {
-  margin-bottom: 0;
-}
-.plugin-tabs--content > div[class*='language-'] {
-  margin: 8px 0;
 }
 </style>
