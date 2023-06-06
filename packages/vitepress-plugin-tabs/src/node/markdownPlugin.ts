@@ -1,6 +1,8 @@
 import type MarkdownIt from 'markdown-it'
 import container from 'markdown-it-container'
 import type Token from 'markdown-it/lib/token'
+import { ruleBlockTab } from './ruleBlockTab'
+import type Renderer from 'markdown-it/lib/renderer'
 
 type Params = {
   shareStateKey: string | undefined
@@ -29,16 +31,17 @@ export const tabsPlugin = (md: MarkdownIt) => {
     }
   })
 
-  md.use(container, 'tab', {
-    render(tokens: Token[], index: number) {
-      const token = tokens[index]
-      if (token.nesting === 1) {
-        const label = token.info.replace(/^\s*tab\s*/, '')
-        const labelProp = `label="${md.utils.escapeHtml(label)}"`
-        return `<PluginTabsTab ${labelProp}>\n`
-      } else {
-        return `</PluginTabsTab>\n`
-      }
+  md.block.ruler.after('container_tabs', 'tab', ruleBlockTab)
+  const renderTab: Renderer.RenderRule = (tokens, index) => {
+    const token = tokens[index]
+    if (token.nesting === 1) {
+      const label = token.info
+      const labelProp = `label="${md.utils.escapeHtml(label)}"`
+      return `<PluginTabsTab ${labelProp}>\n`
+    } else {
+      return `</PluginTabsTab>\n`
     }
-  })
+  }
+  md.renderer.rules['tab_open'] = renderTab
+  md.renderer.rules['tab_close'] = renderTab
 }
