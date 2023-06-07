@@ -5,5 +5,6 @@
 ---
 
 - Changed syntax for creating tabs
-- Tab titles can now contain special characters e.g. spaces
+  - Check out the document for the new syntax
+- Tab titles can now contain special characters (e.g. spaces)
 - Custom blocks can now appear nested inside a tab
