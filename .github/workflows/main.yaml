@@ -18,7 +18,7 @@ jobs:
       - name: setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version-file: '.node-version'
           cache: pnpm
       - run: pnpm i
       - name: run lint
@@ -34,7 +34,7 @@ jobs:
       - name: setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version-file: '.node-version'
           cache: pnpm
       - run: pnpm i
       - name: run format
@@ -50,7 +50,7 @@ jobs:
       - name: setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version-file: '.node-version'
           cache: pnpm
       - run: pnpm i
       - name: run type-check
@@ -66,7 +66,7 @@ jobs:
       - name: setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version-file: '.node-version'
           cache: pnpm
       - run: pnpm i
       - run: pnpm -r --stream build
