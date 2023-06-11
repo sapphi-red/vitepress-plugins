@@ -8,8 +8,7 @@ import { provide } from 'vue'
 
 const props = defineProps<{ sharedStateKey?: string }>()
 
-const container = ref<HTMLDivElement | undefined>()
-const tabLabels = useTabLabels(container)
+const tabLabels = useTabLabels()
 
 const { selected, select } = useTabsSelectedState(
   tabLabels,
@@ -47,7 +46,7 @@ provide('tabs-selected', selected)
 </script>
 
 <template>
-  <div ref="container" class="plugin-tabs">
+  <div class="plugin-tabs">
     <div
       ref="tablist"
       class="plugin-tabs--tab-list"

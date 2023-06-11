@@ -1,20 +1,15 @@
 import type { Ref } from 'vue'
-import { onBeforeMount, onMounted, onUnmounted, ref, useSlots } from 'vue'
+import { computed, useSlots } from 'vue'
 
-export function useTabLabels(
-  container: Ref<HTMLDivElement | undefined>
-): Ref<string[]> {
-  const tabLabels: Ref<string[]> = ref([])
+export function useTabLabels(): Ref<string[]> {
   const slots = useSlots()
-  const mutationObserver: Ref<MutationObserver | null> = ref(null)
-
-  const getLabels = () => {
+  const tabLabels = computed(() => {
     const defaultSlot = slots.default?.()
     if (!defaultSlot) {
-      tabLabels.value = []
-      return
+      return []
     }
-    tabLabels.value = defaultSlot
+
+    return defaultSlot
       .filter(
         vnode =>
           typeof vnode.type === 'object' &&
@@ -23,25 +18,6 @@ export function useTabLabels(
           vnode.props
       )
       .map(vnode => vnode.props?.label)
-  }
-
-  onBeforeMount(getLabels)
-
-  onMounted(() => {
-    if (!container.value) {
-      return
-    }
-    mutationObserver.value = new MutationObserver(getLabels)
-
-    mutationObserver.value.observe(container.value, {
-      attributes: true,
-      childList: true,
-      characterData: true,
-      subtree: true
-    })
-  })
-  onUnmounted(() => {
-    mutationObserver.value?.disconnect()
   })
   return tabLabels
 }
