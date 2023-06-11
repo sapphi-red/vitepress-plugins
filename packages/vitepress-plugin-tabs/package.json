@@ -41,7 +41,7 @@
     "@types/markdown-it-container": "^2.0.5",
     "markdown-it": "^13.0.1",
     "markdown-it-container": "^3.0.0",
-    "tsup": "^6.6.3",
-    "vue": "^3.2.47"
+    "tsup": "^6.7.0",
+    "vue": "^3.3.4"
   }
 }
