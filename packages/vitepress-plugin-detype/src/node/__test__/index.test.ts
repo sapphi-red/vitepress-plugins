@@ -12,7 +12,9 @@ const createTransform = async () => {
   await server.pluginContainer.buildStart({})
   return async (id: string) => {
     const result = await server.transformRequest(id)
-    return result?.code.replaceAll(rootDir, 'root')
+    return result?.code
+      .replaceAll(`/${rootDir}`, '/root')
+      .replaceAll(rootDir, '/root')
   }
 }
 

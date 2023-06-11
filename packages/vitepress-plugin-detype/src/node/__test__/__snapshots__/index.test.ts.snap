@@ -110,7 +110,7 @@ import.meta.hot.accept(mod => {
   }
 })
 import _export_sfc from \\"/@id/__x00__plugin-vue:export-helper\\"
-export default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\\"root/packages/vitepress-plugin-detype/src/node/__test__/fixtures/normal.md\\"]])"
+export default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\\"/root/packages/vitepress-plugin-detype/src/node/__test__/fixtures/normal.md\\"]])"
 `;
 
 exports[`vue 1`] = `
@@ -307,7 +307,7 @@ import.meta.hot.accept(mod => {
   }
 })
 import _export_sfc from \\"/@id/__x00__plugin-vue:export-helper\\"
-export default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\\"root/packages/vitepress-plugin-detype/src/node/__test__/fixtures/vue.md\\"]])"
+export default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\\"/root/packages/vitepress-plugin-detype/src/node/__test__/fixtures/vue.md\\"]])"
 `;
 
 exports[`with highlight lines 1`] = `
@@ -420,5 +420,5 @@ import.meta.hot.accept(mod => {
   }
 })
 import _export_sfc from \\"/@id/__x00__plugin-vue:export-helper\\"
-export default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\\"root/packages/vitepress-plugin-detype/src/node/__test__/fixtures/with-highlight-lines.md\\"]])"
+export default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\\"/root/packages/vitepress-plugin-detype/src/node/__test__/fixtures/with-highlight-lines.md\\"]])"
 `;
