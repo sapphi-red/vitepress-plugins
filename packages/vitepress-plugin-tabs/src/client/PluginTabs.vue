@@ -132,7 +132,7 @@ provide('tabs-selected', selected)
   height: 2px;
   background-color: transparent;
   transition: background-color 0.25s;
-  z-index: 10;
+  z-index: 1;
 }
 
 .plugin-tabs--tab[aria-selected='true']::after {
