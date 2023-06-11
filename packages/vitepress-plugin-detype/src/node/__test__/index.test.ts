@@ -2,15 +2,17 @@ import { createServer } from 'vitepress'
 import { expect, test } from 'vitest'
 import url from 'node:url'
 import path from 'node:path'
+import { normalizePath } from 'vite'
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url))
+const rootDir = normalizePath(path.resolve(__dirname, '../../../../../'))
 
 const createTransform = async () => {
   const server = await createServer(path.resolve(__dirname, './fixtures'))
   await server.pluginContainer.buildStart({})
   return async (id: string) => {
     const result = await server.transformRequest(id)
-    return result?.code
+    return result?.code.replaceAll(rootDir, 'root')
   }
 }
 
