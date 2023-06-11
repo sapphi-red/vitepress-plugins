@@ -89,7 +89,8 @@ provide('tabs-selected', selected)
 .plugin-tabs--tab-list {
   position: relative;
   padding: 0 12px;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .plugin-tabs--tab-list::after {
