@@ -3,7 +3,8 @@ import type { App, Ref, InjectionKey } from 'vue'
 
 type TabsSharedState = Record<string, string>
 
-const injectionKey: InjectionKey<TabsSharedState> = Symbol()
+const injectionKey: InjectionKey<TabsSharedState> =
+  'vitepress:tabSharedState' as unknown as symbol
 const ls = typeof localStorage !== 'undefined' ? localStorage : null
 const localStorageKey = 'vitepress:tabsSharedState'
 
