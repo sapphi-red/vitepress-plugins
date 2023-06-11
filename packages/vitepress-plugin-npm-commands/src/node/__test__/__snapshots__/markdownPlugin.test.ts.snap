@@ -1,31 +1,31 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`escape hatch 1`] = `
-"<PluginTabs :tabLabels=\\"[&quot;npm&quot;,&quot;yarn&quot;,&quot;pnpm&quot;]\\" sharedStateKey=\\"~npm-commands\\"><template #npm><pre><code class=\\"language-{----npm-disable}\\">npm i
+"<PluginTabs sharedStateKey=\\"~npm-commands\\"><PluginTabsTab label=\\"npm\\"><pre><code class=\\"language-{----npm-disable}\\">npm i
 </code></pre>
-</template><template #yarn><pre><code class=\\"language-{----npm-disable}\\">yarn install
+</PluginTabsTab><PluginTabsTab label=\\"yarn\\"><pre><code class=\\"language-{----npm-disable}\\">yarn install
 </code></pre>
-</template><template #pnpm><pre><code class=\\"language-{----npm-disable}\\">pnpm install
+</PluginTabsTab><PluginTabsTab label=\\"pnpm\\"><pre><code class=\\"language-{----npm-disable}\\">pnpm install
 </code></pre>
-</template></PluginTabs>"
+</PluginTabsTab></PluginTabs>"
 `;
 
 exports[`render auto correctly 1`] = `
-"<PluginTabs :tabLabels=\\"[&quot;npm&quot;,&quot;yarn&quot;,&quot;pnpm&quot;]\\" sharedStateKey=\\"~npm-commands\\"><template #npm><pre><code>npm i
+"<PluginTabs sharedStateKey=\\"~npm-commands\\"><PluginTabsTab label=\\"npm\\"><pre><code>npm i
 </code></pre>
-</template><template #yarn><pre><code>yarn install
+</PluginTabsTab><PluginTabsTab label=\\"yarn\\"><pre><code>yarn install
 </code></pre>
-</template><template #pnpm><pre><code>pnpm install
+</PluginTabsTab><PluginTabsTab label=\\"pnpm\\"><pre><code>pnpm install
 </code></pre>
-</template></PluginTabs>"
+</PluginTabsTab></PluginTabs>"
 `;
 
 exports[`render manual correctly 1`] = `
-"<PluginTabs :tabLabels=\\"[&quot;npm&quot;,&quot;yarn&quot;,&quot;pnpm&quot;]\\" sharedStateKey=\\"~npm-commands\\"><template #npm><pre><code>npm i vite 
+"<PluginTabs sharedStateKey=\\"~npm-commands\\"><PluginTabsTab label=\\"npm\\"><pre><code>npm i vite 
 </code></pre>
-</template><template #yarn><pre><code>yarn add vite 
+</PluginTabsTab><PluginTabsTab label=\\"yarn\\"><pre><code>yarn add vite 
 </code></pre>
-</template><template #pnpm><pre><code>pnpm add vite 
+</PluginTabsTab><PluginTabsTab label=\\"pnpm\\"><pre><code>pnpm add vite 
 </code></pre>
-</template></PluginTabs>"
+</PluginTabsTab></PluginTabs>"
 `;

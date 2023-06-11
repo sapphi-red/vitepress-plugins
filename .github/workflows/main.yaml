@@ -69,4 +69,24 @@ jobs:
           node-version-file: '.node-version'
           cache: pnpm
       - run: pnpm i
-      - run: pnpm -r --stream build
+      - run: pnpm run -r --stream build
+  test:
+    name: run test
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+      fail-fast: false
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2
+      - name: setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.node-version'
+          cache: pnpm
+      - run: pnpm i
+      - run: pnpm run -r --stream build
+      - run: pnpm run test
