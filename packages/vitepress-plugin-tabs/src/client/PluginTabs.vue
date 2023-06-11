@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, toRef } from 'vue'
 import { useStabilizeScrollPosition } from './useStabilizeScrollPosition'
-import { useTabs } from './useTabs'
+import { useTabsSelectedState } from './useTabsSelectedState'
 import { useUid } from './useUid'
 import { useTabLabels } from './UseTabLabels'
 import { provide } from 'vue'
@@ -11,7 +11,10 @@ const props = defineProps<{ sharedStateKey?: string }>()
 const container = ref<HTMLDivElement | undefined>()
 const tabLabels = useTabLabels(container)
 
-const { selected, select } = useTabs(tabLabels, toRef(props, 'sharedStateKey'))
+const { selected, select } = useTabsSelectedState(
+  tabLabels,
+  toRef(props, 'sharedStateKey')
+)
 
 const tablist = ref<HTMLDivElement>()
 const { stabilizeScrollPosition } = useStabilizeScrollPosition(tablist)

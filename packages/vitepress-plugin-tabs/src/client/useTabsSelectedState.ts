@@ -31,7 +31,7 @@ export const provideTabsSharedState = (app: App) => {
   app.provide(injectionKey, state)
 }
 
-export const useTabs = <T extends string>(
+export const useTabsSelectedState = <T extends string>(
   acceptValues: Ref<T[]>,
   sharedStateKey: Ref<string | undefined>
 ) => {
