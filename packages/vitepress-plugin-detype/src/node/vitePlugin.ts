@@ -1,5 +1,6 @@
 import type { Plugin } from 'vite'
-import { ContentMap, contentMapKeyRE } from './contentMap'
+import type { ContentMap } from './contentMap'
+import { contentMapKeyRE } from './contentMap'
 
 export const detypePlugin = (contentMap: ContentMap): Plugin => {
   const pluginName = 'vitepress-detype'

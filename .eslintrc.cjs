@@ -24,6 +24,9 @@ module.exports = {
       ],
       parserOptions: {
         parser: '@typescript-eslint/parser'
+      },
+      rules: {
+        '@typescript-eslint/consistent-type-imports': 'error'
       }
     },
     {
@@ -43,7 +46,8 @@ module.exports = {
       ],
       rules: {
         'no-empty': ['error', { allowEmptyCatch: true }],
-        '@typescript-eslint/no-unused-vars': 'off'
+        '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/consistent-type-imports': 'error'
       }
     }
   ],

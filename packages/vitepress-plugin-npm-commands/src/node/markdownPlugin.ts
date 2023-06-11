@@ -1,6 +1,7 @@
 import type MarkdownIt from 'markdown-it'
 import { autoConverter } from './autoConverter'
-import { PackageManager, packageManagers } from './packageManager'
+import type { PackageManager } from './packageManager'
+import { packageManagers } from './packageManager'
 
 const tabsShareStateKey = '~npm-commands'
 const npmCommandsCommandRE = new RegExp(
