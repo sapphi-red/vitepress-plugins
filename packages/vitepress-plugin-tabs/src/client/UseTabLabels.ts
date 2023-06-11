@@ -1,4 +1,5 @@
-import { onBeforeMount, onMounted, onUnmounted, ref, Ref, useSlots } from 'vue'
+import type { Ref } from 'vue'
+import { onBeforeMount, onMounted, onUnmounted, ref, useSlots } from 'vue'
 
 export function useTabLabels(
   container: Ref<HTMLDivElement | undefined>

@@ -1,4 +1,5 @@
-import { nextTick, Ref } from 'vue'
+import type { Ref } from 'vue'
+import { nextTick } from 'vue'
 
 type StabilizeScrollPosition = <Args extends readonly unknown[], Return>(
   func: (...args: Args) => Return

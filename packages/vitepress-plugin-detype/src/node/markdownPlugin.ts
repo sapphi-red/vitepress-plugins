@@ -2,7 +2,8 @@ import type MarkdownIt from 'markdown-it'
 import { transform, removeMagicComments } from 'detype'
 import type { PrettierOptions } from 'detype'
 import type { ContentMap } from './contentMap'
-import { parseDetypeInfo, SupportedType } from './parseDetypeInfo'
+import type { SupportedType } from './parseDetypeInfo'
+import { parseDetypeInfo } from './parseDetypeInfo'
 
 const tabsShareStateKey = '~detype'
 const langs = ['ts', 'js'] as const
