@@ -4,7 +4,7 @@ import { useStabilizeScrollPosition } from './useStabilizeScrollPosition'
 import { useTabsSelectedState } from './useTabsSelectedState'
 import { useUid } from './useUid'
 import { useTabLabels } from './useTabLabels'
-import { provide } from 'vue'
+import { provideTabsSingleState } from './useTabsSingleState'
 
 const props = defineProps<{ sharedStateKey?: string }>()
 
@@ -41,8 +41,7 @@ const onKeydown = (e: KeyboardEvent) => {
 
 const uid = useUid()
 
-provide('tabs-uid', uid)
-provide('tabs-selected', selected)
+provideTabsSingleState({ uid, selected })
 </script>
 
 <template>

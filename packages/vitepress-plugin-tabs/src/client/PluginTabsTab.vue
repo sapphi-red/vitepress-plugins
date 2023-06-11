@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { inject } from 'vue'
+import { useTabsSingleState } from './useTabsSingleState'
+
 defineProps<{ label: string }>()
-const uid = inject('tabs-uid')
-const selected = inject('tabs-selected')
+
+const { uid, selected } = useTabsSingleState()
 </script>
 
 <template>
