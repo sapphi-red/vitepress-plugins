@@ -69,7 +69,7 @@ jobs:
           node-version-file: '.node-version'
           cache: pnpm
       - run: pnpm i
-      - run: pnpm -r --stream build
+      - run: pnpm run -r --stream build
   test:
     name: run test
     strategy:
@@ -88,4 +88,5 @@ jobs:
           node-version-file: '.node-version'
           cache: pnpm
       - run: pnpm i
+      - run: pnpm run -r --stream build
       - run: pnpm run test
