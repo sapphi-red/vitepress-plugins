@@ -3,7 +3,7 @@ import { ref, toRef } from 'vue'
 import { useStabilizeScrollPosition } from './useStabilizeScrollPosition'
 import { useTabsSelectedState } from './useTabsSelectedState'
 import { useUid } from './useUid'
-import { useTabLabels } from './UseTabLabels'
+import { useTabLabels } from './useTabLabels'
 import { provide } from 'vue'
 
 const props = defineProps<{ sharedStateKey?: string }>()
