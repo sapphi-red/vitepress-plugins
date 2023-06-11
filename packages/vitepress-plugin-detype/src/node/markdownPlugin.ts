@@ -28,9 +28,6 @@ export const detypePlugin = (
   prettierOptions: PrettierOptions,
   contentMap: ContentMap
 ) => {
-  const tabLabelsProp = `:tabLabels="${md.utils.escapeHtml(
-    JSON.stringify(langs)
-  )}"`
   const shareStateKeyProp = `sharedStateKey="${md.utils.escapeHtml(
     tabsShareStateKey
   )}"`
@@ -76,11 +73,9 @@ export const detypePlugin = (
         token.content,
         output
       )
-      return `<template #${lang}>${key}</template>`
+      return `<PluginTabsTab label="${lang}">${key}</PluginTabsTab>`
     })
 
-    return `<PluginTabs ${tabLabelsProp} ${shareStateKeyProp}>${slots.join(
-      ''
-    )}</PluginTabs>`
+    return `<PluginTabs ${shareStateKeyProp}>${slots.join('')}</PluginTabs>`
   }
 }

@@ -88,12 +88,16 @@ importers:
   packages/vitepress-plugin-tabs:
     specifiers:
       '@types/markdown-it': ^12.2.3
+      '@types/markdown-it-container': ^2.0.5
       markdown-it: ^13.0.1
+      markdown-it-container: ^3.0.0
       tsup: ^6.6.3
       vue: ^3.2.47
     devDependencies:
       '@types/markdown-it': 12.2.3
+      '@types/markdown-it-container': 2.0.5
       markdown-it: 13.0.1
+      markdown-it-container: 3.0.0
       tsup: 6.6.3
       vue: 3.2.47
 
@@ -1518,6 +1522,12 @@ packages:
 
   /@types/linkify-it/3.0.2:
     resolution: {integrity: sha512-HZQYqbiFVWufzCwexrvh694SOim8z2d+xJl5UNamcvQFejLY/2YUtzXHYi3cHdI7PMlS8ejH2slRAOJQ32aNbA==}
+    dev: true
+
+  /@types/markdown-it-container/2.0.5:
+    resolution: {integrity: sha512-8v5jIC5gcCUv+JcD0DExwNBkoKC0kLB4acensF0NoNlTIcXmQxF3RDjzAdIW82sXSoR+n772ePguxIWlq2ELvA==}
+    dependencies:
+      '@types/markdown-it': 12.2.3
     dev: true
 
   /@types/markdown-it/12.2.3:
@@ -3718,6 +3728,10 @@ packages:
   /map-obj/4.3.0:
     resolution: {integrity: sha512-hdN1wVrZbb29eBGiGjJbeP8JbKjq1urkHJ/LIP/NY48MZ1QVXUsQBV1G1zvYFHn1XE06cwjBsOI2K3Ulnj1YXQ==}
     engines: {node: '>=8'}
+    dev: true
+
+  /markdown-it-container/3.0.0:
+    resolution: {integrity: sha512-y6oKTq4BB9OQuY/KLfk/O3ysFhB3IMYoIWhGJEidXt1NQFocFK2sA2t0NYZAMyMShAGL6x5OPIbrmXPIqaN9rw==}
     dev: true
 
   /markdown-it/13.0.1:

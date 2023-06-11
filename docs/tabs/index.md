@@ -50,71 +50,63 @@ export default {
 ### Tabs with non-shared selection state
 
 ```md
-:::=tabs
-::a
+:::tabs
+== tab a
 a content
-
-::b
+== tab b
 b content
 :::
 
-:::=tabs
-::a
+:::tabs
+== tab a
 a content 2
-
-::b
+== tab b
 b content 2
 :::
 ```
 
-:::=tabs
-::a
+:::tabs
+== tab a
 a content
-
-::b
+== tab b
 b content
 :::
 
-:::=tabs
-::a
+:::tabs
+== tab a
 a content 2
-
-::b
+== tab b
 b content 2
 :::
 
 ### Tabs with shared selection state
 
 ```md
-:::=tabs=ab
-::a
+:::tabs key:ab
+== tab a
 a content
-
-::b
+== tab b
 b content
 :::
 
-:::=tabs=ab
-::a
+:::tabs key:ab
+== tab a
 a content 2
-
-::b
+== tab b
 b content 2
 :::
 ```
 
-:::=tabs=ab
-::a
+:::tabs key:ab
+== tab a
 a content
-
-::b
+== tab b
 b content
 :::
 
-:::=tabs=ab
-::a
+:::tabs key:ab
+== tab a
 a content 2
-
-::b
+== tab b
 b content 2
 :::
