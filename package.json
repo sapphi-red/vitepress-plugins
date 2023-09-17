@@ -21,7 +21,6 @@
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-vue": "^9.17.0",
-    "execa": "^7.2.0",
     "prettier": "^3.0.3",
     "semver": "^7.5.4",
     "ts-dedent": "^2.2.0",
