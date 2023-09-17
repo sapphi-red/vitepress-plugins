@@ -5,7 +5,7 @@ exports[`escape hatch 1`] = `
 </code></pre>
 </PluginTabsTab><PluginTabsTab label=\\"yarn\\"><pre><code class=\\"language-{----npm-disable}\\">yarn install
 </code></pre>
-</PluginTabsTab><PluginTabsTab label=\\"pnpm\\"><pre><code class=\\"language-{----npm-disable}\\">pnpm install
+</PluginTabsTab><PluginTabsTab label=\\"pnpm\\"><pre><code class=\\"language-{----npm-disable}\\">pnpm i
 </code></pre>
 </PluginTabsTab></PluginTabs>"
 `;
@@ -15,7 +15,7 @@ exports[`render auto correctly 1`] = `
 </code></pre>
 </PluginTabsTab><PluginTabsTab label=\\"yarn\\"><pre><code>yarn install
 </code></pre>
-</PluginTabsTab><PluginTabsTab label=\\"pnpm\\"><pre><code>pnpm install
+</PluginTabsTab><PluginTabsTab label=\\"pnpm\\"><pre><code>pnpm i
 </code></pre>
 </PluginTabsTab></PluginTabs>"
 `;

@@ -1,5 +1,5 @@
 import type MarkdownIt from 'markdown-it'
-import { autoConverter } from './autoConverter'
+import convert from 'npm-to-yarn'
 import type { PackageManager } from './packageManager'
 import { packageManagers } from './packageManager'
 
@@ -66,7 +66,7 @@ const generateEachPackageManagerCode = (input: string) => {
       }
     } else if (pkgManager === 'auto') {
       for (const key of packageManagers) {
-        const convertedCommand = autoConverter(
+        const convertedCommand = convert(
           line.replace(npmCommandsCommandRE, '').trimEnd(),
           key
         )
