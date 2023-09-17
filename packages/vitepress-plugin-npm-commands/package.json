@@ -1,7 +1,7 @@
 {
   "name": "vitepress-plugin-npm-commands",
   "version": "0.4.0",
-  "description": "A plugin that adds syntax for showing `npm`, `yarn`, `pnpm` commands in tabs.",
+  "description": "A plugin that adds syntax for showing `npm`, `yarn`, `pnpm`, `bun` commands in tabs.",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

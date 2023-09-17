@@ -4,7 +4,7 @@ title: vitepress-plugin-npm-commands
 
 # vitepress-plugin-npm-commands
 
-> A plugin that adds syntax for showing `npm`, `yarn`, `pnpm` commands in tabs.
+> A plugin that adds syntax for showing `npm`, `yarn`, `pnpm`, `bun` commands in tabs.
 
 [![NPM version](https://img.shields.io/npm/v/vitepress-plugin-tabs.svg)](https://www.npmjs.com/package/vitepress-plugin-npm-commands)
 
@@ -72,13 +72,14 @@ npm run test // [!=npm auto]
 
 ### Manual declaration
 
-Adding the `// [!=npm npm]`/`// [!=npm yarn]`/`// [!=npm pnpm]` comment on a line will limit that line to be shown only in that package manager tab.
+Adding the `// [!=npm npm]`/`// [!=npm yarn]`/`// [!=npm pnpm]`/`// [!=npm bun]` comment on a line will limit that line to be shown only in that package manager tab.
 
-````md{2-4 ----npm-disable}
+````md{2-5 ----npm-disable}
 ```sh{1}
 npx degit user/project my-project // [!=npm npm]
 yarn dlx degit user/project my-project // [!=npm yarn]
 pnpm dlx degit user/project my-project // [!=npm pnpm]
+bun x degit user/project my-project // [!=npm bun]
 cd my-project
 
 npm install // [!=npm auto]
@@ -90,6 +91,7 @@ npm run dev // [!=npm auto]
 npx degit user/project my-project // [!=npm npm]
 yarn dlx degit user/project my-project // [!=npm yarn]
 pnpm dlx degit user/project my-project // [!=npm pnpm]
+bun x degit user/project my-project // [!=npm bun]
 cd my-project
 
 npm install // [!=npm auto]

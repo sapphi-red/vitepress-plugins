@@ -18,6 +18,7 @@ test('render manual correctly', () => {
     npm i vite // [!=npm npm]
     yarn add vite // [!=npm yarn]
     pnpm add vite // [!=npm pnpm]
+    bun add vite // [!=npm bun]
     ${s}
   `)
   expect(result).toMatchSnapshot()
