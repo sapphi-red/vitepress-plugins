@@ -1,5 +1,18 @@
 # vitepress-plugin-npm-commands
 
+## 0.5.0
+
+### Minor Changes
+
+- [#31](https://github.com/sapphi-red/vitepress-plugins/pull/31) [`0864eed`](https://github.com/sapphi-red/vitepress-plugins/commit/0864eed9f406374f16fef159513ec0b1760d8460) Thanks [@sapphi-red](https://github.com/sapphi-red)! - update required vitepress version from 1.0.0-beta.2 to 1.0.0-rc.14.
+
+### Patch Changes
+
+- [#33](https://github.com/sapphi-red/vitepress-plugins/pull/33) [`49ed9f6`](https://github.com/sapphi-red/vitepress-plugins/commit/49ed9f6c59d67bb26377d6c0435181eab8ab68b5) Thanks [@sapphi-red](https://github.com/sapphi-red)! - support bun
+
+- Updated dependencies [[`0864eed`](https://github.com/sapphi-red/vitepress-plugins/commit/0864eed9f406374f16fef159513ec0b1760d8460)]:
+  - vitepress-plugin-tabs@0.4.0
+
 ## 0.4.0
 
 ### Minor Changes

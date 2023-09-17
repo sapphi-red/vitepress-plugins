@@ -1,5 +1,11 @@
 # vitepress-plugin-tabs
 
+## 0.4.0
+
+### Minor Changes
+
+- [#31](https://github.com/sapphi-red/vitepress-plugins/pull/31) [`0864eed`](https://github.com/sapphi-red/vitepress-plugins/commit/0864eed9f406374f16fef159513ec0b1760d8460) Thanks [@sapphi-red](https://github.com/sapphi-red)! - update required vitepress version from 1.0.0-beta.2 to 1.0.0-rc.14.
+
 ## 0.3.0
 
 ### Minor Changes
