@@ -6,7 +6,7 @@ title: vitepress-plugin-tabs
 
 > A plugin that adds syntax for showing content in tabs.
 
-[![NPM version](https://img.shields.io/npm/v/vitepress-plugin-tabs.svg)](https://www.npmjs.com/package/vitepress-plugin-tabs)
+<version-badge package="vitepress-plugin-tabs" />
 
 ## Installation
 

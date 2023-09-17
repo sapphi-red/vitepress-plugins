@@ -6,7 +6,7 @@ title: vitepress-plugin-detype
 
 > A plugin that adds syntax for generating js from ts code snippet.
 
-[![NPM version](https://img.shields.io/npm/v/vitepress-plugin-detype.svg)](https://www.npmjs.com/package/vitepress-plugin-detype)
+<version-badge package="vitepress-plugin-detype" />
 
 This plugin uses [`detype`](https://github.com/cyco130/detype) to transform TypeScript to JavaScript.
 
