@@ -33,7 +33,6 @@ export const detypePlugin = (
     tabsShareStateKey
   )}"`
 
-  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const originalFence = md.renderer.rules.fence!
   md.renderer.rules.fence = (...args) => {
     const [tokens, idx, , env] = args
