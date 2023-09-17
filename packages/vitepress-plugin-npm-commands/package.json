@@ -35,7 +35,9 @@
   },
   "devDependencies": {
     "@types/markdown-it": "^13.0.1",
+    "@types/markdown-it-attrs": "^4.1.0",
     "markdown-it": "^13.0.1",
+    "markdown-it-attrs": "^4.1.6",
     "tsup": "^7.2.0"
   },
   "dependencies": {

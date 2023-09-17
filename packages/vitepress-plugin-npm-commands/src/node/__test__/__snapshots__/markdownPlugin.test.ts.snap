@@ -1,15 +1,9 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`escape hatch 1`] = `
-"<PluginTabs sharedStateKey=\\"~npm-commands\\"><PluginTabsTab label=\\"npm\\"><pre><code class=\\"language-{----npm-disable}\\">npm i
+"<pre><code>npm i // [!=npm auto]
 </code></pre>
-</PluginTabsTab><PluginTabsTab label=\\"yarn\\"><pre><code class=\\"language-{----npm-disable}\\">yarn install
-</code></pre>
-</PluginTabsTab><PluginTabsTab label=\\"pnpm\\"><pre><code class=\\"language-{----npm-disable}\\">pnpm i
-</code></pre>
-</PluginTabsTab><PluginTabsTab label=\\"bun\\"><pre><code class=\\"language-{----npm-disable}\\">bun install
-</code></pre>
-</PluginTabsTab></PluginTabs>"
+"
 `;
 
 exports[`render auto correctly 1`] = `

@@ -1,10 +1,12 @@
 import MarkdownIt from 'markdown-it'
 import { test, expect } from 'vitest'
 import { npmCommandsPlugin } from '../markdownPlugin'
+import attrPlugin from 'markdown-it-attrs'
 import dedent from 'ts-dedent'
 
 const setup = () => {
   const md = MarkdownIt()
+  md.use(attrPlugin)
   md.use(npmCommandsPlugin)
   return md
 }
