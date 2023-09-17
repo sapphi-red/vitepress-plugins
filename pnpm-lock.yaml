@@ -105,6 +105,9 @@ importers:
 
   packages/vitepress-plugin-npm-commands:
     dependencies:
+      npm-to-yarn:
+        specifier: ^2.1.0
+        version: 2.1.0
       vitepress:
         specifier: ^1.0.0-rc.14
         version: 1.0.0-rc.14(@types/node@18.17.17)(search-insights@2.6.0)
@@ -3488,6 +3491,11 @@ packages:
     dependencies:
       path-key: 3.1.1
     dev: true
+
+  /npm-to-yarn@2.1.0:
+    resolution: {integrity: sha512-2C1IgJLdJngq1bSER7K7CGFszRr9s2rijEwvENPEgI0eK9xlD3tNwDc0UJnRj7FIT2aydWm72jB88uVswAhXHA==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: false
 
   /nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
