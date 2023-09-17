@@ -34,7 +34,7 @@
     "vitepress-plugin-tabs": "^0.3.0"
   },
   "devDependencies": {
-    "@types/markdown-it": "^12.2.3",
+    "@types/markdown-it": "^13.0.1",
     "markdown-it": "^13.0.1",
     "tsup": "^7.2.0"
   }
