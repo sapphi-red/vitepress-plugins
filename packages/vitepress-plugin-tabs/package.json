@@ -1,6 +1,6 @@
 {
   "name": "vitepress-plugin-tabs",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A plugin that adds syntax for showing content in tabs.",
   "type": "module",
   "main": "./dist/index.js",
