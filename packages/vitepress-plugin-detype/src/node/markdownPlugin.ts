@@ -63,7 +63,7 @@ export const detypePlugin = (
           const langForRender = getLangForRender(type, lang)
           const codeWithFence =
             `${token.markup}${langForRender}${attrs}\n` + content + token.markup
-          return { result: md.render(codeWithFence, env) }
+          return { result: md.render(codeWithFence, structuredClone(env)) }
         } catch (e) {
           return { error: e }
         }

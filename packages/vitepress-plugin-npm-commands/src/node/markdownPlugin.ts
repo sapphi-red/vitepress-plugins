@@ -40,7 +40,7 @@ export const npmCommandsPlugin = (md: MarkdownIt) => {
         `${token.markup}${token.info}${attrStr}\n` + code + token.markup
       return `<PluginTabsTab label="${pkgManger}">${md.render(
         codeWithFence,
-        env
+        structuredClone(env)
       )}</PluginTabsTab>`
     })
 
