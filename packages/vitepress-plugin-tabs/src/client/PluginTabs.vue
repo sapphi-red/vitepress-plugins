@@ -139,4 +139,13 @@ provideTabsSingleState({ uid, selected })
 .plugin-tabs--tab[aria-selected='true']::after {
   background-color: var(--vp-plugin-tabs-tab-active-bar-color);
 }
+
+.plugin-tabs div[class*='language-'] {
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+:root:not(.dark) .plugin-tabs div[class*='language-'] {
+  background-color: var(--vp-c-bg);
+}
 </style>
