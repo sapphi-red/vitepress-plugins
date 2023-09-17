@@ -78,7 +78,7 @@ provideTabsSingleState({ uid, selected })
   --vp-plugin-tabs-tab-hover-text-color: var(--vp-c-text-1);
   --vp-plugin-tabs-tab-bg: var(--vp-c-bg-soft);
   --vp-plugin-tabs-tab-divider: var(--vp-c-divider);
-  --vp-plugin-tabs-tab-active-bar-color: var(--vp-c-brand);
+  --vp-plugin-tabs-tab-active-bar-color: var(--vp-c-brand-1);
 }
 
 .plugin-tabs {
