@@ -45,15 +45,16 @@ export default defineConfig({
 
 ```ts
 // .vitepress/theme/index.ts
-import Theme from 'vitepress/theme'
+import type { Theme } from 'vitepress'
+import DefaultTheme from 'vitepress/theme'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 
 export default {
-  ...Theme,
+  extends: DefaultTheme,
   enhanceApp({ app }) {
     enhanceAppWithTabs(app)
   }
-}
+} satisfies Theme
 ```
 
 ## Syntax
