@@ -80,6 +80,9 @@ importers:
       detype:
         specifier: ^0.6.3
         version: 0.6.3
+      klona:
+        specifier: ^2.0.6
+        version: 2.0.6
     devDependencies:
       '@types/markdown-it':
         specifier: ^13.0.1
@@ -105,6 +108,9 @@ importers:
 
   packages/vitepress-plugin-npm-commands:
     dependencies:
+      klona:
+        specifier: ^2.0.6
+        version: 2.0.6
       npm-to-yarn:
         specifier: ^2.1.0
         version: 2.1.0
@@ -3218,6 +3224,11 @@ packages:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
     dev: true
+
+  /klona@2.0.6:
+    resolution: {integrity: sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==}
+    engines: {node: '>= 8'}
+    dev: false
 
   /levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}

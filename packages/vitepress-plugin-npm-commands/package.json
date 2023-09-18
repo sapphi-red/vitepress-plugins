@@ -41,6 +41,7 @@
     "tsup": "^7.2.0"
   },
   "dependencies": {
+    "klona": "^2.0.6",
     "npm-to-yarn": "^2.1.0"
   }
 }
