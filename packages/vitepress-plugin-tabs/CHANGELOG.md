@@ -1,5 +1,14 @@
 # vitepress-plugin-tabs
 
+## 0.4.1
+
+### Patch Changes
+
+- [#40](https://github.com/sapphi-red/vitepress-plugins/pull/40) [`1669888`](https://github.com/sapphi-red/vitepress-plugins/commit/166988814c77e6e2b982bd40d848dfae4f5f0f32) Thanks [@sapphi-red](https://github.com/sapphi-red)! - fix hydration mismatch error when non default tab is selected.
+
+- [#35](https://github.com/sapphi-red/vitepress-plugins/pull/35) [`b30ae90`](https://github.com/sapphi-red/vitepress-plugins/commit/b30ae9011a83cc76248c29ff2154240a4db43a5b) Thanks [@brc-dd](https://github.com/brc-dd)! - Use `--vp-c-bg` in light mode for code blocks inside tabs to have slight difference between the backgrounds.
+  Specify margin and border radius on code blocks inside tabs to prevent them from overflowing on smaller viewport widths.
+
 ## 0.4.0
 
 ### Minor Changes

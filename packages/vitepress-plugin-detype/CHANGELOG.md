@@ -1,5 +1,14 @@
 # vitepress-plugin-detype
 
+## 0.5.1
+
+### Patch Changes
+
+- [#37](https://github.com/sapphi-red/vitepress-plugins/pull/37) [`51168e0`](https://github.com/sapphi-red/vitepress-plugins/commit/51168e0269f4f296644bb36508723bbd9c8259b5) Thanks [@brc-dd](https://github.com/brc-dd)! - Pass a deep cloned copy of `env` to avoid mutating the original object.
+
+- Updated dependencies [[`1669888`](https://github.com/sapphi-red/vitepress-plugins/commit/166988814c77e6e2b982bd40d848dfae4f5f0f32), [`b30ae90`](https://github.com/sapphi-red/vitepress-plugins/commit/b30ae9011a83cc76248c29ff2154240a4db43a5b)]:
+  - vitepress-plugin-tabs@0.4.1
+
 ## 0.5.0
 
 ### Minor Changes
