@@ -3,4 +3,4 @@
 'vitepress-plugin-detype': patch
 ---
 
-Pass a deep cloned copy of `env` to avoid mutating the original object. 
+Pass a deep cloned copy of `env` to avoid mutating the original object.
