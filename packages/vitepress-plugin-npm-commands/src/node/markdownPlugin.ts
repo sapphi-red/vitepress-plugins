@@ -2,6 +2,7 @@ import type MarkdownIt from 'markdown-it'
 import convert from 'npm-to-yarn'
 import type { PackageManager } from './packageManager'
 import { packageManagers } from './packageManager'
+import { klona } from 'klona'
 
 const tabsShareStateKey = '~npm-commands'
 const npmCommandsCommandRE = new RegExp(
@@ -40,7 +41,7 @@ export const npmCommandsPlugin = (md: MarkdownIt) => {
         `${token.markup}${token.info}${attrStr}\n` + code + token.markup
       return `<PluginTabsTab label="${pkgManger}">${md.render(
         codeWithFence,
-        env
+        klona(env)
       )}</PluginTabsTab>`
     })
 

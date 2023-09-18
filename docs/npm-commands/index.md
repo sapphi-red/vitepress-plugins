@@ -1,7 +1,3 @@
----
-title: vitepress-plugin-npm-commands
----
-
 # vitepress-plugin-npm-commands
 
 > A plugin that adds syntax for showing `npm`, `yarn`, `pnpm`, `bun` commands in tabs.

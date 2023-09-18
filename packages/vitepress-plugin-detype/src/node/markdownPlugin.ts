@@ -4,6 +4,7 @@ import type { PrettierOptions } from 'detype'
 import type { ContentMap } from './contentMap'
 import type { SupportedType } from './parseDetypeInfo'
 import { parseDetypeInfo } from './parseDetypeInfo'
+import { klona } from 'klona'
 
 const tabsShareStateKey = '~detype'
 const langs = ['ts', 'js'] as const
@@ -63,7 +64,7 @@ export const detypePlugin = (
           const langForRender = getLangForRender(type, lang)
           const codeWithFence =
             `${token.markup}${langForRender}${attrs}\n` + content + token.markup
-          return { result: md.render(codeWithFence, env) }
+          return { result: md.render(codeWithFence, klona(env)) }
         } catch (e) {
           return { error: e }
         }
