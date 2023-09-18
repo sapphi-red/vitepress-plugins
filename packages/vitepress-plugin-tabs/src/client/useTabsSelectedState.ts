@@ -1,14 +1,17 @@
-import { ref, computed, reactive, inject, watch } from 'vue'
+import { ref, computed, reactive, inject, watch, onMounted } from 'vue'
 import type { App, Ref, InjectionKey } from 'vue'
 
-type TabsSharedState = Record<string, string>
+type TabsSharedState = {
+  content?: TabsSharedStateContent
+}
+type TabsSharedStateContent = Record<string, string>
 
 const injectionKey: InjectionKey<TabsSharedState> =
   'vitepress:tabSharedState' as unknown as symbol
 const ls = typeof localStorage !== 'undefined' ? localStorage : null
 const localStorageKey = 'vitepress:tabsSharedState'
 
-const getLocalStorageValue = (): TabsSharedState => {
+const getLocalStorageValue = (): TabsSharedStateContent => {
   const rawValue = ls?.getItem(localStorageKey)
   if (rawValue) {
     try {
@@ -17,16 +20,23 @@ const getLocalStorageValue = (): TabsSharedState => {
   }
   return {}
 }
-const setLocalStorageValue = (v: TabsSharedState) => {
+const setLocalStorageValue = (v: TabsSharedStateContent) => {
   if (!ls) return
   ls.setItem(localStorageKey, JSON.stringify(v))
 }
 
 export const provideTabsSharedState = (app: App) => {
-  const state = reactive(getLocalStorageValue())
-  watch(state, newState => {
-    setLocalStorageValue(newState)
-  })
+  const state = reactive<TabsSharedState>({})
+  watch(
+    () => state.content,
+    (newStateContent, oldStateContent) => {
+      // skip initialize
+      if (newStateContent && oldStateContent) {
+        setLocalStorageValue(newStateContent)
+      }
+    },
+    { deep: true }
+  )
 
   app.provide(injectionKey, state)
 }
@@ -42,6 +52,12 @@ export const useTabsSelectedState = <T extends string>(
     )
   }
 
+  onMounted(() => {
+    if (!sharedState.content) {
+      sharedState.content = getLocalStorageValue()
+    }
+  })
+
   const nonSharedState = ref<T | undefined>()
 
   const selected = computed({
@@ -49,7 +65,7 @@ export const useTabsSelectedState = <T extends string>(
       const key = sharedStateKey.value
       const acceptVals = acceptValues.value
       if (key) {
-        const value = sharedState[key]
+        const value = sharedState.content?.[key]
         if (value && (acceptVals as string[]).includes(value)) {
           return value as T
         }
@@ -64,7 +80,9 @@ export const useTabsSelectedState = <T extends string>(
     set(v) {
       const key = sharedStateKey.value
       if (key) {
-        sharedState[key] = v
+        if (sharedState.content) {
+          sharedState.content[key] = v
+        }
       } else {
         nonSharedState.value = v
       }
