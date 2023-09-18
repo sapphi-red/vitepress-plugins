@@ -118,7 +118,7 @@ importers:
         specifier: ^1.0.0-rc.14
         version: 1.0.0-rc.14(@types/node@18.17.17)(search-insights@2.6.0)
       vitepress-plugin-tabs:
-        specifier: ^0.4.0
+        specifier: ^0.4.1
         version: link:../vitepress-plugin-tabs
     devDependencies:
       '@types/markdown-it':
