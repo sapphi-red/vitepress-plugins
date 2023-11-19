@@ -8,10 +8,10 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.14",
+    "vitepress": "1.0.0-rc.27",
     "vitepress-plugin-detype": "workspace:*",
     "vitepress-plugin-npm-commands": "workspace:*",
     "vitepress-plugin-tabs": "workspace:*",
-    "vue": "^3.3.4"
+    "vue": "^3.3.8"
   }
 }

@@ -30,18 +30,18 @@
   },
   "homepage": "https://vitepress-plugins.sapphi.red/detype/",
   "peerDependencies": {
-    "vitepress": "^1.0.0-rc.14",
+    "vitepress": "^1.0.0-rc.27",
     "vitepress-plugin-tabs": "^0.4.1",
-    "vue": "^3.3.4"
+    "vue": "^3.3.8"
   },
   "devDependencies": {
     "@types/markdown-it": "^13.0.6",
     "markdown-it": "^13.0.2",
     "tsup": "^7.3.0",
-    "vite": "^4.4.9",
-    "vitepress": "^1.0.0-rc.14",
+    "vite": "^5.0.0",
+    "vitepress": "1.0.0-rc.27",
     "vitepress-plugin-tabs": "workspace:*",
-    "vue": "^3.3.4"
+    "vue": "^3.3.8"
   },
   "dependencies": {
     "detype": "^0.6.3",
