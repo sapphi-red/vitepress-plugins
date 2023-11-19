@@ -2,10 +2,10 @@
 
 exports[`render correctly > input 1`] = `
 "<PluginTabs >
-<PluginTabsTab label=\\"Tab &quot;A&quot;\\">
+<PluginTabsTab label="Tab &quot;A&quot;">
 <p>a</p>
 </PluginTabsTab>
-<PluginTabsTab label=\\"Tab &quot;B&quot;\\">
+<PluginTabsTab label="Tab &quot;B&quot;">
 <p>b</p>
 </PluginTabsTab>
 </PluginTabs>
@@ -14,10 +14,10 @@ exports[`render correctly > input 1`] = `
 
 exports[`render correctly > input 2`] = `
 "<PluginTabs >
-<PluginTabsTab label=\\"Tab &quot;A&quot;\\">
+<PluginTabsTab label="Tab &quot;A&quot;">
 <p>a</p>
 </PluginTabsTab>
-<PluginTabsTab label=\\"Tab &quot;B&quot;\\">
+<PluginTabsTab label="Tab &quot;B&quot;">
 <p>b</p>
 </PluginTabsTab>
 </PluginTabs>
@@ -26,10 +26,10 @@ exports[`render correctly > input 2`] = `
 
 exports[`render correctly > input 3`] = `
 "<PluginTabs >
-<PluginTabsTab label=\\"Tab &quot;A&quot;\\">
+<PluginTabsTab label="Tab &quot;A&quot;">
 <p>a</p>
 </PluginTabsTab>
-<PluginTabsTab label=\\"Tab &quot;B&quot;\\">
+<PluginTabsTab label="Tab &quot;B&quot;">
 <p>b</p>
 </PluginTabsTab>
 </PluginTabs>
@@ -38,12 +38,12 @@ exports[`render correctly > input 3`] = `
 
 exports[`render tab with nested ::: code correctly 1`] = `
 "<PluginTabs >
-<PluginTabsTab label=\\"Tab &quot;A&quot;\\">
+<PluginTabsTab label="Tab &quot;A&quot;">
 <p>a</p>
-<pre><code class=\\"language-js\\">const foo = ':::';
+<pre><code class="language-js">const foo = ':::';
 </code></pre>
 </PluginTabsTab>
-<PluginTabsTab label=\\"Tab &quot;B&quot;\\">
+<PluginTabsTab label="Tab &quot;B&quot;">
 <p>b</p>
 </PluginTabsTab>
 </PluginTabs>
@@ -52,13 +52,13 @@ exports[`render tab with nested ::: code correctly 1`] = `
 
 exports[`render tab with nested block correctly > input 1`] = `
 "<PluginTabs >
-<PluginTabsTab label=\\"Tab &quot;A&quot;\\">
+<PluginTabsTab label="Tab &quot;A&quot;">
 <p>a</p>
-<div class=\\"tip\\">
+<div class="tip">
 <p>Tip</p>
 </div>
 </PluginTabsTab>
-<PluginTabsTab label=\\"Tab &quot;B&quot;\\">
+<PluginTabsTab label="Tab &quot;B&quot;">
 <p>b</p>
 </PluginTabsTab>
 </PluginTabs>
@@ -67,16 +67,16 @@ exports[`render tab with nested block correctly > input 1`] = `
 
 exports[`render tab with nested block correctly > input 2`] = `
 "<PluginTabs >
-<PluginTabsTab label=\\"Tab &quot;A&quot;\\">
+<PluginTabsTab label="Tab &quot;A&quot;">
 <p>a</p>
-<div class=\\"tip\\">
+<div class="tip">
 <p>Tip</p>
 </div>
 </PluginTabsTab>
-<PluginTabsTab label=\\"Tab &quot;B&quot;\\">
+<PluginTabsTab label="Tab &quot;B&quot;">
 <p>:::</p>
 </PluginTabsTab>
-<PluginTabsTab label=\\"Tab &quot;C&quot;\\">
+<PluginTabsTab label="Tab &quot;C&quot;">
 <p>c</p>
 </PluginTabsTab>
 </PluginTabs>
@@ -85,14 +85,14 @@ exports[`render tab with nested block correctly > input 2`] = `
 
 exports[`render tab with nested block correctly > input 3`] = `
 "<PluginTabs >
-<PluginTabsTab label=\\"Tab &quot;A&quot;\\">
+<PluginTabsTab label="Tab &quot;A&quot;">
 <p>a</p>
-<div class=\\"tip\\">
+<div class="tip">
 <p>Tip
 == t</p>
 </div>
 </PluginTabsTab>
-<PluginTabsTab label=\\"Tab &quot;B&quot;\\">
+<PluginTabsTab label="Tab &quot;B&quot;">
 <p>b</p>
 </PluginTabsTab>
 </PluginTabs>
