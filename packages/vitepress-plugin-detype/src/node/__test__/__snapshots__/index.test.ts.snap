@@ -1,142 +1,142 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`should work 1`] = `
-"import { createHotContext as __vite__createHotContext } from \\"/@vite/client\\";import.meta.hot = __vite__createHotContext(\\"/normal.md\\");
-export const __pageData = JSON.parse(\\"{\\\\\\"title\\\\\\":\\\\\\"\\\\\\",\\\\\\"description\\\\\\":\\\\\\"\\\\\\",\\\\\\"frontmatter\\\\\\":{},\\\\\\"headers\\\\\\":[],\\\\\\"relativePath\\\\\\":\\\\\\"normal.md\\\\\\",\\\\\\"filePath\\\\\\":\\\\\\"normal.md\\\\\\"}\\")
-const _sfc_main = {name:\\"normal.md\\"}
-import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \\"/@fs/root/node_modules/.pnpm/vue@3.3.4/node_modules/vue/dist/vue.runtime.esm-bundler.js\\"
+"import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/normal.md");
+export const __pageData = JSON.parse("{\\"title\\":\\"\\",\\"description\\":\\"\\",\\"frontmatter\\":{},\\"headers\\":[],\\"relativePath\\":\\"normal.md\\",\\"filePath\\":\\"normal.md\\"}")
+const _sfc_main = {name:"normal.md"}
+import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from "/@fs/root/node_modules/.pnpm/vue@3.3.4/node_modules/vue/dist/vue.runtime.esm-bundler.js"
 
-const _hoisted_1 = /*#__PURE__*/_createElementVNode(\\"div\\", { class: \\"language-ts vp-adaptive-theme\\" }, [
-  /*#__PURE__*/_createElementVNode(\\"button\\", {
-    title: \\"Copy Code\\",
-    class: \\"copy\\"
+const _hoisted_1 = /*#__PURE__*/_createElementVNode("div", { class: "language-ts vp-adaptive-theme" }, [
+  /*#__PURE__*/_createElementVNode("button", {
+    title: "Copy Code",
+    class: "copy"
   }),
-  /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"lang\\" }, \\"ts\\"),
-  /*#__PURE__*/_createElementVNode(\\"pre\\", { class: \\"shiki github-dark vp-code-dark\\" }, [
-    /*#__PURE__*/_createElementVNode(\\"code\\", null, [
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"type\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#B392F0\\"} }, \\"Foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" {\\")
+  /*#__PURE__*/_createElementVNode("span", { class: "lang" }, "ts"),
+  /*#__PURE__*/_createElementVNode("pre", { class: "shiki github-dark vp-code-dark" }, [
+    /*#__PURE__*/_createElementVNode("code", null, [
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "type"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#B392F0"} }, "Foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " {")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"  \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#FFAB70\\"} }, \\"foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\":\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#79B8FF\\"} }, \\"string\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\";\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "  "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#FFAB70"} }, "foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, ":"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#79B8FF"} }, "string"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, ";")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"};\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "};")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"const\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#79B8FF\\"} }, \\"fooList\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\":\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#B392F0\\"} }, \\"Foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"[] \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" [];\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }),
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "const"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#79B8FF"} }, "fooList"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, ":"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#B392F0"} }, "Foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "[] "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " [];")
       ])
     ])
   ]),
-  /*#__PURE__*/_createElementVNode(\\"pre\\", { class: \\"shiki github-light vp-code-light\\" }, [
-    /*#__PURE__*/_createElementVNode(\\"code\\", null, [
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"type\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#6F42C1\\"} }, \\"Foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" {\\")
+  /*#__PURE__*/_createElementVNode("pre", { class: "shiki github-light vp-code-light" }, [
+    /*#__PURE__*/_createElementVNode("code", null, [
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "type"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#6F42C1"} }, "Foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " {")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"  \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E36209\\"} }, \\"foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\":\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#005CC5\\"} }, \\"string\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\";\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "  "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E36209"} }, "foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, ":"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#005CC5"} }, "string"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, ";")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"};\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "};")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"const\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#005CC5\\"} }, \\"fooList\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\":\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#6F42C1\\"} }, \\"Foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"[] \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" [];\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }),
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "const"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#005CC5"} }, "fooList"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, ":"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#6F42C1"} }, "Foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "[] "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " [];")
       ])
     ])
   ])
 ], -1 /* HOISTED */)
-const _hoisted_2 = /*#__PURE__*/_createElementVNode(\\"div\\", { class: \\"language-js vp-adaptive-theme\\" }, [
-  /*#__PURE__*/_createElementVNode(\\"button\\", {
-    title: \\"Copy Code\\",
-    class: \\"copy\\"
+const _hoisted_2 = /*#__PURE__*/_createElementVNode("div", { class: "language-js vp-adaptive-theme" }, [
+  /*#__PURE__*/_createElementVNode("button", {
+    title: "Copy Code",
+    class: "copy"
   }),
-  /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"lang\\" }, \\"js\\"),
-  /*#__PURE__*/_createElementVNode(\\"pre\\", { class: \\"shiki github-dark vp-code-dark\\" }, [
-    /*#__PURE__*/_createElementVNode(\\"code\\", null, [
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"const\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#79B8FF\\"} }, \\"fooList\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" [];\\")
+  /*#__PURE__*/_createElementVNode("span", { class: "lang" }, "js"),
+  /*#__PURE__*/_createElementVNode("pre", { class: "shiki github-dark vp-code-dark" }, [
+    /*#__PURE__*/_createElementVNode("code", null, [
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "const"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#79B8FF"} }, "fooList"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " [];")
       ])
     ])
   ]),
-  /*#__PURE__*/_createElementVNode(\\"pre\\", { class: \\"shiki github-light vp-code-light\\" }, [
-    /*#__PURE__*/_createElementVNode(\\"code\\", null, [
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"const\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#005CC5\\"} }, \\"fooList\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" [];\\")
+  /*#__PURE__*/_createElementVNode("pre", { class: "shiki github-light vp-code-light" }, [
+    /*#__PURE__*/_createElementVNode("code", null, [
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "const"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#005CC5"} }, "fooList"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " [];")
       ])
     ])
   ])
 ], -1 /* HOISTED */)
 
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_PluginTabsTab = _resolveComponent(\\"PluginTabsTab\\")
-  const _component_PluginTabs = _resolveComponent(\\"PluginTabs\\")
+  const _component_PluginTabsTab = _resolveComponent("PluginTabsTab")
+  const _component_PluginTabs = _resolveComponent("PluginTabs")
 
-  return (_openBlock(), _createElementBlock(\\"div\\", null, [
-    _createVNode(_component_PluginTabs, { sharedStateKey: \\"~detype\\" }, {
+  return (_openBlock(), _createElementBlock("div", null, [
+    _createVNode(_component_PluginTabs, { sharedStateKey: "~detype" }, {
       default: _withCtx(() => [
-        _createVNode(_component_PluginTabsTab, { label: \\"ts\\" }, {
+        _createVNode(_component_PluginTabsTab, { label: "ts" }, {
           default: _withCtx(() => [
             _hoisted_1
           ]),
           _: 1 /* STABLE */
         }),
-        _createVNode(_component_PluginTabsTab, { label: \\"js\\" }, {
+        _createVNode(_component_PluginTabsTab, { label: "js" }, {
           default: _withCtx(() => [
             _hoisted_2
           ]),
@@ -149,7 +149,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
 }
 
 
-_sfc_main.__hmrId = \\"bb8e3465\\"
+_sfc_main.__hmrId = "bb8e3465"
 typeof __VUE_HMR_RUNTIME__ !== 'undefined' && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main)
 import.meta.hot.accept(mod => {
   if (!mod) return
@@ -160,299 +160,299 @@ import.meta.hot.accept(mod => {
     __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated)
   }
 })
-import _export_sfc from \\"/@id/__x00__plugin-vue:export-helper\\"
-export default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\\"/root/packages/vitepress-plugin-detype/src/node/__test__/fixtures/normal.md\\"]])"
+import _export_sfc from "/@id/__x00__plugin-vue:export-helper"
+export default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',"/root/packages/vitepress-plugin-detype/src/node/__test__/fixtures/normal.md"]])"
 `;
 
 exports[`vue 1`] = `
-"import { createHotContext as __vite__createHotContext } from \\"/@vite/client\\";import.meta.hot = __vite__createHotContext(\\"/vue.md\\");
-export const __pageData = JSON.parse(\\"{\\\\\\"title\\\\\\":\\\\\\"\\\\\\",\\\\\\"description\\\\\\":\\\\\\"\\\\\\",\\\\\\"frontmatter\\\\\\":{},\\\\\\"headers\\\\\\":[],\\\\\\"relativePath\\\\\\":\\\\\\"vue.md\\\\\\",\\\\\\"filePath\\\\\\":\\\\\\"vue.md\\\\\\"}\\")
-const _sfc_main = {name:\\"vue.md\\"}
-import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \\"/@fs/root/node_modules/.pnpm/vue@3.3.4/node_modules/vue/dist/vue.runtime.esm-bundler.js\\"
+"import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/vue.md");
+export const __pageData = JSON.parse("{\\"title\\":\\"\\",\\"description\\":\\"\\",\\"frontmatter\\":{},\\"headers\\":[],\\"relativePath\\":\\"vue.md\\",\\"filePath\\":\\"vue.md\\"}")
+const _sfc_main = {name:"vue.md"}
+import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from "/@fs/root/node_modules/.pnpm/vue@3.3.4/node_modules/vue/dist/vue.runtime.esm-bundler.js"
 
-const _hoisted_1 = /*#__PURE__*/_createElementVNode(\\"div\\", { class: \\"language-vue vp-adaptive-theme\\" }, [
-  /*#__PURE__*/_createElementVNode(\\"button\\", {
-    title: \\"Copy Code\\",
-    class: \\"copy\\"
+const _hoisted_1 = /*#__PURE__*/_createElementVNode("div", { class: "language-vue vp-adaptive-theme" }, [
+  /*#__PURE__*/_createElementVNode("button", {
+    title: "Copy Code",
+    class: "copy"
   }),
-  /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"lang\\" }, \\"vue\\"),
-  /*#__PURE__*/_createElementVNode(\\"pre\\", { class: \\"shiki github-dark vp-code-dark\\" }, [
-    /*#__PURE__*/_createElementVNode(\\"code\\", null, [
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"<\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#85E89D\\"} }, \\"script\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#B392F0\\"} }, \\"setup\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#B392F0\\"} }, \\"lang\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#9ECBFF\\"} }, \\"\\\\\\"ts\\\\\\"\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\">\\")
+  /*#__PURE__*/_createElementVNode("span", { class: "lang" }, "vue"),
+  /*#__PURE__*/_createElementVNode("pre", { class: "shiki github-dark vp-code-dark" }, [
+    /*#__PURE__*/_createElementVNode("code", null, [
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "<"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#85E89D"} }, "script"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#B392F0"} }, "setup"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#B392F0"} }, "lang"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#9ECBFF"} }, "\\"ts\\""),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, ">")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"type\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#B392F0\\"} }, \\"Foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" {\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "type"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#B392F0"} }, "Foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " {")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"  \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#FFAB70\\"} }, \\"foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\":\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#79B8FF\\"} }, \\"string\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\";\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "  "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#FFAB70"} }, "foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, ":"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#79B8FF"} }, "string"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, ";")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"};\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "};")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"const\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#79B8FF\\"} }, \\"fooList\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\":\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#B392F0\\"} }, \\"Foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"[] \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" [];\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }),
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "const"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#79B8FF"} }, "fooList"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, ":"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#B392F0"} }, "Foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "[] "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " [];")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"</\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#85E89D\\"} }, \\"script\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\">\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "</"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#85E89D"} }, "script"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, ">")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"<\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#85E89D\\"} }, \\"template\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\">\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }),
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "<"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#85E89D"} }, "template"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, ">")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"  <\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#85E89D\\"} }, \\"div\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\">{{ fooList.join(\\\\\\", \\\\\\") }}</\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#85E89D\\"} }, \\"div\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\">\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "  <"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#85E89D"} }, "div"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, ">{{ fooList.join(\\", \\") }}</"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#85E89D"} }, "div"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, ">")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"</\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#85E89D\\"} }, \\"template\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\">\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "</"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#85E89D"} }, "template"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, ">")
       ])
     ])
   ]),
-  /*#__PURE__*/_createElementVNode(\\"pre\\", { class: \\"shiki github-light vp-code-light\\" }, [
-    /*#__PURE__*/_createElementVNode(\\"code\\", null, [
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"<\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#22863A\\"} }, \\"script\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#6F42C1\\"} }, \\"setup\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#6F42C1\\"} }, \\"lang\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#032F62\\"} }, \\"\\\\\\"ts\\\\\\"\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\">\\")
+  /*#__PURE__*/_createElementVNode("pre", { class: "shiki github-light vp-code-light" }, [
+    /*#__PURE__*/_createElementVNode("code", null, [
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "<"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#22863A"} }, "script"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#6F42C1"} }, "setup"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#6F42C1"} }, "lang"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#032F62"} }, "\\"ts\\""),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, ">")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"type\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#6F42C1\\"} }, \\"Foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" {\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "type"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#6F42C1"} }, "Foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " {")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"  \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E36209\\"} }, \\"foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\":\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#005CC5\\"} }, \\"string\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\";\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "  "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E36209"} }, "foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, ":"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#005CC5"} }, "string"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, ";")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"};\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "};")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"const\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#005CC5\\"} }, \\"fooList\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\":\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#6F42C1\\"} }, \\"Foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"[] \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" [];\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }),
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "const"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#005CC5"} }, "fooList"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, ":"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#6F42C1"} }, "Foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "[] "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " [];")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"</\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#22863A\\"} }, \\"script\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\">\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "</"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#22863A"} }, "script"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, ">")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"<\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#22863A\\"} }, \\"template\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\">\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }),
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "<"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#22863A"} }, "template"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, ">")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"  <\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#22863A\\"} }, \\"div\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\">{{ fooList.join(\\\\\\", \\\\\\") }}</\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#22863A\\"} }, \\"div\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\">\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "  <"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#22863A"} }, "div"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, ">{{ fooList.join(\\", \\") }}</"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#22863A"} }, "div"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, ">")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"</\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#22863A\\"} }, \\"template\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\">\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "</"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#22863A"} }, "template"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, ">")
       ])
     ])
   ])
 ], -1 /* HOISTED */)
-const _hoisted_2 = /*#__PURE__*/_createElementVNode(\\"div\\", { class: \\"language-vue vp-adaptive-theme\\" }, [
-  /*#__PURE__*/_createElementVNode(\\"button\\", {
-    title: \\"Copy Code\\",
-    class: \\"copy\\"
+const _hoisted_2 = /*#__PURE__*/_createElementVNode("div", { class: "language-vue vp-adaptive-theme" }, [
+  /*#__PURE__*/_createElementVNode("button", {
+    title: "Copy Code",
+    class: "copy"
   }),
-  /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"lang\\" }, \\"vue\\"),
-  /*#__PURE__*/_createElementVNode(\\"pre\\", { class: \\"shiki github-dark vp-code-dark\\" }, [
-    /*#__PURE__*/_createElementVNode(\\"code\\", null, [
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"<\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#85E89D\\"} }, \\"script\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#B392F0\\"} }, \\"setup\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\">\\")
+  /*#__PURE__*/_createElementVNode("span", { class: "lang" }, "vue"),
+  /*#__PURE__*/_createElementVNode("pre", { class: "shiki github-dark vp-code-dark" }, [
+    /*#__PURE__*/_createElementVNode("code", null, [
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "<"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#85E89D"} }, "script"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#B392F0"} }, "setup"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, ">")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"const\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#79B8FF\\"} }, \\"fooList\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" [];\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "const"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#79B8FF"} }, "fooList"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " [];")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"</\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#85E89D\\"} }, \\"script\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\">\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "</"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#85E89D"} }, "script"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, ">")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"<\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#85E89D\\"} }, \\"template\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\">\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }),
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "<"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#85E89D"} }, "template"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, ">")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"  <\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#85E89D\\"} }, \\"div\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\">{{ fooList.join(\\\\\\", \\\\\\") }}</\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#85E89D\\"} }, \\"div\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\">\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "  <"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#85E89D"} }, "div"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, ">{{ fooList.join(\\", \\") }}</"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#85E89D"} }, "div"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, ">")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"</\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#85E89D\\"} }, \\"template\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\">\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "</"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#85E89D"} }, "template"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, ">")
       ])
     ])
   ]),
-  /*#__PURE__*/_createElementVNode(\\"pre\\", { class: \\"shiki github-light vp-code-light\\" }, [
-    /*#__PURE__*/_createElementVNode(\\"code\\", null, [
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"<\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#22863A\\"} }, \\"script\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#6F42C1\\"} }, \\"setup\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\">\\")
+  /*#__PURE__*/_createElementVNode("pre", { class: "shiki github-light vp-code-light" }, [
+    /*#__PURE__*/_createElementVNode("code", null, [
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "<"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#22863A"} }, "script"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#6F42C1"} }, "setup"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, ">")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"const\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#005CC5\\"} }, \\"fooList\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" [];\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "const"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#005CC5"} }, "fooList"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " [];")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"</\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#22863A\\"} }, \\"script\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\">\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "</"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#22863A"} }, "script"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, ">")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"<\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#22863A\\"} }, \\"template\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\">\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }),
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "<"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#22863A"} }, "template"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, ">")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"  <\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#22863A\\"} }, \\"div\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\">{{ fooList.join(\\\\\\", \\\\\\") }}</\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#22863A\\"} }, \\"div\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\">\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "  <"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#22863A"} }, "div"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, ">{{ fooList.join(\\", \\") }}</"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#22863A"} }, "div"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, ">")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"</\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#22863A\\"} }, \\"template\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\">\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "</"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#22863A"} }, "template"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, ">")
       ])
     ])
   ])
 ], -1 /* HOISTED */)
 
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_PluginTabsTab = _resolveComponent(\\"PluginTabsTab\\")
-  const _component_PluginTabs = _resolveComponent(\\"PluginTabs\\")
+  const _component_PluginTabsTab = _resolveComponent("PluginTabsTab")
+  const _component_PluginTabs = _resolveComponent("PluginTabs")
 
-  return (_openBlock(), _createElementBlock(\\"div\\", null, [
-    _createVNode(_component_PluginTabs, { sharedStateKey: \\"~detype\\" }, {
+  return (_openBlock(), _createElementBlock("div", null, [
+    _createVNode(_component_PluginTabs, { sharedStateKey: "~detype" }, {
       default: _withCtx(() => [
-        _createVNode(_component_PluginTabsTab, { label: \\"ts\\" }, {
+        _createVNode(_component_PluginTabsTab, { label: "ts" }, {
           default: _withCtx(() => [
             _hoisted_1
           ]),
           _: 1 /* STABLE */
         }),
-        _createVNode(_component_PluginTabsTab, { label: \\"js\\" }, {
+        _createVNode(_component_PluginTabsTab, { label: "js" }, {
           default: _withCtx(() => [
             _hoisted_2
           ]),
@@ -465,7 +465,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
 }
 
 
-_sfc_main.__hmrId = \\"4a58c0b4\\"
+_sfc_main.__hmrId = "4a58c0b4"
 typeof __VUE_HMR_RUNTIME__ !== 'undefined' && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main)
 import.meta.hot.accept(mod => {
   if (!mod) return
@@ -476,147 +476,147 @@ import.meta.hot.accept(mod => {
     __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated)
   }
 })
-import _export_sfc from \\"/@id/__x00__plugin-vue:export-helper\\"
-export default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\\"/root/packages/vitepress-plugin-detype/src/node/__test__/fixtures/vue.md\\"]])"
+import _export_sfc from "/@id/__x00__plugin-vue:export-helper"
+export default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',"/root/packages/vitepress-plugin-detype/src/node/__test__/fixtures/vue.md"]])"
 `;
 
 exports[`with highlight lines 1`] = `
-"import { createHotContext as __vite__createHotContext } from \\"/@vite/client\\";import.meta.hot = __vite__createHotContext(\\"/with-highlight-lines.md\\");
-export const __pageData = JSON.parse(\\"{\\\\\\"title\\\\\\":\\\\\\"\\\\\\",\\\\\\"description\\\\\\":\\\\\\"\\\\\\",\\\\\\"frontmatter\\\\\\":{},\\\\\\"headers\\\\\\":[],\\\\\\"relativePath\\\\\\":\\\\\\"with-highlight-lines.md\\\\\\",\\\\\\"filePath\\\\\\":\\\\\\"with-highlight-lines.md\\\\\\"}\\")
-const _sfc_main = {name:\\"with-highlight-lines.md\\"}
-import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \\"/@fs/root/node_modules/.pnpm/vue@3.3.4/node_modules/vue/dist/vue.runtime.esm-bundler.js\\"
+"import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/with-highlight-lines.md");
+export const __pageData = JSON.parse("{\\"title\\":\\"\\",\\"description\\":\\"\\",\\"frontmatter\\":{},\\"headers\\":[],\\"relativePath\\":\\"with-highlight-lines.md\\",\\"filePath\\":\\"with-highlight-lines.md\\"}")
+const _sfc_main = {name:"with-highlight-lines.md"}
+import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from "/@fs/root/node_modules/.pnpm/vue@3.3.4/node_modules/vue/dist/vue.runtime.esm-bundler.js"
 
-const _hoisted_1 = /*#__PURE__*/_createElementVNode(\\"div\\", { class: \\"language-ts vp-adaptive-theme\\" }, [
-  /*#__PURE__*/_createElementVNode(\\"button\\", {
-    title: \\"Copy Code\\",
-    class: \\"copy\\"
+const _hoisted_1 = /*#__PURE__*/_createElementVNode("div", { class: "language-ts vp-adaptive-theme" }, [
+  /*#__PURE__*/_createElementVNode("button", {
+    title: "Copy Code",
+    class: "copy"
   }),
-  /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"lang\\" }, \\"ts\\"),
-  /*#__PURE__*/_createElementVNode(\\"pre\\", { class: \\"shiki github-dark has-highlighted-lines vp-code-dark\\" }, [
-    /*#__PURE__*/_createElementVNode(\\"code\\", null, [
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line highlighted\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"type\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#B392F0\\"} }, \\"Foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" {\\")
+  /*#__PURE__*/_createElementVNode("span", { class: "lang" }, "ts"),
+  /*#__PURE__*/_createElementVNode("pre", { class: "shiki github-dark has-highlighted-lines vp-code-dark" }, [
+    /*#__PURE__*/_createElementVNode("code", null, [
+      /*#__PURE__*/_createElementVNode("span", { class: "line highlighted" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "type"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#B392F0"} }, "Foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " {")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line highlighted\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"  \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#FFAB70\\"} }, \\"foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\":\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#79B8FF\\"} }, \\"string\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\";\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line highlighted" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "  "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#FFAB70"} }, "foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, ":"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#79B8FF"} }, "string"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, ";")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line highlighted\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"};\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line highlighted" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "};")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line highlighted\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"const\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#79B8FF\\"} }, \\"fooList\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\":\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#B392F0\\"} }, \\"Foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\"[] \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" [];\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }),
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line highlighted" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "const"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#79B8FF"} }, "fooList"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, ":"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#B392F0"} }, "Foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, "[] "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " [];")
       ])
     ])
   ]),
-  /*#__PURE__*/_createElementVNode(\\"pre\\", { class: \\"shiki github-light has-highlighted-lines vp-code-light\\" }, [
-    /*#__PURE__*/_createElementVNode(\\"code\\", null, [
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line highlighted\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"type\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#6F42C1\\"} }, \\"Foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" {\\")
+  /*#__PURE__*/_createElementVNode("pre", { class: "shiki github-light has-highlighted-lines vp-code-light" }, [
+    /*#__PURE__*/_createElementVNode("code", null, [
+      /*#__PURE__*/_createElementVNode("span", { class: "line highlighted" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "type"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#6F42C1"} }, "Foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " {")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line highlighted\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"  \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E36209\\"} }, \\"foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\":\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#005CC5\\"} }, \\"string\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\";\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line highlighted" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "  "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E36209"} }, "foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, ":"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#005CC5"} }, "string"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, ";")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line highlighted\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"};\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line highlighted" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "};")
       ]),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line\\" }),
-      /*#__PURE__*/_createTextVNode(\\"\\\\n\\"),
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line highlighted\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"const\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#005CC5\\"} }, \\"fooList\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\":\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#6F42C1\\"} }, \\"Foo\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\"[] \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" [];\\")
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line" }),
+      /*#__PURE__*/_createTextVNode("\\n"),
+      /*#__PURE__*/_createElementVNode("span", { class: "line highlighted" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "const"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#005CC5"} }, "fooList"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, ":"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#6F42C1"} }, "Foo"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, "[] "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " [];")
       ])
     ])
   ])
 ], -1 /* HOISTED */)
-const _hoisted_2 = /*#__PURE__*/_createElementVNode(\\"div\\", { class: \\"language-js vp-adaptive-theme\\" }, [
-  /*#__PURE__*/_createElementVNode(\\"button\\", {
-    title: \\"Copy Code\\",
-    class: \\"copy\\"
+const _hoisted_2 = /*#__PURE__*/_createElementVNode("div", { class: "language-js vp-adaptive-theme" }, [
+  /*#__PURE__*/_createElementVNode("button", {
+    title: "Copy Code",
+    class: "copy"
   }),
-  /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"lang\\" }, \\"js\\"),
-  /*#__PURE__*/_createElementVNode(\\"pre\\", { class: \\"shiki github-dark has-highlighted-lines vp-code-dark\\" }, [
-    /*#__PURE__*/_createElementVNode(\\"code\\", null, [
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line highlighted\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"const\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#79B8FF\\"} }, \\"fooList\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#F97583\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#E1E4E8\\"} }, \\" [];\\")
+  /*#__PURE__*/_createElementVNode("span", { class: "lang" }, "js"),
+  /*#__PURE__*/_createElementVNode("pre", { class: "shiki github-dark has-highlighted-lines vp-code-dark" }, [
+    /*#__PURE__*/_createElementVNode("code", null, [
+      /*#__PURE__*/_createElementVNode("span", { class: "line highlighted" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "const"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#79B8FF"} }, "fooList"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#F97583"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#E1E4E8"} }, " [];")
       ])
     ])
   ]),
-  /*#__PURE__*/_createElementVNode(\\"pre\\", { class: \\"shiki github-light has-highlighted-lines vp-code-light\\" }, [
-    /*#__PURE__*/_createElementVNode(\\"code\\", null, [
-      /*#__PURE__*/_createElementVNode(\\"span\\", { class: \\"line highlighted\\" }, [
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"const\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#005CC5\\"} }, \\"fooList\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" \\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#D73A49\\"} }, \\"=\\"),
-        /*#__PURE__*/_createElementVNode(\\"span\\", { style: {\\"color\\":\\"#24292E\\"} }, \\" [];\\")
+  /*#__PURE__*/_createElementVNode("pre", { class: "shiki github-light has-highlighted-lines vp-code-light" }, [
+    /*#__PURE__*/_createElementVNode("code", null, [
+      /*#__PURE__*/_createElementVNode("span", { class: "line highlighted" }, [
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "const"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#005CC5"} }, "fooList"),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " "),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#D73A49"} }, "="),
+        /*#__PURE__*/_createElementVNode("span", { style: {"color":"#24292E"} }, " [];")
       ])
     ])
   ])
 ], -1 /* HOISTED */)
 
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_PluginTabsTab = _resolveComponent(\\"PluginTabsTab\\")
-  const _component_PluginTabs = _resolveComponent(\\"PluginTabs\\")
+  const _component_PluginTabsTab = _resolveComponent("PluginTabsTab")
+  const _component_PluginTabs = _resolveComponent("PluginTabs")
 
-  return (_openBlock(), _createElementBlock(\\"div\\", null, [
-    _createVNode(_component_PluginTabs, { sharedStateKey: \\"~detype\\" }, {
+  return (_openBlock(), _createElementBlock("div", null, [
+    _createVNode(_component_PluginTabs, { sharedStateKey: "~detype" }, {
       default: _withCtx(() => [
-        _createVNode(_component_PluginTabsTab, { label: \\"ts\\" }, {
+        _createVNode(_component_PluginTabsTab, { label: "ts" }, {
           default: _withCtx(() => [
             _hoisted_1
           ]),
           _: 1 /* STABLE */
         }),
-        _createVNode(_component_PluginTabsTab, { label: \\"js\\" }, {
+        _createVNode(_component_PluginTabsTab, { label: "js" }, {
           default: _withCtx(() => [
             _hoisted_2
           ]),
@@ -629,7 +629,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
 }
 
 
-_sfc_main.__hmrId = \\"5bcedc41\\"
+_sfc_main.__hmrId = "5bcedc41"
 typeof __VUE_HMR_RUNTIME__ !== 'undefined' && __VUE_HMR_RUNTIME__.createRecord(_sfc_main.__hmrId, _sfc_main)
 import.meta.hot.accept(mod => {
   if (!mod) return
@@ -640,6 +640,6 @@ import.meta.hot.accept(mod => {
     __VUE_HMR_RUNTIME__.reload(updated.__hmrId, updated)
   }
 })
-import _export_sfc from \\"/@id/__x00__plugin-vue:export-helper\\"
-export default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',\\"/root/packages/vitepress-plugin-detype/src/node/__test__/fixtures/with-highlight-lines.md\\"]])"
+import _export_sfc from "/@id/__x00__plugin-vue:export-helper"
+export default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__file',"/root/packages/vitepress-plugin-detype/src/node/__test__/fixtures/with-highlight-lines.md"]])"
 `;
