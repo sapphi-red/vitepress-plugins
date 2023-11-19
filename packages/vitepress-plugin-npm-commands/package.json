@@ -30,7 +30,7 @@
   },
   "homepage": "https://vitepress-plugins.sapphi.red/npm-commands/",
   "peerDependencies": {
-    "vitepress": "^1.0.0-rc.14",
+    "vitepress": "^1.0.0-rc.27",
     "vitepress-plugin-tabs": "^0.4.1"
   },
   "devDependencies": {
