@@ -1,14 +1,22 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { useTabsSingleState } from './useTabsSingleState'
 
 defineProps<{ label: string }>()
 
 const { uid, selected } = useTabsSingleState()
+
+const isPrint = computed<boolean>(
+  () =>
+    typeof window !== 'undefined' &&
+    typeof window.matchMedia === 'function' &&
+    window.matchMedia('print')?.matches
+)
 </script>
 
 <template>
   <div
-    v-if="selected === label"
+    v-if="selected === label || isPrint"
     :id="`panel-${label}-${uid}`"
     class="plugin-tabs--content"
     role="tabpanel"
