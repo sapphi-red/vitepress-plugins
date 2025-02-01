@@ -1,8 +1,8 @@
 import type MarkdownIt from 'markdown-it'
 import container from 'markdown-it-container'
-import type Token from 'markdown-it/lib/token'
+import type Token from 'markdown-it/lib/token.d.mts'
 import { ruleBlockTab } from './ruleBlockTab'
-import type Renderer from 'markdown-it/lib/renderer'
+import type * as Renderer from 'markdown-it/lib/renderer.d.mts'
 
 type Params = {
   shareStateKey: string | undefined

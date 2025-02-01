@@ -37,10 +37,10 @@
     "vue": "^3.3.8"
   },
   "devDependencies": {
-    "@types/markdown-it": "^13.0.6",
-    "@types/markdown-it-container": "^2.0.9",
-    "markdown-it": "^13.0.2",
-    "markdown-it-container": "^3.0.0",
+    "@types/markdown-it": "^14.1.2",
+    "@types/markdown-it-container": "^2.0.10",
+    "markdown-it": "^14.1.0",
+    "markdown-it-container": "^4.0.0",
     "tsup": "^8.3.6",
     "vue": "^3.3.8"
   }
