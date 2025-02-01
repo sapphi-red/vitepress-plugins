@@ -5,8 +5,11 @@ import { useTabsSelectedState } from './useTabsSelectedState'
 import { useUid } from './useUid'
 import { useTabLabels } from './useTabLabels'
 import { provideTabsSingleState } from './useTabsSingleState'
+import { useIsPrint } from './useIsPrint'
 
 const props = defineProps<{ sharedStateKey?: string }>()
+
+const isPrint = useIsPrint()
 
 const tabLabels = useTabLabels()
 
@@ -59,7 +62,7 @@ provideTabsSingleState({ uid, selected })
         :key="tabLabel"
         role="tab"
         class="plugin-tabs--tab"
-        :aria-selected="tabLabel === selected"
+        :aria-selected="tabLabel === selected && !isPrint"
         :aria-controls="`panel-${tabLabel}-${uid}`"
         :tabindex="tabLabel === selected ? 0 : -1"
         @click="() => selectStable(tabLabel)"

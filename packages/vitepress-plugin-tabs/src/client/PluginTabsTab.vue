@@ -17,6 +17,7 @@ const isPrint = useIsPrint()
     role="tabpanel"
     tabindex="0"
     :aria-labelledby="`tab-${label}-${uid}`"
+    :data-is-print="isPrint"
   >
     <slot />
   </div>
@@ -25,6 +26,10 @@ const isPrint = useIsPrint()
 <style scoped>
 .plugin-tabs--content {
   padding: 16px;
+}
+
+.plugin-tabs--content[data-is-print='true']:not(:last-child) {
+  border-bottom: 2px solid var(--vp-plugin-tabs-tab-divider);
 }
 
 .plugin-tabs--content > :first-child:first-child {
