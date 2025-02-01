@@ -1,17 +1,12 @@
 <script setup lang="ts">
-import { computed } from 'vue'
 import { useTabsSingleState } from './useTabsSingleState'
+import { useIsPrint } from './useIsPrint'
 
 defineProps<{ label: string }>()
 
 const { uid, selected } = useTabsSingleState()
 
-const isPrint = computed<boolean>(
-  () =>
-    typeof window !== 'undefined' &&
-    typeof window.matchMedia === 'function' &&
-    window.matchMedia('print')?.matches
-)
+const isPrint = useIsPrint()
 </script>
 
 <template>
