@@ -4,65 +4,7 @@ exports[`should work 1`] = `
 "import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/normal.md");
 export const __pageData = JSON.parse("{\\"title\\":\\"\\",\\"description\\":\\"\\",\\"frontmatter\\":{},\\"headers\\":[],\\"relativePath\\":\\"normal.md\\",\\"filePath\\":\\"normal.md\\"}")
 const _sfc_main = {name:"normal.md"}
-import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from "/@fs/root/node_modules/.pnpm/vue@3.3.8_typescript@5.7.3/node_modules/vue/dist/vue.runtime.esm-bundler.js"
-
-const _hoisted_1 = /*#__PURE__*/_createElementVNode("div", { class: "language-ts vp-adaptive-theme" }, [
-  /*#__PURE__*/_createElementVNode("button", {
-    title: "Copy Code",
-    class: "copy"
-  }),
-  /*#__PURE__*/_createElementVNode("span", { class: "lang" }, "ts"),
-  /*#__PURE__*/_createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
-    /*#__PURE__*/_createElementVNode("code", null, [
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "type"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " Foo"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, " ="),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " {")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#E36209","--shiki-dark":"#FFAB70"} }, "  foo"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, ":"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " string"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ";")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "};")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "const"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " fooList"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, ":"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " Foo"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "[] "),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "="),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " [];")
-      ])
-    ])
-  ])
-], -1 /* HOISTED */)
-const _hoisted_2 = /*#__PURE__*/_createElementVNode("div", { class: "language-js vp-adaptive-theme" }, [
-  /*#__PURE__*/_createElementVNode("button", {
-    title: "Copy Code",
-    class: "copy"
-  }),
-  /*#__PURE__*/_createElementVNode("span", { class: "lang" }, "js"),
-  /*#__PURE__*/_createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
-    /*#__PURE__*/_createElementVNode("code", null, [
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "const"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " fooList"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, " ="),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " [];")
-      ])
-    ])
-  ])
-], -1 /* HOISTED */)
+import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from "/@fs/root/node_modules/.pnpm/vue@3.5.13_typescript@5.7.3/node_modules/vue/dist/vue.runtime.esm-bundler.js"
 
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_PluginTabsTab = _resolveComponent("PluginTabsTab")
@@ -72,15 +14,70 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     _createVNode(_component_PluginTabs, { sharedStateKey: "~detype" }, {
       default: _withCtx(() => [
         _createVNode(_component_PluginTabsTab, { label: "ts" }, {
-          default: _withCtx(() => [
-            _hoisted_1
-          ]),
+          default: _withCtx(() => _cache[0] || (_cache[0] = [
+            _createElementVNode("div", { class: "language-ts vp-adaptive-theme" }, [
+              _createElementVNode("button", {
+                title: "Copy Code",
+                class: "copy"
+              }),
+              _createElementVNode("span", { class: "lang" }, "ts"),
+              _createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
+                _createElementVNode("code", null, [
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "type"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " Foo"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, " ="),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " {")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#E36209","--shiki-dark":"#FFAB70"} }, "  foo"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, ":"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " string"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ";")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "};")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "const"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " fooList"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, ":"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " Foo"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "[] "),
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "="),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " [];")
+                  ])
+                ])
+              ])
+            ], -1 /* HOISTED */)
+          ])),
           _: 1 /* STABLE */
         }),
         _createVNode(_component_PluginTabsTab, { label: "js" }, {
-          default: _withCtx(() => [
-            _hoisted_2
-          ]),
+          default: _withCtx(() => _cache[1] || (_cache[1] = [
+            _createElementVNode("div", { class: "language-js vp-adaptive-theme" }, [
+              _createElementVNode("button", {
+                title: "Copy Code",
+                class: "copy"
+              }),
+              _createElementVNode("span", { class: "lang" }, "js"),
+              _createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
+                _createElementVNode("code", null, [
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "const"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " fooList"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, " ="),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " [];")
+                  ])
+                ])
+              ])
+            ], -1 /* HOISTED */)
+          ])),
           _: 1 /* STABLE */
         })
       ]),
@@ -112,138 +109,7 @@ exports[`vue 1`] = `
 "import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/vue.md");
 export const __pageData = JSON.parse("{\\"title\\":\\"\\",\\"description\\":\\"\\",\\"frontmatter\\":{},\\"headers\\":[],\\"relativePath\\":\\"vue.md\\",\\"filePath\\":\\"vue.md\\"}")
 const _sfc_main = {name:"vue.md"}
-import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from "/@fs/root/node_modules/.pnpm/vue@3.3.8_typescript@5.7.3/node_modules/vue/dist/vue.runtime.esm-bundler.js"
-
-const _hoisted_1 = /*#__PURE__*/_createElementVNode("div", { class: "language-vue vp-adaptive-theme" }, [
-  /*#__PURE__*/_createElementVNode("button", {
-    title: "Copy Code",
-    class: "copy"
-  }),
-  /*#__PURE__*/_createElementVNode("span", { class: "lang" }, "vue"),
-  /*#__PURE__*/_createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
-    /*#__PURE__*/_createElementVNode("code", null, [
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "<"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "script"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " setup"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " lang"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "="),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#032F62","--shiki-dark":"#9ECBFF"} }, "\\"ts\\""),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "type"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " Foo"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, " ="),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " {")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#E36209","--shiki-dark":"#FFAB70"} }, "  foo"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, ":"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " string"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ";")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "};")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "const"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " fooList"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, ":"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " Foo"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "[] "),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "="),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " [];")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "</"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "script"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "<"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "template"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "  <"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "div"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">{{ fooList.join(\\", \\") }}</"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "div"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "</"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "template"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
-      ])
-    ])
-  ])
-], -1 /* HOISTED */)
-const _hoisted_2 = /*#__PURE__*/_createElementVNode("div", { class: "language-vue vp-adaptive-theme" }, [
-  /*#__PURE__*/_createElementVNode("button", {
-    title: "Copy Code",
-    class: "copy"
-  }),
-  /*#__PURE__*/_createElementVNode("span", { class: "lang" }, "vue"),
-  /*#__PURE__*/_createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
-    /*#__PURE__*/_createElementVNode("code", null, [
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "<"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "script"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " setup"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "const"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " fooList"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, " ="),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " [];")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "</"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "script"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "<"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "template"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "  <"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "div"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">{{ fooList.join(\\", \\") }}</"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "div"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "</"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "template"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
-      ])
-    ])
-  ])
-], -1 /* HOISTED */)
+import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from "/@fs/root/node_modules/.pnpm/vue@3.5.13_typescript@5.7.3/node_modules/vue/dist/vue.runtime.esm-bundler.js"
 
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_PluginTabsTab = _resolveComponent("PluginTabsTab")
@@ -253,15 +119,143 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     _createVNode(_component_PluginTabs, { sharedStateKey: "~detype" }, {
       default: _withCtx(() => [
         _createVNode(_component_PluginTabsTab, { label: "ts" }, {
-          default: _withCtx(() => [
-            _hoisted_1
-          ]),
+          default: _withCtx(() => _cache[0] || (_cache[0] = [
+            _createElementVNode("div", { class: "language-vue vp-adaptive-theme" }, [
+              _createElementVNode("button", {
+                title: "Copy Code",
+                class: "copy"
+              }),
+              _createElementVNode("span", { class: "lang" }, "vue"),
+              _createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
+                _createElementVNode("code", null, [
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "<"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "script"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " setup"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " lang"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "="),
+                    _createElementVNode("span", { style: {"--shiki-light":"#032F62","--shiki-dark":"#9ECBFF"} }, "\\"ts\\""),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "type"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " Foo"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, " ="),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " {")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#E36209","--shiki-dark":"#FFAB70"} }, "  foo"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, ":"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " string"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ";")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "};")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "const"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " fooList"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, ":"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " Foo"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "[] "),
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "="),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " [];")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "</"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "script"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "<"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "template"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "  <"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "div"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">{{ fooList.join(\\", \\") }}</"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "div"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "</"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "template"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
+                  ])
+                ])
+              ])
+            ], -1 /* HOISTED */)
+          ])),
           _: 1 /* STABLE */
         }),
         _createVNode(_component_PluginTabsTab, { label: "js" }, {
-          default: _withCtx(() => [
-            _hoisted_2
-          ]),
+          default: _withCtx(() => _cache[1] || (_cache[1] = [
+            _createElementVNode("div", { class: "language-vue vp-adaptive-theme" }, [
+              _createElementVNode("button", {
+                title: "Copy Code",
+                class: "copy"
+              }),
+              _createElementVNode("span", { class: "lang" }, "vue"),
+              _createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
+                _createElementVNode("code", null, [
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "<"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "script"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " setup"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "const"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " fooList"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, " ="),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " [];")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "</"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "script"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "<"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "template"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "  <"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "div"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">{{ fooList.join(\\", \\") }}</"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "div"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "</"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "template"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
+                  ])
+                ])
+              ])
+            ], -1 /* HOISTED */)
+          ])),
           _: 1 /* STABLE */
         })
       ]),
@@ -293,65 +287,7 @@ exports[`with highlight lines 1`] = `
 "import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/with-highlight-lines.md");
 export const __pageData = JSON.parse("{\\"title\\":\\"\\",\\"description\\":\\"\\",\\"frontmatter\\":{},\\"headers\\":[],\\"relativePath\\":\\"with-highlight-lines.md\\",\\"filePath\\":\\"with-highlight-lines.md\\"}")
 const _sfc_main = {name:"with-highlight-lines.md"}
-import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from "/@fs/root/node_modules/.pnpm/vue@3.3.8_typescript@5.7.3/node_modules/vue/dist/vue.runtime.esm-bundler.js"
-
-const _hoisted_1 = /*#__PURE__*/_createElementVNode("div", { class: "language-ts vp-adaptive-theme" }, [
-  /*#__PURE__*/_createElementVNode("button", {
-    title: "Copy Code",
-    class: "copy"
-  }),
-  /*#__PURE__*/_createElementVNode("span", { class: "lang" }, "ts"),
-  /*#__PURE__*/_createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
-    /*#__PURE__*/_createElementVNode("code", null, [
-      /*#__PURE__*/_createElementVNode("span", { class: "line highlighted" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "type"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " Foo"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, " ="),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " {")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line highlighted" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#E36209","--shiki-dark":"#FFAB70"} }, "  foo"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, ":"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " string"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ";")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line highlighted" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "};")
-      ]),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line" }),
-      /*#__PURE__*/_createTextVNode("\\n"),
-      /*#__PURE__*/_createElementVNode("span", { class: "line highlighted" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "const"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " fooList"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, ":"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " Foo"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "[] "),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "="),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " [];")
-      ])
-    ])
-  ])
-], -1 /* HOISTED */)
-const _hoisted_2 = /*#__PURE__*/_createElementVNode("div", { class: "language-js vp-adaptive-theme" }, [
-  /*#__PURE__*/_createElementVNode("button", {
-    title: "Copy Code",
-    class: "copy"
-  }),
-  /*#__PURE__*/_createElementVNode("span", { class: "lang" }, "js"),
-  /*#__PURE__*/_createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
-    /*#__PURE__*/_createElementVNode("code", null, [
-      /*#__PURE__*/_createElementVNode("span", { class: "line highlighted" }, [
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "const"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " fooList"),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, " ="),
-        /*#__PURE__*/_createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " [];")
-      ])
-    ])
-  ])
-], -1 /* HOISTED */)
+import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from "/@fs/root/node_modules/.pnpm/vue@3.5.13_typescript@5.7.3/node_modules/vue/dist/vue.runtime.esm-bundler.js"
 
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_PluginTabsTab = _resolveComponent("PluginTabsTab")
@@ -361,15 +297,70 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     _createVNode(_component_PluginTabs, { sharedStateKey: "~detype" }, {
       default: _withCtx(() => [
         _createVNode(_component_PluginTabsTab, { label: "ts" }, {
-          default: _withCtx(() => [
-            _hoisted_1
-          ]),
+          default: _withCtx(() => _cache[0] || (_cache[0] = [
+            _createElementVNode("div", { class: "language-ts vp-adaptive-theme" }, [
+              _createElementVNode("button", {
+                title: "Copy Code",
+                class: "copy"
+              }),
+              _createElementVNode("span", { class: "lang" }, "ts"),
+              _createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
+                _createElementVNode("code", null, [
+                  _createElementVNode("span", { class: "line highlighted" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "type"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " Foo"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, " ="),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " {")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line highlighted" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#E36209","--shiki-dark":"#FFAB70"} }, "  foo"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, ":"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " string"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ";")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line highlighted" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "};")
+                  ]),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line" }),
+                  _createTextVNode("\\n"),
+                  _createElementVNode("span", { class: "line highlighted" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "const"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " fooList"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, ":"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, " Foo"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "[] "),
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "="),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " [];")
+                  ])
+                ])
+              ])
+            ], -1 /* HOISTED */)
+          ])),
           _: 1 /* STABLE */
         }),
         _createVNode(_component_PluginTabsTab, { label: "js" }, {
-          default: _withCtx(() => [
-            _hoisted_2
-          ]),
+          default: _withCtx(() => _cache[1] || (_cache[1] = [
+            _createElementVNode("div", { class: "language-js vp-adaptive-theme" }, [
+              _createElementVNode("button", {
+                title: "Copy Code",
+                class: "copy"
+              }),
+              _createElementVNode("span", { class: "lang" }, "js"),
+              _createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
+                _createElementVNode("code", null, [
+                  _createElementVNode("span", { class: "line highlighted" }, [
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "const"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#005CC5","--shiki-dark":"#79B8FF"} }, " fooList"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, " ="),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, " [];")
+                  ])
+                ])
+              ])
+            ], -1 /* HOISTED */)
+          ])),
           _: 1 /* STABLE */
         })
       ]),

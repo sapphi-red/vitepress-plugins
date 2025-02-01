@@ -1,10 +1,14 @@
 import type MarkdownIt from 'markdown-it'
-import { transform, removeMagicComments } from 'detype'
+import module from 'node:module'
 import type { PrettierOptions } from 'detype'
 import type { ContentMap } from './contentMap'
 import type { SupportedType } from './parseDetypeInfo'
 import { parseDetypeInfo } from './parseDetypeInfo'
 import { klona } from 'klona'
+
+const { transform, removeMagicComments } = module.createRequire(
+  import.meta.url
+)('detype') as typeof import('detype')
 
 const tabsShareStateKey = '~detype'
 const langs = ['ts', 'js'] as const
@@ -52,7 +56,7 @@ export const detypePlugin = (
         try {
           const content =
             lang === 'ts'
-              ? removeMagicComments(
+              ? await removeMagicComments(
                   token.content,
                   `foo.${type}`,
                   prettierOptions
