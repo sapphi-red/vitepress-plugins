@@ -112,8 +112,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0(@algolia/client-search@5.20.0)(@types/node@18.19.74)(postcss@8.5.1)(search-insights@2.6.0)(typescript@5.7.3)
       vitepress-plugin-tabs:
-        specifier: ^0.5.0
-        version: 0.5.0(vitepress@1.0.0(@algolia/client-search@5.20.0)(@types/node@18.19.74)(postcss@8.5.1)(search-insights@2.6.0)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3))
+        specifier: workspace:^0.5.0
+        version: link:../vitepress-plugin-tabs
     devDependencies:
       '@types/markdown-it':
         specifier: ^14.1.2
@@ -2903,12 +2903,6 @@ packages:
         optional: true
       terser:
         optional: true
-
-  vitepress-plugin-tabs@0.5.0:
-    resolution: {integrity: sha512-SIhFWwGsUkTByfc2b279ray/E0Jt8vDTsM1LiHxmCOBAEMmvzIBZSuYYT1DpdDTiS3SuJieBheJkYnwCq/yD9A==}
-    peerDependencies:
-      vitepress: ^1.0.0-rc.27
-      vue: ^3.3.8
 
   vitepress@1.0.0:
     resolution: {integrity: sha512-4YXbHzuyhymuVTKPexnnOgJOgf1Uzmak4B6g3L3SQf9KRgtnVKHoPV4/WorWhaGnLBaIS/g8KspxRJAIOsOdJQ==}
@@ -5889,11 +5883,6 @@ snapshots:
     optionalDependencies:
       '@types/node': 18.19.74
       fsevents: 2.3.3
-
-  vitepress-plugin-tabs@0.5.0(vitepress@1.0.0(@algolia/client-search@5.20.0)(@types/node@18.19.74)(postcss@8.5.1)(search-insights@2.6.0)(typescript@5.7.3))(vue@3.5.13(typescript@5.7.3)):
-    dependencies:
-      vitepress: 1.0.0(@algolia/client-search@5.20.0)(@types/node@18.19.74)(postcss@8.5.1)(search-insights@2.6.0)(typescript@5.7.3)
-      vue: 3.5.13(typescript@5.7.3)
 
   vitepress@1.0.0(@algolia/client-search@5.20.0)(@types/node@18.19.74)(postcss@8.5.1)(search-insights@2.6.0)(typescript@5.7.3):
     dependencies:
