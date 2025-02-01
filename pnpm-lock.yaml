@@ -20,9 +20,6 @@ importers:
       '@types/node':
         specifier: ^18.19.74
         version: 18.19.74
-      '@types/semver':
-        specifier: ^7.5.5
-        version: 7.5.5
       eslint:
         specifier: ^9.19.0
         version: 9.19.0
@@ -35,9 +32,6 @@ importers:
       prettier:
         specifier: ^3.4.2
         version: 3.4.2
-      semver:
-        specifier: ^7.5.4
-        version: 7.5.4
       ts-dedent:
         specifier: ^2.2.0
         version: 2.2.0
@@ -1195,9 +1189,6 @@ packages:
 
   '@types/node@18.19.74':
     resolution: {integrity: sha512-HMwEkkifei3L605gFdV+/UwtpxP6JSzM+xFk2Ia6DNFSwSVBRh9qp5Tgf4lNFOMfPVuU0WnkcWpXZpgn5ufO4A==}
-
-  '@types/semver@7.5.5':
-    resolution: {integrity: sha512-+d+WYC1BxJ6yVOgUgzK8gWvp5qF8ssV5r4nsDcZWKRWcDQLQ619tvWAxJQYGgBrO1MnLJC7a5GtiYsAoQ47dJg==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -2587,11 +2578,6 @@ packages:
 
   semver@6.3.0:
     resolution: {integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==}
-    hasBin: true
-
-  semver@7.5.4:
-    resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==}
-    engines: {node: '>=10'}
     hasBin: true
 
   semver@7.7.0:
@@ -4052,8 +4038,6 @@ snapshots:
   '@types/node@18.19.74':
     dependencies:
       undici-types: 5.26.5
-
-  '@types/semver@7.5.5': {}
 
   '@types/unist@3.0.3': {}
 
@@ -5574,10 +5558,6 @@ snapshots:
   search-insights@2.6.0: {}
 
   semver@6.3.0: {}
-
-  semver@7.5.4:
-    dependencies:
-      lru-cache: 6.0.0
 
   semver@7.7.0: {}
 
