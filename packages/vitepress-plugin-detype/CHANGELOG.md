@@ -1,5 +1,16 @@
 # vitepress-plugin-detype
 
+## 1.0.0
+
+### Minor Changes
+
+- [`3e3ecc3`](https://github.com/sapphi-red/vitepress-plugins/commit/3e3ecc306fd72d2f3640cc741a0abd9ca59e4ffd) Thanks [@sapphi-red](https://github.com/sapphi-red)! - update required vitepress version from 1.0.0-rc.27 to 1.0.0
+
+### Patch Changes
+
+- Updated dependencies [[`971574e`](https://github.com/sapphi-red/vitepress-plugins/commit/971574e5e63ab7838255a7f2ca224a7f09236e6f), [`3e3ecc3`](https://github.com/sapphi-red/vitepress-plugins/commit/3e3ecc306fd72d2f3640cc741a0abd9ca59e4ffd)]:
+  - vitepress-plugin-tabs@0.6.0
+
 ## 0.6.0
 
 ### Minor Changes

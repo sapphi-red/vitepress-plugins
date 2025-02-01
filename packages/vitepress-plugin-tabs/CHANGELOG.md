@@ -1,5 +1,13 @@
 # vitepress-plugin-tabs
 
+## 0.6.0
+
+### Minor Changes
+
+- [#50](https://github.com/sapphi-red/vitepress-plugins/pull/50) [`971574e`](https://github.com/sapphi-red/vitepress-plugins/commit/971574e5e63ab7838255a7f2ca224a7f09236e6f) Thanks [@kwesterfeld2](https://github.com/kwesterfeld2)! - render all tabs when printing
+
+- [`3e3ecc3`](https://github.com/sapphi-red/vitepress-plugins/commit/3e3ecc306fd72d2f3640cc741a0abd9ca59e4ffd) Thanks [@sapphi-red](https://github.com/sapphi-red)! - update required vitepress version from 1.0.0-rc.27 to 1.0.0
+
 ## 0.5.0
 
 ### Minor Changes
