@@ -21,7 +21,10 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
                 class: "copy"
               }),
               _createElementVNode("span", { class: "lang" }, "ts"),
-              _createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
+              _createElementVNode("pre", {
+                class: "shiki shiki-themes github-light github-dark vp-code",
+                tabindex: "0"
+              }, [
                 _createElementVNode("code", null, [
                   _createElementVNode("span", { class: "line" }, [
                     _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "type"),
@@ -66,7 +69,10 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
                 class: "copy"
               }),
               _createElementVNode("span", { class: "lang" }, "js"),
-              _createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
+              _createElementVNode("pre", {
+                class: "shiki shiki-themes github-light github-dark vp-code",
+                tabindex: "0"
+              }, [
                 _createElementVNode("code", null, [
                   _createElementVNode("span", { class: "line" }, [
                     _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "const"),
@@ -126,7 +132,10 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
                 class: "copy"
               }),
               _createElementVNode("span", { class: "lang" }, "vue"),
-              _createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
+              _createElementVNode("pre", {
+                class: "shiki shiki-themes github-light github-dark vp-code",
+                tabindex: "0"
+              }, [
                 _createElementVNode("code", null, [
                   _createElementVNode("span", { class: "line" }, [
                     _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "<"),
@@ -185,7 +194,11 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
                   _createElementVNode("span", { class: "line" }, [
                     _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "  <"),
                     _createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "div"),
-                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">{{ fooList.join(\\", \\") }}</"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">{{ fooList."),
+                    _createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, "join"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "("),
+                    _createElementVNode("span", { style: {"--shiki-light":"#032F62","--shiki-dark":"#9ECBFF"} }, "\\", \\""),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ") }}</"),
                     _createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "div"),
                     _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
                   ]),
@@ -209,7 +222,10 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
                 class: "copy"
               }),
               _createElementVNode("span", { class: "lang" }, "vue"),
-              _createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
+              _createElementVNode("pre", {
+                class: "shiki shiki-themes github-light github-dark vp-code",
+                tabindex: "0"
+              }, [
                 _createElementVNode("code", null, [
                   _createElementVNode("span", { class: "line" }, [
                     _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "<"),
@@ -242,7 +258,11 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
                   _createElementVNode("span", { class: "line" }, [
                     _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "  <"),
                     _createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "div"),
-                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">{{ fooList.join(\\", \\") }}</"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">{{ fooList."),
+                    _createElementVNode("span", { style: {"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"} }, "join"),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, "("),
+                    _createElementVNode("span", { style: {"--shiki-light":"#032F62","--shiki-dark":"#9ECBFF"} }, "\\", \\""),
+                    _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ") }}</"),
                     _createElementVNode("span", { style: {"--shiki-light":"#22863A","--shiki-dark":"#85E89D"} }, "div"),
                     _createElementVNode("span", { style: {"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"} }, ">")
                   ]),
@@ -304,7 +324,10 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
                 class: "copy"
               }),
               _createElementVNode("span", { class: "lang" }, "ts"),
-              _createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
+              _createElementVNode("pre", {
+                class: "shiki shiki-themes github-light github-dark vp-code",
+                tabindex: "0"
+              }, [
                 _createElementVNode("code", null, [
                   _createElementVNode("span", { class: "line highlighted" }, [
                     _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "type"),
@@ -349,7 +372,10 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
                 class: "copy"
               }),
               _createElementVNode("span", { class: "lang" }, "js"),
-              _createElementVNode("pre", { class: "shiki shiki-themes github-light github-dark vp-code" }, [
+              _createElementVNode("pre", {
+                class: "shiki shiki-themes github-light github-dark vp-code",
+                tabindex: "0"
+              }, [
                 _createElementVNode("code", null, [
                   _createElementVNode("span", { class: "line highlighted" }, [
                     _createElementVNode("span", { style: {"--shiki-light":"#D73A49","--shiki-dark":"#F97583"} }, "const"),
