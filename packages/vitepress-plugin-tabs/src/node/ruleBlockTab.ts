@@ -1,4 +1,4 @@
-import type { RuleBlock } from 'markdown-it/lib/parser_block'
+import type { RuleBlock } from 'markdown-it/lib/parser_block.mts'
 
 const tabMarker = '='
 const tabMarkerCode = tabMarker.charCodeAt(0)
