@@ -33,7 +33,7 @@
   },
   "homepage": "https://vitepress-plugins.sapphi.red/tabs/",
   "peerDependencies": {
-    "vitepress": "^1.0.0-rc.27",
+    "vitepress": "^1.0.0",
     "vue": "^3.3.8"
   },
   "devDependencies": {
