@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { ref, toRef } from 'vue'
+import { ref, toRef, useId } from 'vue'
 import { useStabilizeScrollPosition } from './useStabilizeScrollPosition'
 import { useTabsSelectedState } from './useTabsSelectedState'
-import { useUid } from './useUid'
 import { useTabLabels } from './useTabLabels'
 import { provideTabsSingleState } from './useTabsSingleState'
 import { useIsPrint } from './useIsPrint'
@@ -42,7 +41,7 @@ const onKeydown = (e: KeyboardEvent) => {
   }
 }
 
-const uid = useUid()
+const uid = useId()
 
 provideTabsSingleState({ uid, selected })
 </script>

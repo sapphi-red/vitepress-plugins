@@ -34,7 +34,7 @@
   "homepage": "https://vitepress-plugins.sapphi.red/tabs/",
   "peerDependencies": {
     "vitepress": "^1.0.0",
-    "vue": "^3.3.8"
+    "vue": "^3.5"
   },
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
