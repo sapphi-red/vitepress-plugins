@@ -1,6 +1,6 @@
 {
   "name": "vitepress-plugin-detype",
-  "version": "1.0.0",
+  "version": "0.8.0",
   "description": "A plugin that adds syntax for generating js from ts code snippet.",
   "type": "module",
   "main": "./dist/index.js",
@@ -32,7 +32,7 @@
   "peerDependencies": {
     "vitepress": "^1.0.0",
     "vitepress-plugin-tabs": "workspace:^0.7.0",
-    "vue": "^3.3.8"
+    "vue": "^3.5.0"
   },
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
