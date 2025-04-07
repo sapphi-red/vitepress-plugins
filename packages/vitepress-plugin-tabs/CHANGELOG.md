@@ -1,5 +1,12 @@
 # vitepress-plugin-tabs
 
+## 0.7.0
+
+### Minor Changes
+
+- [#52](https://github.com/sapphi-red/vitepress-plugins/pull/52) [`565c936`](https://github.com/sapphi-red/vitepress-plugins/commit/565c9367221da5e738207f3980357c3067f68f21) Thanks [@brc-dd](https://github.com/brc-dd)! - replace incremental ids with vue's useId to ensure stable IDs across builds.
+  Vue 3.5+ is now required.
+
 ## 0.6.0
 
 ### Minor Changes
