@@ -1,5 +1,12 @@
 # vitepress-plugin-npm-commands
 
+## 1.0.0
+
+### Patch Changes
+
+- Updated dependencies [[`565c936`](https://github.com/sapphi-red/vitepress-plugins/commit/565c9367221da5e738207f3980357c3067f68f21)]:
+  - vitepress-plugin-tabs@0.7.0
+
 ## 0.7.0
 
 ### Minor Changes
