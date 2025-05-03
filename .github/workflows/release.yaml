@@ -11,6 +11,10 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # to update code for the next release (changesets/action)
+      pull-requests: write # to create PR for the next release (changesets/action)
+      id-token: write # for provenance
     steps:
       - name: checkout
         uses: actions/checkout@v4
