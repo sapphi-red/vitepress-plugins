@@ -16,18 +16,14 @@ jobs:
       pull-requests: write # to create PR for the next release (changesets/action)
       id-token: write # for provenance
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
-      - name: setup pnpm
-        uses: pnpm/action-setup@v4
-      - name: setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
           node-version-file: '.node-version'
           cache: pnpm
-      - run: pnpm i
-      - name: run build
-        run: pnpm run -r --stream --filter=!./docs build
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run -r --stream --filter=!./docs build
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1

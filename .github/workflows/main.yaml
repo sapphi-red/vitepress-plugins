@@ -11,64 +11,51 @@ jobs:
     name: run lint
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
-      - name: setup pnpm
-        uses: pnpm/action-setup@v4
-      - name: setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
           node-version-file: '.node-version'
           cache: pnpm
-      - run: pnpm i
-      - name: run lint
-        run: pnpm run lint --max-warnings=0
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run lint --max-warnings=0
   format:
     name: run format
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
-      - name: setup pnpm
-        uses: pnpm/action-setup@v4
-      - name: setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
           node-version-file: '.node-version'
           cache: pnpm
-      - run: pnpm i
+      - run: pnpm install --frozen-lockfile
       - name: run format
         run: pnpm exec prettier --check .
   type-check:
     name: run type-check
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
-      - name: setup pnpm
-        uses: pnpm/action-setup@v4
-      - name: setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
           node-version-file: '.node-version'
           cache: pnpm
-      - run: pnpm i
+      - run: pnpm install --frozen-lockfile
       - name: run type-check
         run: pnpm run type-check
   build:
     name: run build
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
-      - name: setup pnpm
-        uses: pnpm/action-setup@v4
-      - name: setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
           node-version-file: '.node-version'
           cache: pnpm
-      - run: pnpm i
+      - run: pnpm install --frozen-lockfile
       - run: pnpm run -r --stream build
   test:
     name: run test
@@ -78,15 +65,12 @@ jobs:
       fail-fast: false
     runs-on: ${{ matrix.os }}
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
-      - name: setup pnpm
-        uses: pnpm/action-setup@v4
-      - name: setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
         with:
           node-version-file: '.node-version'
           cache: pnpm
-      - run: pnpm i
+      - run: pnpm install --frozen-lockfile
       - run: pnpm run -r --stream build
       - run: pnpm run test
