@@ -1,6 +1,6 @@
 {
   "name": "vitepress-plugin-detype",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "A plugin that adds syntax for generating js from ts code snippet.",
   "type": "module",
   "main": "./dist/index.js",
@@ -31,7 +31,7 @@
   "homepage": "https://vitepress-plugins.sapphi.red/detype/",
   "peerDependencies": {
     "vitepress": "^1.0.0",
-    "vitepress-plugin-tabs": "workspace:^0.7.0",
+    "vitepress-plugin-tabs": "workspace:^0.7.1",
     "vue": "^3.5.0"
   },
   "devDependencies": {
