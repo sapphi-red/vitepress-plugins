@@ -4,7 +4,7 @@ exports[`should work 1`] = `
 "import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/normal.md");
 export const __pageData = JSON.parse("{\\"title\\":\\"\\",\\"description\\":\\"\\",\\"frontmatter\\":{},\\"headers\\":[],\\"relativePath\\":\\"normal.md\\",\\"filePath\\":\\"normal.md\\"}")
 const _sfc_main = {name:"normal.md"}
-import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from "/@fs/root/node_modules/.pnpm/vue@3.5.13_typescript@5.7.3/node_modules/vue/dist/vue.runtime.esm-bundler.js"
+import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from "/@fs/root/node_modules/.pnpm/vue@3.5.13_typescript@5.8.3/node_modules/vue/dist/vue.runtime.esm-bundler.js"
 
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_PluginTabsTab = _resolveComponent("PluginTabsTab")
@@ -115,7 +115,7 @@ exports[`vue 1`] = `
 "import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/vue.md");
 export const __pageData = JSON.parse("{\\"title\\":\\"\\",\\"description\\":\\"\\",\\"frontmatter\\":{},\\"headers\\":[],\\"relativePath\\":\\"vue.md\\",\\"filePath\\":\\"vue.md\\"}")
 const _sfc_main = {name:"vue.md"}
-import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from "/@fs/root/node_modules/.pnpm/vue@3.5.13_typescript@5.7.3/node_modules/vue/dist/vue.runtime.esm-bundler.js"
+import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from "/@fs/root/node_modules/.pnpm/vue@3.5.13_typescript@5.8.3/node_modules/vue/dist/vue.runtime.esm-bundler.js"
 
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_PluginTabsTab = _resolveComponent("PluginTabsTab")
@@ -307,7 +307,7 @@ exports[`with highlight lines 1`] = `
 "import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/with-highlight-lines.md");
 export const __pageData = JSON.parse("{\\"title\\":\\"\\",\\"description\\":\\"\\",\\"frontmatter\\":{},\\"headers\\":[],\\"relativePath\\":\\"with-highlight-lines.md\\",\\"filePath\\":\\"with-highlight-lines.md\\"}")
 const _sfc_main = {name:"with-highlight-lines.md"}
-import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from "/@fs/root/node_modules/.pnpm/vue@3.5.13_typescript@5.7.3/node_modules/vue/dist/vue.runtime.esm-bundler.js"
+import { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from "/@fs/root/node_modules/.pnpm/vue@3.5.13_typescript@5.8.3/node_modules/vue/dist/vue.runtime.esm-bundler.js"
 
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_PluginTabsTab = _resolveComponent("PluginTabsTab")
