@@ -1,5 +1,11 @@
 # vitepress-plugin-tabs
 
+## 0.7.1
+
+### Patch Changes
+
+- [#62](https://github.com/sapphi-red/vitepress-plugins/pull/62) [`302082b`](https://github.com/sapphi-red/vitepress-plugins/commit/302082b15113ec7ac2f470e0ac8566cc9ef4d6a0) Thanks [@sapphi-red](https://github.com/sapphi-red)! - publish the package with provenance
+
 ## 0.7.0
 
 ### Minor Changes
