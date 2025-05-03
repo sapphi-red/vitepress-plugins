@@ -37,8 +37,8 @@
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
     "markdown-it": "^14.1.0",
-    "tsup": "^8.3.6",
-    "vite": "^5.4.14",
+    "tsup": "^8.4.0",
+    "vite": "^5.4.19",
     "vitepress": "^1.6.3",
     "vitepress-plugin-tabs": "workspace:*",
     "vue": "^3.5.13"

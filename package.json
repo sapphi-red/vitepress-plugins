@@ -12,20 +12,20 @@
   },
   "packageManager": "pnpm@10.10.0",
   "devDependencies": {
-    "@changesets/changelog-github": "^0.5.0",
-    "@changesets/cli": "^2.27.12",
-    "@eslint/js": "^9.19.0",
-    "@types/node": "^18.19.74",
-    "eslint": "^9.19.0",
-    "eslint-config-prettier": "^10.0.1",
-    "eslint-plugin-vue": "^9.32.0",
-    "prettier": "^3.4.2",
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.29.2",
+    "@eslint/js": "^9.26.0",
+    "@types/node": "^22.15.3",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-vue": "^10.1.0",
+    "prettier": "^3.5.3",
     "ts-dedent": "^2.2.0",
-    "tsx": "^4.19.2",
-    "typescript": "^5.7.3",
-    "typescript-eslint": "^8.22.0",
-    "vitest": "^3.0.4",
-    "vue-tsc": "^2.2.0"
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.1",
+    "vitest": "^3.1.2",
+    "vue-tsc": "^2.2.10"
   },
   "pnpm": {
     "peerDependencyRules": {
