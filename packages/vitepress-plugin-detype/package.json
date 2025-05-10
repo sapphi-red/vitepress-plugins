@@ -12,8 +12,8 @@
     "dist"
   ],
   "scripts": {
-    "dev": "tsup --watch",
-    "build": "tsup"
+    "dev": "tsdown --watch",
+    "build": "tsdown"
   },
   "repository": {
     "type": "git",
@@ -37,7 +37,7 @@
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
     "markdown-it": "^14.1.0",
-    "tsup": "^8.4.0",
+    "tsdown": "^0.11.2",
     "vite": "^5.4.19",
     "vitepress": "^1.6.3",
     "vitepress-plugin-tabs": "workspace:*",
