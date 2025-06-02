@@ -5,9 +5,26 @@ on:
     branches:
       - 'main'
   pull_request:
+  pull_request_review:
+    types: [submitted]
 
 jobs:
+  can-deploy:
+    runs-on: ubuntu-latest
+    outputs:
+      can-deploy: ${{ steps.check.outputs.CAN_DEPLOY }} == 'true'
+    steps:
+      - name: Check if secret can be accessed
+        id: check
+        run: echo "CAN_DEPLOY=$CF_TOKEN_EXISTS" >> "$GITHUB_OUTPUT"
+        env:
+          CF_TOKEN_EXISTS: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+
   deploy:
+    needs: can-deploy
+    if: >
+      needs.can-deploy.outputs.can-deploy &&
+      (github.event_name != 'pull_request_review' || github.event.review.state == 'approved')
     runs-on: ubuntu-latest
     permissions:
       contents: read
