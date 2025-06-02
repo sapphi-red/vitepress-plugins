@@ -2,19 +2,24 @@ import { createServer } from 'vitepress'
 import { expect, test } from 'vitest'
 import url from 'node:url'
 import path from 'node:path'
-import { normalizePath } from 'vite'
+import { renderToString } from '@vue/test-utils'
+import prettier from 'prettier'
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url))
-const rootDir = normalizePath(path.resolve(__dirname, '../../../../../'))
 
 const createTransform = async () => {
   const server = await createServer(path.resolve(__dirname, './fixtures'))
   await server.pluginContainer.buildStart({})
   return async (id: string) => {
-    const result = await server.transformRequest(id)
-    return result?.code
-      .replaceAll(`/${rootDir}`, '/root')
-      .replaceAll(rootDir, '/root')
+    const module = await server.ssrLoadModule(id)
+    const rendered = await renderToString(module.default, {
+      global: {
+        stubs: ['PluginTabs', 'PluginTabsTab'],
+        renderStubDefaultSlot: true
+      }
+    })
+    const formatted = await prettier.format(rendered, { parser: 'html' })
+    return formatted
   }
 }
 
