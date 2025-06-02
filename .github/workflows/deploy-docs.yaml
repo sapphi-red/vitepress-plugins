@@ -12,7 +12,7 @@ jobs:
   can-deploy:
     runs-on: ubuntu-latest
     outputs:
-      can-deploy: ${{ steps.check.outputs.CAN_DEPLOY }} == 'true'
+      can-deploy: ${{ steps.check.outputs.CAN_DEPLOY }}
     steps:
       - name: Check if secret can be accessed
         id: check
@@ -23,7 +23,7 @@ jobs:
   deploy:
     needs: can-deploy
     if: >
-      needs.can-deploy.outputs.can-deploy &&
+      needs.can-deploy.outputs.can-deploy == 'true' &&
       (github.event_name != 'pull_request_review' || github.event.review.state == 'approved')
     runs-on: ubuntu-latest
     permissions:
