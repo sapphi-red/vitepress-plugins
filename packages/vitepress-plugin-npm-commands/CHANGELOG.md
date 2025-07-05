@@ -67,7 +67,6 @@
 - [#20](https://github.com/sapphi-red/vitepress-plugins/pull/20) [`7f4c8fe`](https://github.com/sapphi-red/vitepress-plugins/commit/7f4c8fe683650f6e8b82addc92c187fe07801fd4) Thanks [@sapphi-red](https://github.com/sapphi-red)! - update required vitepress version from 1.0.0-alpha.29 to 1.0.0-alpha.46. update required vue version from 3.2.45 to 3.2.47.
 
 - [#24](https://github.com/sapphi-red/vitepress-plugins/pull/24) [`2951127`](https://github.com/sapphi-red/vitepress-plugins/commit/2951127dd0d4ade93d3d684bc26838f58b9068b8) Thanks [@DreierF](https://github.com/DreierF)! - - Changed syntax for creating tabs
-
   - Check out the document for the new syntax
   - Tab titles can now contain special characters (e.g. spaces)
   - Custom blocks can now appear nested inside a tab
