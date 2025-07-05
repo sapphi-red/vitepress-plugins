@@ -12,7 +12,7 @@
     "vitepress-plugin-detype": "workspace:*",
     "vitepress-plugin-npm-commands": "workspace:*",
     "vitepress-plugin-tabs": "workspace:*",
-    "vue": "^3.5.13",
-    "wrangler": "^4.14.1"
+    "vue": "^3.5.17",
+    "wrangler": "^4.23.0"
   }
 }
