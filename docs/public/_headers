@@ -3,3 +3,6 @@
 
 https://*.workers.dev/*
   X-Robots-Tag: noindex
+
+https://:worker.:subdomain.workers.dev/*
+  X-Robots-Tag: noindex
