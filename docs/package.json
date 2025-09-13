@@ -8,11 +8,11 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
-    "vitepress": "^1.6.3",
+    "vitepress": "^1.6.4",
     "vitepress-plugin-detype": "workspace:*",
     "vitepress-plugin-npm-commands": "workspace:*",
     "vitepress-plugin-tabs": "workspace:*",
-    "vue": "^3.5.17",
-    "wrangler": "^4.23.0"
+    "vue": "^3.5.21",
+    "wrangler": "^4.36.0"
   }
 }

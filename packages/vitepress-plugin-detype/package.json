@@ -39,14 +39,14 @@
     "@vue/test-utils": "^2.4.6",
     "markdown-it": "^14.1.0",
     "prettier": "^3.6.2",
-    "tsdown": "^0.12.9",
-    "vite": "^5.4.19",
-    "vitepress": "^1.6.3",
+    "tsdown": "^0.15.1",
+    "vite": "^5.4.20",
+    "vitepress": "^1.6.4",
     "vitepress-plugin-tabs": "workspace:*",
-    "vue": "^3.5.17"
+    "vue": "^3.5.21"
   },
   "dependencies": {
-    "detype": "^1.1.2",
+    "detype": "^1.1.3",
     "klona": "^2.0.6"
   }
 }
