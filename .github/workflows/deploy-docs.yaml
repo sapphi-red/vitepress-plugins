@@ -32,7 +32,7 @@ jobs:
     steps:
       - name: Create deployment
         id: create-deployment
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           result-encoding: string
@@ -89,7 +89,7 @@ jobs:
 
       - name: Update deployment status
         if: always()
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         env:
           IS_SUCCESS: ${{ job.status == 'success' }}
           ENVIRONMENT_URL: ${{ steps.deploy-prod.outputs.deployment-url || steps.deploy-preview.outputs.deployment-url }}
