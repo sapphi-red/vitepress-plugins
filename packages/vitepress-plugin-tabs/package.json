@@ -3,16 +3,14 @@
   "version": "0.7.1",
   "description": "A plugin that adds syntax for showing content in tabs.",
   "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/node/index.js",
+  "types": "./dist/node/index.d.ts",
   "exports": {
-    ".": "./dist/index.js",
-    "./client": "./src/client/index.ts"
+    ".": "./dist/node/index.js",
+    "./client": "./dist/client/index.js"
   },
   "files": [
-    "dist",
-    "client.ts",
-    "src/client"
+    "dist"
   ],
   "scripts": {
     "dev": "tsdown --watch",
@@ -42,6 +40,8 @@
     "markdown-it": "^14.1.0",
     "markdown-it-container": "^4.0.0",
     "tsdown": "^0.15.1",
-    "vue": "^3.5.21"
+    "unplugin-vue": "^7.0.1",
+    "vue": "^3.5.21",
+    "vue-tsc": "^3.0.7"
   }
 }
