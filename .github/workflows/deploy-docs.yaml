@@ -60,7 +60,7 @@ jobs:
             });
             return deployment.id;
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4
       - uses: actions/setup-node@v5
         with:
