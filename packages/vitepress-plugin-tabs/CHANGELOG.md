@@ -1,5 +1,11 @@
 # vitepress-plugin-tabs
 
+## 0.7.2
+
+### Patch Changes
+
+- [#85](https://github.com/sapphi-red/vitepress-plugins/pull/85) [`ef1b661`](https://github.com/sapphi-red/vitepress-plugins/commit/ef1b66196dc72b74a81fdc85ca563ca488c945ee) Thanks [@sapphi-red](https://github.com/sapphi-red)! - Precompiled client codes so that less work is needed when running the dev server or build. It also help avoiding typescript errors.
+
 ## 0.7.1
 
 ### Patch Changes
