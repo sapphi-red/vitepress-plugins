@@ -7,28 +7,30 @@ import vue from 'eslint-plugin-vue'
 export default tseslint.config(
   {
     languageOptions: {
-      sourceType: 'module'
+      sourceType: 'module',
     },
     linterOptions: {
-      reportUnusedDisableDirectives: 'error'
-    }
+      reportUnusedDisableDirectives: 'error',
+    },
   },
   eslint.configs.recommended,
-  ...[...tseslint.configs.recommended, ...tseslint.configs.stylistic].map(c => {
-    if (c.name === 'typescript-eslint/eslint-recommended') {
-      // apply to `<script lang='ts'>` in `.vue` files
-      c.files = ['**/*.{c|m|}ts', '**/*.vue']
-    }
-    return c
-  }),
+  ...[...tseslint.configs.recommended, ...tseslint.configs.stylistic].map(
+    (c) => {
+      if (c.name === 'typescript-eslint/eslint-recommended') {
+        // apply to `<script lang='ts'>` in `.vue` files
+        c.files = ['**/*.{c|m|}ts', '**/*.vue']
+      }
+      return c
+    },
+  ),
   ...vue.configs['flat/recommended'],
   {
     files: ['**/*.vue'],
     languageOptions: {
       parserOptions: {
-        parser: '@typescript-eslint/parser'
-      }
-    }
+        parser: '@typescript-eslint/parser',
+      },
+    },
   },
   {
     files: ['**/*.{c|m|}{jt}s', '**/*.vue'],
@@ -37,11 +39,11 @@ export default tseslint.config(
       '@typescript-eslint/no-unused-vars': 'off',
       '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
-      '@typescript-eslint/array-type': ['error', { default: 'array-simple' }]
-    }
+      '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
+    },
   },
   eslintConfigPrettier,
   {
-    ignores: ['**/dist/**', '**/.vitepress/cache/**']
-  }
+    ignores: ['**/dist/**', '**/.vitepress/cache/**'],
+  },
 )

@@ -35,7 +35,7 @@ export const provideTabsSharedState = (app: App) => {
         setLocalStorageValue(newStateContent)
       }
     },
-    { deep: true }
+    { deep: true },
   )
 
   app.provide(injectionKey, state)
@@ -43,12 +43,12 @@ export const provideTabsSharedState = (app: App) => {
 
 export const useTabsSelectedState = <T extends string>(
   acceptValues: Ref<T[]>,
-  sharedStateKey: Ref<string | undefined>
+  sharedStateKey: Ref<string | undefined>,
 ) => {
   const sharedState = inject(injectionKey)
   if (!sharedState) {
     throw new Error(
-      '[vitepress-plugin-tabs] TabsSharedState should be injected'
+      '[vitepress-plugin-tabs] TabsSharedState should be injected',
     )
   }
 
@@ -86,7 +86,7 @@ export const useTabsSelectedState = <T extends string>(
       } else {
         nonSharedState.value = v
       }
-    }
+    },
   })
   const select = (newValue: T) => {
     selected.value = newValue

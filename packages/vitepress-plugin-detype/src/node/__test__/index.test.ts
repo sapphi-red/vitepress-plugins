@@ -15,8 +15,8 @@ const createTransform = async () => {
     const rendered = await renderToString(module.default, {
       global: {
         stubs: ['PluginTabs', 'PluginTabsTab'],
-        renderStubDefaultSlot: true
-      }
+        renderStubDefaultSlot: true,
+      },
     })
     const formatted = await prettier.format(rendered, { parser: 'html' })
     return formatted

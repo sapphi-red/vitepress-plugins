@@ -9,12 +9,12 @@ export const createDetypePlugin = () => {
 
   const detypeMarkdownPlugin = (
     md: MarkdownIt,
-    prettierOptions: PrettierOptions
+    prettierOptions: PrettierOptions,
   ) => rawDetypeMarkdownPlugin(md, prettierOptions, contentMap)
   const detypeVitePlugin = () => rawDetypeVitePlugin(contentMap)
 
   return {
     detypeMarkdownPlugin,
-    detypeVitePlugin
+    detypeVitePlugin,
   }
 }

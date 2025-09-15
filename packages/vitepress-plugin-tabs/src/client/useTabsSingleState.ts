@@ -16,7 +16,7 @@ export const useTabsSingleState = () => {
   const singleState = inject(injectionKey)
   if (!singleState) {
     throw new Error(
-      '[vitepress-plugin-tabs] TabsSingleState should be injected'
+      '[vitepress-plugin-tabs] TabsSingleState should be injected',
     )
   }
   return singleState

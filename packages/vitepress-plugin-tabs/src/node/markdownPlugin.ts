@@ -11,7 +11,7 @@ type Params = {
 const parseTabsParams = (input: string): Params => {
   const match = input.match(/key:(\S+)/)
   return {
-    shareStateKey: match?.[1]
+    shareStateKey: match?.[1],
   }
 }
 
@@ -28,7 +28,7 @@ export const tabsPlugin = (md: MarkdownIt) => {
       } else {
         return `</PluginTabs>\n`
       }
-    }
+    },
   })
 
   md.block.ruler.after('container_tabs', 'tab', ruleBlockTab)

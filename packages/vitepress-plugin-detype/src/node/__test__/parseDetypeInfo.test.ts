@@ -10,12 +10,12 @@ const cases: Array<{
   { input: 'vue,=detype=', output: { type: 'vue', tsAttrs: '', jsAttrs: '' } },
   {
     input: 'ts{1-2,3},=detype=',
-    output: { type: 'ts', tsAttrs: '{1-2,3}', jsAttrs: '' }
+    output: { type: 'ts', tsAttrs: '{1-2,3}', jsAttrs: '' },
   },
   {
     input: 'ts,=detype{1-2,3}=',
-    output: { type: 'ts', tsAttrs: '', jsAttrs: '{1-2,3}' }
-  }
+    output: { type: 'ts', tsAttrs: '', jsAttrs: '{1-2,3}' },
+  },
 ]
 
 for (const testcase of cases) {

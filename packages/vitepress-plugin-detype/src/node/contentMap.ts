@@ -9,7 +9,7 @@ export type ContentMap = {
   add(
     frontmatter: string,
     inputValue: string,
-    outputContent: Promise<ResultOrError>
+    outputContent: Promise<ResultOrError>,
   ): string
   get(key: string): Promise<ResultOrError | undefined>
 }
@@ -28,7 +28,7 @@ export const createContentMap = (): ContentMap => {
     async get(key) {
       const val = map.get(key)
       return val
-    }
+    },
   }
 }
 

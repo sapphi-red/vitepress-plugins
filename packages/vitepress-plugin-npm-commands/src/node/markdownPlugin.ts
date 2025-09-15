@@ -7,12 +7,12 @@ import { klona } from 'klona'
 const tabsShareStateKey = '~npm-commands'
 const npmCommandsCommandRE = new RegExp(
   `(?://\\s*\\[!=npm\\s+(${packageManagers.join('|')}|auto)\\])+$`,
-  'm'
+  'm',
 )
 
 export const npmCommandsPlugin = (md: MarkdownIt) => {
   const shareStateKeyProp = `sharedStateKey="${md.utils.escapeHtml(
-    tabsShareStateKey
+    tabsShareStateKey,
   )}"`
 
   const originalFence = md.renderer.rules.fence!
@@ -41,7 +41,7 @@ export const npmCommandsPlugin = (md: MarkdownIt) => {
         `${token.markup}${token.info}${attrStr}\n` + code + token.markup
       return `<PluginTabsTab label="${pkgManger}">${md.render(
         codeWithFence,
-        klona(env)
+        klona(env),
       )}</PluginTabsTab>`
     })
 
@@ -57,7 +57,7 @@ const parseNpmCommandsCommandFromLine = (line: string) => {
 
 const generateEachPackageManagerCode = (input: string) => {
   const codes = Object.fromEntries(
-    packageManagers.map(m => [m, [] as string[]])
+    packageManagers.map((m) => [m, [] as string[]]),
   ) as Record<PackageManager, string[]>
   for (const line of input.split('\n')) {
     const pkgManager = parseNpmCommandsCommandFromLine(line)
@@ -69,7 +69,7 @@ const generateEachPackageManagerCode = (input: string) => {
       for (const key of packageManagers) {
         const convertedCommand = convert(
           line.replace(npmCommandsCommandRE, '').trimEnd(),
-          key
+          key,
         )
         codes[key].push(convertedCommand)
       }
@@ -78,6 +78,6 @@ const generateEachPackageManagerCode = (input: string) => {
     }
   }
   return Object.entries(codes).map(
-    ([key, val]) => [key as PackageManager, val.join('\n')] as const
+    ([key, val]) => [key as PackageManager, val.join('\n')] as const,
   )
 }

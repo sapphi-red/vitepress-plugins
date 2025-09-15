@@ -5,7 +5,7 @@ import dedent from 'ts-dedent'
 import container from 'markdown-it-container'
 
 const setup = ({
-  withTipContainer = false
+  withTipContainer = false,
 }: { withTipContainer?: boolean } = {}) => {
   const md = MarkdownIt()
   md.use(tabsPlugin)
@@ -41,10 +41,10 @@ describe('render correctly', () => {
       a
       == Tab "B"
       b
-    `
+    `,
   ]
 
-  test.each(inputs)('input', input => {
+  test.each(inputs)('input', (input) => {
     const result = md.render(input)
     expect(result).toMatchSnapshot()
   })
@@ -104,10 +104,10 @@ describe('render tab with nested block correctly', () => {
       === Tab "B"
       b
       ::::
-    `
+    `,
   ]
 
-  test.each(inputs)('input', input => {
+  test.each(inputs)('input', (input) => {
     const result = md.render(input)
     expect(result).toMatchSnapshot()
   })

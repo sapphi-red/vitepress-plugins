@@ -31,11 +31,11 @@ export default defineConfig({
     config(md) {
       md.use(tabsMarkdownPlugin)
       md.use(detypeMarkdownPlugin)
-    }
+    },
   },
   vite: {
-    plugins: [detypeVitePlugin()]
-  }
+    plugins: [detypeVitePlugin()],
+  },
 })
 ```
 
@@ -49,7 +49,7 @@ export default {
   extends: DefaultTheme,
   enhanceApp({ app }) {
     enhanceAppWithTabs(app)
-  }
+  },
 } satisfies Theme
 ```
 

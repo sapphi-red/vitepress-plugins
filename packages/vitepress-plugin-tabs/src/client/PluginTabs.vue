@@ -14,7 +14,7 @@ const tabLabels = useTabLabels()
 
 const { selected, select } = useTabsSelectedState(
   tabLabels,
-  toRef(props, 'sharedStateKey')
+  toRef(props, 'sharedStateKey'),
 )
 
 const tablist = ref<HTMLDivElement>()

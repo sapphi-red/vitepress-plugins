@@ -23,8 +23,8 @@ export default defineConfig({
   markdown: {
     config(md) {
       md.use(tabsMarkdownPlugin)
-    }
-  }
+    },
+  },
 })
 ```
 
@@ -38,7 +38,7 @@ export default {
   extends: DefaultTheme,
   enhanceApp({ app }) {
     enhanceAppWithTabs(app)
-  }
+  },
 } satisfies Theme
 ```
 

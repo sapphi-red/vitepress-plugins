@@ -27,8 +27,8 @@ export default defineConfig({
     config(md) {
       md.use(tabsMarkdownPlugin)
       md.use(npmCommandsMarkdownPlugin)
-    }
-  }
+    },
+  },
 })
 ```
 
@@ -42,7 +42,7 @@ export default {
   extends: DefaultTheme,
   enhanceApp({ app }) {
     enhanceAppWithTabs(app)
-  }
+  },
 } satisfies Theme
 ```
 

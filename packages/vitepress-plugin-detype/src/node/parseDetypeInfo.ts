@@ -6,8 +6,8 @@ function assertType(type: string): asserts type is SupportedType {
   if (!(supportedTypes as readonly string[]).includes(type)) {
     throw new Error(
       `detype does not support type ${JSON.stringify(
-        type
-      )} (supported: ${supportedTypes.join(', ')})`
+        type,
+      )} (supported: ${supportedTypes.join(', ')})`,
     )
   }
 }
@@ -24,6 +24,6 @@ export const parseDetypeInfo = (info: string) => {
   return {
     type,
     tsAttrs,
-    jsAttrs
+    jsAttrs,
   }
 }

@@ -8,5 +8,5 @@ export default {
   enhanceApp({ app }) {
     enhanceAppWithTabs(app)
     app.component('VersionBadge', VersionBadge)
-  }
+  },
 } satisfies Theme
