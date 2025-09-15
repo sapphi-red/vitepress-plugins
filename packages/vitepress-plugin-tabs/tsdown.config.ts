@@ -20,7 +20,7 @@ export default defineConfig([
         outDir: `dist/client/${name}`,
         outputOptions: {
           banner: name === 'browser' ? 'import "./index.css"' : undefined
-        },
+        }
       }) satisfies UserConfig
   )
 ])
