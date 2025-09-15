@@ -1,5 +1,11 @@
 # vitepress-plugin-tabs
 
+## 0.7.3
+
+### Patch Changes
+
+- [#88](https://github.com/sapphi-red/vitepress-plugins/pull/88) [`f430e81`](https://github.com/sapphi-red/vitepress-plugins/commit/f430e812704966d627adce15bb340a2c8a2907a6) Thanks [@sapphi-red](https://github.com/sapphi-red)! - Publish SSR build for client code so that it works without adding this plugin to ssr.noExternal.
+
 ## 0.7.2
 
 ### Patch Changes
