@@ -34,6 +34,13 @@ export default defineConfig({
     }
   },
   vite: {
-    plugins: [detypeVitePlugin()]
+    plugins: [detypeVitePlugin()],
+    ssr: {
+      external: [
+        'vitepress-plugin-detype',
+        'vitepress-plugin-tabs',
+        'vitepress-plugin-npm-commands'
+      ]
+    }
   }
 })

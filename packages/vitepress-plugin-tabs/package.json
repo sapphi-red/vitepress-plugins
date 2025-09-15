@@ -7,7 +7,10 @@
   "types": "./dist/node/index.d.ts",
   "exports": {
     ".": "./dist/node/index.js",
-    "./client": "./dist/client/index.js"
+    "./client": {
+      "browser": "./dist/client/browser/index.js",
+      "default": "./dist/client/ssr/index.js"
+    }
   },
   "files": [
     "dist"
