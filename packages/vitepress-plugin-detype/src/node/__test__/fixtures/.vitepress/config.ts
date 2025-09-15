@@ -9,9 +9,9 @@ export default defineConfig({
     config(md) {
       md.use(tabsMarkdownPlugin)
       md.use(detypeMarkdownPlugin)
-    }
+    },
   },
   vite: {
-    plugins: [detypeVitePlugin()]
-  }
+    plugins: [detypeVitePlugin()],
+  },
 })

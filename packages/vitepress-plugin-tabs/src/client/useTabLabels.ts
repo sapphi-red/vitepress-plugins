@@ -11,13 +11,13 @@ export function useTabLabels(): Ref<string[]> {
 
     return defaultSlot
       .filter(
-        vnode =>
+        (vnode) =>
           typeof vnode.type === 'object' &&
           '__name' in vnode.type &&
           vnode.type.__name === 'PluginTabsTab' &&
-          vnode.props
+          vnode.props,
       )
-      .map(vnode => vnode.props?.label)
+      .map((vnode) => vnode.props?.label)
   })
   return tabLabels
 }

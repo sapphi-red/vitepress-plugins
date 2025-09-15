@@ -12,26 +12,26 @@ export default defineConfig({
     algolia: {
       appId: 'KQMH99B171',
       apiKey: '520ec1c8df02a3b0d2aaca23cd55cac6',
-      indexName: 'vitepress-plugins-sapphi'
+      indexName: 'vitepress-plugins-sapphi',
     },
     editLink: {
       pattern:
         'https://github.com/sapphi-red/vitepress-plugins/edit/main/docs/:path',
-      text: 'Suggest changes to this page'
+      text: 'Suggest changes to this page',
     },
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/sapphi-red/vitepress-plugins'
-      }
-    ]
+        link: 'https://github.com/sapphi-red/vitepress-plugins',
+      },
+    ],
   },
   markdown: {
     config(md) {
       md.use(tabsMarkdownPlugin)
       md.use(detypeMarkdownPlugin)
       md.use(npmCommandsMarkdownPlugin)
-    }
+    },
   },
   vite: {
     plugins: [detypeVitePlugin()],
@@ -39,8 +39,8 @@ export default defineConfig({
       external: [
         'vitepress-plugin-detype',
         'vitepress-plugin-tabs',
-        'vitepress-plugin-npm-commands'
-      ]
-    }
-  }
+        'vitepress-plugin-npm-commands',
+      ],
+    },
+  },
 })

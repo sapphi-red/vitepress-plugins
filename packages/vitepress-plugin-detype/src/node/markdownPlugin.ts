@@ -7,7 +7,7 @@ import { parseDetypeInfo } from './parseDetypeInfo'
 import { klona } from 'klona'
 
 const { transform, removeMagicComments } = module.createRequire(
-  import.meta.url
+  import.meta.url,
 )('detype') as typeof import('detype')
 
 const tabsShareStateKey = '~detype'
@@ -32,10 +32,10 @@ const exhaustiveCheck = (_p: never) => {}
 export const detypePlugin = (
   md: MarkdownIt,
   prettierOptions: PrettierOptions,
-  contentMap: ContentMap
+  contentMap: ContentMap,
 ) => {
   const shareStateKeyProp = `sharedStateKey="${md.utils.escapeHtml(
-    tabsShareStateKey
+    tabsShareStateKey,
   )}"`
 
   const originalFence = md.renderer.rules.fence!
@@ -50,7 +50,7 @@ export const detypePlugin = (
 
     const { type, tsAttrs, jsAttrs } = parsed
 
-    const slots = langs.map(lang => {
+    const slots = langs.map((lang) => {
       const attrs = lang === 'ts' ? tsAttrs : jsAttrs
       const output = (async () => {
         try {
@@ -59,11 +59,11 @@ export const detypePlugin = (
               ? await removeMagicComments(
                   token.content,
                   `foo.${type}`,
-                  prettierOptions
+                  prettierOptions,
                 )
               : await transform(token.content, `foo.${type}`, {
                   prettierOptions,
-                  removeTsComments: true
+                  removeTsComments: true,
                 })
           const langForRender = getLangForRender(type, lang)
           const codeWithFence =
@@ -76,7 +76,7 @@ export const detypePlugin = (
       const key = contentMap.add(
         `${type}_${token.markup}_${lang}_${attrs}`,
         token.content,
-        output
+        output,
       )
       return `<PluginTabsTab label="${lang}">${key}</PluginTabsTab>`
     })

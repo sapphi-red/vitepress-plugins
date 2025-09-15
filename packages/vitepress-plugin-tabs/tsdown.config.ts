@@ -7,10 +7,10 @@ export default defineConfig([
     format: 'esm',
     dts: true,
     target: 'node18',
-    outDir: 'dist/node'
+    outDir: 'dist/node',
   },
   ...(['browser', 'ssr'] as const).map(
-    name =>
+    (name) =>
       ({
         entry: ['src/client/index.ts'],
         platform: name === 'browser' ? 'browser' : 'node',
@@ -19,8 +19,8 @@ export default defineConfig([
         plugins: [vue({ isProduction: true, ssr: name === 'ssr' })],
         outDir: `dist/client/${name}`,
         outputOptions: {
-          banner: name === 'browser' ? 'import "./index.css"' : undefined
-        }
-      }) satisfies UserConfig
-  )
+          banner: name === 'browser' ? 'import "./index.css"' : undefined,
+        },
+      }) satisfies UserConfig,
+  ),
 ])
