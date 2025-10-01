@@ -39,11 +39,11 @@
     "@vue/test-utils": "^2.4.6",
     "markdown-it": "^14.1.0",
     "prettier": "^3.6.2",
-    "tsdown": "^0.15.1",
+    "tsdown": "^0.15.6",
     "vite": "^5.4.20",
     "vitepress": "^1.6.4",
     "vitepress-plugin-tabs": "workspace:*",
-    "vue": "^3.5.21"
+    "vue": "^3.5.22"
   },
   "dependencies": {
     "detype": "^1.1.3",
