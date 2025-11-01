@@ -38,7 +38,7 @@
     "@types/markdown-it-attrs": "^4.1.3",
     "markdown-it": "^14.1.0",
     "markdown-it-attrs": "^4.3.1",
-    "tsdown": "^0.15.6"
+    "tsdown": "^0.15.12"
   },
   "dependencies": {
     "klona": "^2.0.6",
