@@ -8,6 +8,7 @@ export default defineConfig([
     dts: true,
     target: 'node18',
     outDir: 'dist/node',
+    fixedExtension: false,
   },
   ...(['browser', 'ssr'] as const).map(
     (name) =>
@@ -18,6 +19,7 @@ export default defineConfig([
         dts: { vue: true },
         plugins: [vue({ isProduction: true, ssr: name === 'ssr' })],
         outDir: `dist/client/${name}`,
+        fixedExtension: false,
         outputOptions: {
           banner: name === 'browser' ? 'import "./index.css"' : undefined,
         },
