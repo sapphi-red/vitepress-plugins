@@ -105,6 +105,20 @@ describe('render tab with nested block correctly', () => {
       b
       ::::
     `,
+    dedent`
+      :::: tabs
+      === Tab "A"
+      a
+      ::: tabs
+      == Inner Tab "A"
+      a
+      == Inner Tab "B"
+      a
+      :::
+      === Tab "B"
+      b
+      ::::
+    `,
   ]
 
   test.each(inputs)('input', (input) => {
