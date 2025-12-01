@@ -98,3 +98,23 @@ exports[`render tab with nested block correctly > input 3`] = `
 </PluginTabs>
 "
 `;
+
+exports[`render tab with nested block correctly > input 4`] = `
+"<PluginTabs >
+<PluginTabsTab label="Tab &quot;A&quot;">
+<p>a</p>
+<PluginTabs >
+<PluginTabsTab label="Inner Tab &quot;A&quot;">
+<p>a</p>
+</PluginTabsTab>
+<PluginTabsTab label="Inner Tab &quot;B&quot;">
+<p>a</p>
+</PluginTabsTab>
+</PluginTabs>
+</PluginTabsTab>
+<PluginTabsTab label="Tab &quot;B&quot;">
+<p>b</p>
+</PluginTabsTab>
+</PluginTabs>
+"
+`;

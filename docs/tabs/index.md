@@ -107,3 +107,39 @@ a content 2
 == tab b
 b content 2
 :::
+
+### Nested tabs
+
+For nested tabs, add more `:` and `=` to the outer tabs.
+
+```md
+::::tabs
+=== outer tab a
+outer tab a content
+
+:::tabs
+== inner tab a
+inner tab a content
+== inner tab b
+inner tab b content
+:::
+
+=== outer tab b
+outer tab b content
+::::
+```
+
+::::tabs
+=== outer tab a
+outer tab a content
+
+:::tabs
+== inner tab a
+inner tab a content
+== inner tab b
+inner tab b content
+:::
+
+=== outer tab b
+outer tab b content
+::::
