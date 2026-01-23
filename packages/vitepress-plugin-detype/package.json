@@ -29,6 +29,10 @@
     "url": "https://github.com/sapphi-red/vitepress-plugins/issues"
   },
   "homepage": "https://vitepress-plugins.sapphi.red/detype/",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/sapphi-red"
+  },
   "peerDependencies": {
     "vitepress": "^1.0.0",
     "vitepress-plugin-tabs": "workspace:^0.7.3",

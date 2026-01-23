@@ -33,6 +33,10 @@
     "url": "https://github.com/sapphi-red/vitepress-plugins/issues"
   },
   "homepage": "https://vitepress-plugins.sapphi.red/tabs/",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/sapphi-red"
+  },
   "peerDependencies": {
     "vitepress": "^1.0.0",
     "vue": "^3.5.0"
