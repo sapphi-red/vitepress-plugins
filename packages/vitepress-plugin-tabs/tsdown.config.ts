@@ -9,7 +9,7 @@ export default defineConfig([
     target: 'node18',
     outDir: 'dist/node',
     fixedExtension: false,
-    inlineOnly: ['markdown-it-container']
+    inlineOnly: ['markdown-it-container'],
   },
   ...(['browser', 'ssr'] as const).map(
     (name) =>
