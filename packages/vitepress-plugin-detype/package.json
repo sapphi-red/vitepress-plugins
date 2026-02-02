@@ -42,12 +42,11 @@
     "@types/markdown-it": "^14.1.2",
     "@vue/test-utils": "^2.4.6",
     "markdown-it": "^14.1.0",
-    "prettier": "^3.7.3",
-    "tsdown": "^0.16.8",
-    "vite": "^5.4.21",
+    "prettier": "^3.8.1",
+    "tsdown": "^0.20.1",
     "vitepress": "^1.6.4",
     "vitepress-plugin-tabs": "workspace:*",
-    "vue": "^3.5.25"
+    "vue": "^3.5.27"
   },
   "dependencies": {
     "detype": "^1.1.3",

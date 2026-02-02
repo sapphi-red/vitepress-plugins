@@ -10,22 +10,22 @@
     "release:version": "changeset version && pnpm install --no-frozen-lockfile",
     "release:publish": "changeset publish"
   },
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.28.2",
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.2",
     "@changesets/cli": "^2.29.8",
-    "@eslint/js": "^9.39.1",
-    "@types/node": "^22.19.1",
-    "eslint": "^9.39.1",
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^22.19.7",
+    "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-vue": "^10.6.2",
-    "prettier": "^3.7.3",
+    "eslint-plugin-vue": "^10.7.0",
+    "prettier": "^3.8.1",
     "ts-dedent": "^2.2.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.48.0",
-    "vitest": "^4.0.14",
-    "vue-tsc": "^3.1.5"
+    "typescript-eslint": "^8.54.0",
+    "vitest": "^4.0.18",
+    "vue-tsc": "^3.2.4"
   },
   "pnpm": {
     "peerDependencyRules": {
