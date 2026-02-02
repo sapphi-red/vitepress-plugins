@@ -1,4 +1,4 @@
-import type { Plugin } from 'vite'
+import type { Plugin } from 'vitepress'
 import type { ContentMap } from './contentMap'
 import { contentMapKeyRE } from './contentMap'
 

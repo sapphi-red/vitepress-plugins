@@ -44,7 +44,6 @@
     "markdown-it": "^14.1.0",
     "prettier": "^3.8.1",
     "tsdown": "^0.20.1",
-    "vite": "^5.4.21",
     "vitepress": "^1.6.4",
     "vitepress-plugin-tabs": "workspace:*",
     "vue": "^3.5.27"

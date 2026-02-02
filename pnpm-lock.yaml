@@ -96,9 +96,6 @@ importers:
       tsdown:
         specifier: ^0.20.1
         version: 0.20.1(typescript@5.9.3)(vue-tsc@3.2.4(typescript@5.9.3))
-      vite:
-        specifier: ^5.4.21
-        version: 5.4.21(@types/node@22.19.7)(lightningcss@1.31.1)
       vitepress:
         specifier: ^1.6.4
         version: 1.6.4(@algolia/client-search@5.20.0)(@types/node@22.19.7)(lightningcss@1.31.1)(postcss@8.5.6)(search-insights@2.6.0)(typescript@5.9.3)
