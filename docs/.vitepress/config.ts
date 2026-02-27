@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { createDetypePlugin } from 'vitepress-plugin-detype'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
+import { graphvizMarkdownPlugin } from 'vitepress-plugin-graphviz'
 import { npmCommandsMarkdownPlugin } from 'vitepress-plugin-npm-commands'
 
 const { detypeMarkdownPlugin, detypeVitePlugin } = createDetypePlugin()
@@ -27,10 +28,11 @@ export default defineConfig({
     ],
   },
   markdown: {
-    config(md) {
+    async config(md) {
       md.use(tabsMarkdownPlugin)
       md.use(detypeMarkdownPlugin)
       md.use(npmCommandsMarkdownPlugin)
+      await graphvizMarkdownPlugin(md)
     },
   },
   vite: {
@@ -38,6 +40,7 @@ export default defineConfig({
     ssr: {
       external: [
         'vitepress-plugin-detype',
+        'vitepress-plugin-graphviz',
         'vitepress-plugin-tabs',
         'vitepress-plugin-npm-commands',
       ],

@@ -1,0 +1,23 @@
+:root.dark .vp-graphviz.light-only {
+  display: none !important;
+}
+
+:root:not(.dark) .vp-graphviz.dark-only {
+  display: none !important;
+}
+
+.vp-graphviz svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.vp-graphviz-error {
+  color: var(--vp-c-danger-1);
+  background: var(--vp-c-danger-soft);
+  border: 1px solid var(--vp-c-danger-2);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-family: var(--vp-font-family-mono);
+  font-size: 14px;
+  white-space: pre-wrap;
+}
