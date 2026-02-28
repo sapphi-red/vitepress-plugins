@@ -30,9 +30,7 @@ export const tabsPlugin = (md: MarkdownIt) => {
         const variantProp = params.variant
           ? `variant="${md.utils.escapeHtml(params.variant)}"`
           : ''
-        const props = [shareStateKeyProp, variantProp]
-          .filter(Boolean)
-          .join(' ')
+        const props = [shareStateKeyProp, variantProp].filter(Boolean).join(' ')
         return `<PluginTabs ${props}>\n`
       } else {
         return `</PluginTabs>\n`

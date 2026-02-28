@@ -183,7 +183,8 @@ provideTabsSingleState({ uid, selected })
   color: var(--vp-code-tab-hover-text-color);
 }
 
-.plugin-tabs[data-variant='code'] .plugin-tabs--tab[aria-selected='true']::after {
+.plugin-tabs[data-variant='code']
+  .plugin-tabs--tab[aria-selected='true']::after {
   background-color: var(--vp-code-tab-active-bar-color);
 }
 </style>

@@ -115,25 +115,33 @@ Use `variant:code` to style tabs like VitePress's built-in [code groups](https:/
 ````md
 :::tabs variant:code
 == JavaScript
+
 ```js
 console.log('Hello')
 ```
+
 == TypeScript
+
 ```ts
 console.log('Hello' as string)
 ```
+
 :::
 ````
 
 :::tabs variant:code
 == JavaScript
+
 ```js
 console.log('Hello')
 ```
+
 == TypeScript
+
 ```ts
 console.log('Hello' as string)
 ```
+
 :::
 
 You can combine `variant:code` with `key:` for shared selection state:
@@ -141,22 +149,29 @@ You can combine `variant:code` with `key:` for shared selection state:
 ````md
 :::tabs key:lang variant:code
 == JavaScript
+
 ```js
 const x = 1
 ```
+
 == TypeScript
+
 ```ts
 const x: number = 1
 ```
+
 :::
 ````
 
 :::tabs key:lang variant:code
 == JavaScript
+
 ```js
 const x = 1
 ```
+
 == TypeScript
+
 ```ts
 const x: number = 1
 ```
@@ -164,13 +179,17 @@ const x: number = 1
 :::
 :::tabs key:lang variant:code
 == JavaScript
+
 ```js
 const x = 2
 ```
+
 == TypeScript
+
 ```ts
 const x: number = 2
 ```
+
 :::
 
 ### Nested tabs

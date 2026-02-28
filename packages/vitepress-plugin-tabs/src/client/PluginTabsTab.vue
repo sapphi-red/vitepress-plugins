@@ -53,14 +53,18 @@ const isPrint = useIsPrint()
   padding: 0;
 }
 
-.plugin-tabs[data-variant='code'] .plugin-tabs--content > :deep(div[class*='language-']) {
+.plugin-tabs[data-variant='code']
+  .plugin-tabs--content
+  > :deep(div[class*='language-']) {
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
   margin: 0 -24px !important;
 }
 
 @media (min-width: 640px) {
-  .plugin-tabs[data-variant='code'] .plugin-tabs--content > :deep(div[class*='language-']) {
+  .plugin-tabs[data-variant='code']
+    .plugin-tabs--content
+    > :deep(div[class*='language-']) {
     border-bottom-left-radius: 8px !important;
     border-bottom-right-radius: 8px !important;
     margin-right: 0 !important;
