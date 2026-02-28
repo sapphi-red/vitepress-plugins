@@ -45,7 +45,7 @@ export const npmCommandsPlugin = (md: MarkdownIt) => {
       )}</PluginTabsTab>`
     })
 
-    return `<PluginTabs ${shareStateKeyProp}>${slots.join('')}</PluginTabs>`
+    return `<PluginTabs ${shareStateKeyProp} variant="code">${slots.join('')}</PluginTabs>`
   }
 }
 

@@ -81,6 +81,6 @@ export const detypePlugin = (
       return `<PluginTabsTab label="${lang}">${key}</PluginTabsTab>`
     })
 
-    return `<PluginTabs ${shareStateKeyProp}>${slots.join('')}</PluginTabs>`
+    return `<PluginTabs ${shareStateKeyProp} variant="code">${slots.join('')}</PluginTabs>`
   }
 }
