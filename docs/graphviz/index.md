@@ -115,7 +115,10 @@ export default defineConfig({
               // modify rendered SVG (e.g., set max width)
               const maxWidth = attrs.maxWidth
               if (maxWidth) {
-                return svg.replace('<svg', `<svg style="max-width:${maxWidth}px"`)
+                return svg.replace(
+                  '<svg',
+                  `<svg style="max-width:${maxWidth}px"`,
+                )
               }
               return svg
             },
@@ -149,7 +152,7 @@ Example: ` ```dot+name maxWidth=500 title="my graph" responsive ` parses as `{ m
 
 ## Options
 
-| Option       | Type                        | Default                     | Description                      |
-| ------------ | --------------------------- | --------------------------- | -------------------------------- |
-| `cacheDir`   | `string`                    | `.vitepress/cache/graphviz` | Directory for cached SVG files   |
-| `processors` | `Record<string, Processor>` | `{}`                        | Custom processors keyed by name  |
+| Option       | Type                        | Default                     | Description                     |
+| ------------ | --------------------------- | --------------------------- | ------------------------------- |
+| `cacheDir`   | `string`                    | `.vitepress/cache/graphviz` | Directory for cached SVG files  |
+| `processors` | `Record<string, Processor>` | `{}`                        | Custom processors keyed by name |

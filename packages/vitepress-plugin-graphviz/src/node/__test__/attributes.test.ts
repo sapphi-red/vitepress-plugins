@@ -31,9 +31,7 @@ test('parses bare flags as "true"', () => {
 })
 
 test('parses mixed attributes', () => {
-  expect(
-    parseFenceAttrs('maxWidth=500 title="my graph" responsive'),
-  ).toEqual({
+  expect(parseFenceAttrs('maxWidth=500 title="my graph" responsive')).toEqual({
     maxWidth: '500',
     title: 'my graph',
     responsive: 'true',

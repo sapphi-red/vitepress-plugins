@@ -17,7 +17,11 @@ export type Processor = {
   /** Transform content before rendering (DOT → DOT). */
   preprocess?: (content: string, attrs: FenceAttrs) => string
   /** Transform SVG after rendering (SVG → SVG). */
-  postprocess?: (svg: string, mode: 'light' | 'dark', attrs: FenceAttrs) => string
+  postprocess?: (
+    svg: string,
+    mode: 'light' | 'dark',
+    attrs: FenceAttrs,
+  ) => string
 }
 
 export type GraphvizPluginOptions = {
