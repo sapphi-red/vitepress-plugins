@@ -118,3 +118,15 @@ exports[`render tab with nested block correctly > input 4`] = `
 </PluginTabs>
 "
 `;
+
+exports[`render with variant correctly 1`] = `
+"<PluginTabs variant="code">
+<PluginTabsTab label="Tab &quot;A&quot;">
+<p>a</p>
+</PluginTabsTab>
+<PluginTabsTab label="Tab &quot;B&quot;">
+<p>b</p>
+</PluginTabsTab>
+</PluginTabs>
+"
+`;

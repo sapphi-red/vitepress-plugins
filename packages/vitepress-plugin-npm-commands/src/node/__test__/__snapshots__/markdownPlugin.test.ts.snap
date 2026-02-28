@@ -7,7 +7,7 @@ exports[`escape hatch 1`] = `
 `;
 
 exports[`render auto correctly 1`] = `
-"<PluginTabs sharedStateKey="~npm-commands"><PluginTabsTab label="npm"><pre><code>npm i
+"<PluginTabs sharedStateKey="~npm-commands" variant="code"><PluginTabsTab label="npm"><pre><code>npm i
 </code></pre>
 </PluginTabsTab><PluginTabsTab label="yarn"><pre><code>yarn install
 </code></pre>
@@ -19,7 +19,7 @@ exports[`render auto correctly 1`] = `
 `;
 
 exports[`render manual correctly 1`] = `
-"<PluginTabs sharedStateKey="~npm-commands"><PluginTabsTab label="npm"><pre><code>npm i vite 
+"<PluginTabs sharedStateKey="~npm-commands" variant="code"><PluginTabsTab label="npm"><pre><code>npm i vite 
 </code></pre>
 </PluginTabsTab><PluginTabsTab label="yarn"><pre><code>yarn add vite 
 </code></pre>

@@ -2,7 +2,7 @@
 
 exports[`should work 1`] = `
 "<div>
-  <plugin-tabs-stub sharedStateKey="~detype"
+  <plugin-tabs-stub sharedStateKey="~detype" variant="code"
     ><plugin-tabs-tab-stub label="ts"
       ><div class="language-ts vp-adaptive-theme">
         <button title="Copy Code" class="copy"></button
@@ -33,7 +33,7 @@ exports[`should work 1`] = `
 
 exports[`vue 1`] = `
 "<div>
-  <plugin-tabs-stub sharedStateKey="~detype"
+  <plugin-tabs-stub sharedStateKey="~detype" variant="code"
     ><plugin-tabs-tab-stub label="ts"
       ><div class="language-vue vp-adaptive-theme">
         <button title="Copy Code" class="copy"></button
@@ -76,7 +76,7 @@ exports[`vue 1`] = `
 
 exports[`with highlight lines 1`] = `
 "<div>
-  <plugin-tabs-stub sharedStateKey="~detype"
+  <plugin-tabs-stub sharedStateKey="~detype" variant="code"
     ><plugin-tabs-tab-stub label="ts"
       ><div class="language-ts vp-adaptive-theme">
         <button title="Copy Code" class="copy"></button

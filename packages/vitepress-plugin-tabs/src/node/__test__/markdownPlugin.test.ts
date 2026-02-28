@@ -50,6 +50,19 @@ describe('render correctly', () => {
   })
 })
 
+test('render with variant correctly', () => {
+  const md = setup()
+  const result = md.render(dedent`
+    :::tabs variant:code
+    == Tab "A"
+    a
+    == Tab "B"
+    b
+    :::
+  `)
+  expect(result).toMatchSnapshot()
+})
+
 test('render tab with nested ::: code correctly', () => {
   const md = setup()
   const result = md.render(dedent`

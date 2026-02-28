@@ -108,6 +108,71 @@ a content 2
 b content 2
 :::
 
+### Code variant
+
+Use `variant:code` to style tabs like VitePress's built-in [code groups](https://vitepress.dev/guide/markdown#code-groups). This is useful when your tab content is primarily code blocks.
+
+````md
+:::tabs variant:code
+== JavaScript
+```js
+console.log('Hello')
+```
+== TypeScript
+```ts
+console.log('Hello' as string)
+```
+:::
+````
+
+:::tabs variant:code
+== JavaScript
+```js
+console.log('Hello')
+```
+== TypeScript
+```ts
+console.log('Hello' as string)
+```
+:::
+
+You can combine `variant:code` with `key:` for shared selection state:
+
+````md
+:::tabs key:lang variant:code
+== JavaScript
+```js
+const x = 1
+```
+== TypeScript
+```ts
+const x: number = 1
+```
+:::
+````
+
+:::tabs key:lang variant:code
+== JavaScript
+```js
+const x = 1
+```
+== TypeScript
+```ts
+const x: number = 1
+```
+
+:::
+:::tabs key:lang variant:code
+== JavaScript
+```js
+const x = 2
+```
+== TypeScript
+```ts
+const x: number = 2
+```
+:::
+
 ### Nested tabs
 
 For nested tabs, add more `:` and `=` to the outer tabs.

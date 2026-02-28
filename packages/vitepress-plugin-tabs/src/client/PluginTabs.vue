@@ -6,7 +6,10 @@ import { useTabLabels } from './useTabLabels'
 import { provideTabsSingleState } from './useTabsSingleState'
 import { useIsPrint } from './useIsPrint'
 
-const props = defineProps<{ sharedStateKey?: string }>()
+const props = defineProps<{
+  sharedStateKey?: string
+  variant?: 'default' | 'code'
+}>()
 
 const isPrint = useIsPrint()
 
@@ -47,7 +50,7 @@ provideTabsSingleState({ uid, selected })
 </script>
 
 <template>
-  <div class="plugin-tabs">
+  <div class="plugin-tabs" :data-variant="props.variant">
     <div
       ref="tablist"
       class="plugin-tabs--tab-list"
@@ -140,5 +143,47 @@ provideTabsSingleState({ uid, selected })
 
 .plugin-tabs--tab[aria-selected='true']::after {
   background-color: var(--vp-plugin-tabs-tab-active-bar-color);
+}
+
+.plugin-tabs[data-variant='code'] {
+  margin-top: 16px;
+  margin-bottom: 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.plugin-tabs[data-variant='code'] .plugin-tabs--tab-list {
+  margin-right: -24px;
+  margin-left: -24px;
+  background-color: var(--vp-code-tab-bg);
+  box-shadow: inset 0 -1px var(--vp-code-tab-divider);
+}
+
+@media (min-width: 640px) {
+  .plugin-tabs[data-variant='code'] .plugin-tabs--tab-list {
+    margin-right: 0;
+    margin-left: 0;
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+.plugin-tabs[data-variant='code'] .plugin-tabs--tab-list::after {
+  display: none;
+}
+
+.plugin-tabs[data-variant='code'] .plugin-tabs--tab {
+  color: var(--vp-code-tab-text-color);
+}
+
+.plugin-tabs[data-variant='code'] .plugin-tabs--tab[aria-selected='true'] {
+  color: var(--vp-code-tab-active-text-color);
+}
+
+.plugin-tabs[data-variant='code'] .plugin-tabs--tab:hover {
+  color: var(--vp-code-tab-hover-text-color);
+}
+
+.plugin-tabs[data-variant='code'] .plugin-tabs--tab[aria-selected='true']::after {
+  background-color: var(--vp-code-tab-active-bar-color);
 }
 </style>

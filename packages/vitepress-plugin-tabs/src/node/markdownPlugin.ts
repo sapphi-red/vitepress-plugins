@@ -6,12 +6,15 @@ import type * as Renderer from 'markdown-it/lib/renderer.d.mts'
 
 type Params = {
   shareStateKey: string | undefined
+  variant: string | undefined
 }
 
 const parseTabsParams = (input: string): Params => {
-  const match = input.match(/key:(\S+)/)
+  const keyMatch = input.match(/key:(\S+)/)
+  const variantMatch = input.match(/variant:(\S+)/)
   return {
-    shareStateKey: match?.[1],
+    shareStateKey: keyMatch?.[1],
+    variant: variantMatch?.[1],
   }
 }
 
@@ -24,7 +27,13 @@ export const tabsPlugin = (md: MarkdownIt) => {
         const shareStateKeyProp = params.shareStateKey
           ? `sharedStateKey="${md.utils.escapeHtml(params.shareStateKey)}"`
           : ''
-        return `<PluginTabs ${shareStateKeyProp}>\n`
+        const variantProp = params.variant
+          ? `variant="${md.utils.escapeHtml(params.variant)}"`
+          : ''
+        const props = [shareStateKeyProp, variantProp]
+          .filter(Boolean)
+          .join(' ')
+        return `<PluginTabs ${props}>\n`
       } else {
         return `</PluginTabs>\n`
       }
