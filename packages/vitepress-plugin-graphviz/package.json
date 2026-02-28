@@ -1,6 +1,6 @@
 {
   "name": "vitepress-plugin-graphviz",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "A VitePress plugin that renders Graphviz DOT diagrams with light/dark theme support.",
   "type": "module",
   "main": "./dist/index.js",
