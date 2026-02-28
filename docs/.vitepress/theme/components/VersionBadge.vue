@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
   <a
-    :href="`https://www.npmjs.com/package/${package}`"
+    :href="`https://npmx.dev/package/${package}`"
     target="_blank"
     rel="noopener noreferrer"
   >
