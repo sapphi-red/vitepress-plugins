@@ -1,8 +1,7 @@
 import { onBeforeMount, onUnmounted, ref } from 'vue'
 
 export const useIsPrint = () => {
-  const matchMedia =
-    typeof window !== 'undefined' ? window.matchMedia('print') : undefined
+  const matchMedia = typeof window !== 'undefined' ? window.matchMedia('print') : undefined
   const value = ref(matchMedia?.matches)
 
   const listener = () => {

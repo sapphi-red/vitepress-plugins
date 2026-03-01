@@ -19,12 +19,8 @@ test('handles multiple interpolations', () => {
 
 test('escapes $${', () => {
   const input = 'literal $${not|interpolated} here'
-  expect(interpolateTheme(input, 'light')).toBe(
-    'literal ${not|interpolated} here',
-  )
-  expect(interpolateTheme(input, 'dark')).toBe(
-    'literal ${not|interpolated} here',
-  )
+  expect(interpolateTheme(input, 'light')).toBe('literal ${not|interpolated} here')
+  expect(interpolateTheme(input, 'dark')).toBe('literal ${not|interpolated} here')
 })
 
 test('passes through text without interpolation', () => {

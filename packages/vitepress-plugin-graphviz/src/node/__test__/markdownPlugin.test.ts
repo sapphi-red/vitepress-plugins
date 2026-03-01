@@ -50,12 +50,8 @@ test('applies theme interpolation', async () => {
     ${s}
   `)
   // Light SVG should contain "red", dark should contain "blue"
-  const lightMatch = result.match(
-    /<div class="vp-graphviz light-only">([\s\S]*?)<\/div>/,
-  )
-  const darkMatch = result.match(
-    /<div class="vp-graphviz dark-only">([\s\S]*?)<\/div>/,
-  )
+  const lightMatch = result.match(/<div class="vp-graphviz light-only">([\s\S]*?)<\/div>/)
+  const darkMatch = result.match(/<div class="vp-graphviz dark-only">([\s\S]*?)<\/div>/)
   expect(lightMatch?.[1]).toContain('red')
   expect(darkMatch?.[1]).toContain('blue')
 })

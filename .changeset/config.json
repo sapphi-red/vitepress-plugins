@@ -1,9 +1,6 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.2.0/schema.json",
-  "changelog": [
-    "@changesets/changelog-github",
-    { "repo": "sapphi-red/vitepress-plugins" }
-  ],
+  "changelog": ["@changesets/changelog-github", { "repo": "sapphi-red/vitepress-plugins" }],
   "commit": false,
   "fixed": [],
   "linked": [],

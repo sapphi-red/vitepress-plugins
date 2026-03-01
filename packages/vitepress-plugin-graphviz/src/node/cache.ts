@@ -74,11 +74,7 @@ export function createCacheManager(cacheDir: string): CacheManager {
       if (!fs.existsSync(cacheDir)) {
         fs.mkdirSync(cacheDir, { recursive: true })
       }
-      fs.writeFileSync(
-        manifestPath,
-        JSON.stringify({ hashes: [...usedHashes] }),
-        'utf8',
-      )
+      fs.writeFileSync(manifestPath, JSON.stringify({ hashes: [...usedHashes] }), 'utf8')
     },
   }
 }

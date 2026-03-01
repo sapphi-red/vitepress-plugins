@@ -2,6 +2,29 @@
   "name": "vitepress-plugin-graphviz",
   "version": "0.0.1",
   "description": "A VitePress plugin that renders Graphviz DOT diagrams with light/dark theme support.",
+  "keywords": [
+    "dot",
+    "graphviz",
+    "vitepress",
+    "vitepress-plugin"
+  ],
+  "homepage": "https://vitepress-plugins.sapphi.red/graphviz/",
+  "bugs": {
+    "url": "https://github.com/sapphi-red/vitepress-plugins/issues"
+  },
+  "license": "MIT",
+  "author": "sapphi-red (https://github.com/sapphi-red)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sapphi-red/vitepress-plugins.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/sapphi-red"
+  },
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -9,42 +32,19 @@
     ".": "./dist/index.js",
     "./style.css": "./dist/style.css"
   },
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "dev": "tsdown --watch",
     "build": "tsdown"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sapphi-red/vitepress-plugins.git"
-  },
-  "keywords": [
-    "vitepress",
-    "vitepress-plugin",
-    "graphviz",
-    "dot"
-  ],
-  "author": "sapphi-red (https://github.com/sapphi-red)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sapphi-red/vitepress-plugins/issues"
-  },
-  "homepage": "https://vitepress-plugins.sapphi.red/graphviz/",
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/sapphi-red"
-  },
-  "peerDependencies": {
-    "vitepress": "^1.0.0"
+  "dependencies": {
+    "@hpcc-js/wasm-graphviz": "^1.21.0"
   },
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
     "markdown-it": "^14.1.0",
     "tsdown": "^0.20.1"
   },
-  "dependencies": {
-    "@hpcc-js/wasm-graphviz": "^1.21.0"
+  "peerDependencies": {
+    "vitepress": "^1.0.0"
   }
 }

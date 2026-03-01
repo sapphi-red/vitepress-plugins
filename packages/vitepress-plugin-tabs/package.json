@@ -2,6 +2,27 @@
   "name": "vitepress-plugin-tabs",
   "version": "0.7.3",
   "description": "A plugin that adds syntax for showing content in tabs.",
+  "keywords": [
+    "vitepress",
+    "vitepress-plugin"
+  ],
+  "homepage": "https://vitepress-plugins.sapphi.red/tabs/",
+  "bugs": {
+    "url": "https://github.com/sapphi-red/vitepress-plugins/issues"
+  },
+  "license": "MIT",
+  "author": "sapphi-red (https://github.com/sapphi-red)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sapphi-red/vitepress-plugins.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/sapphi-red"
+  },
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "main": "./dist/node/index.js",
   "types": "./dist/node/index.d.ts",
@@ -12,34 +33,9 @@
       "default": "./dist/client/ssr/index.js"
     }
   },
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "dev": "tsdown --watch",
     "build": "tsdown"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sapphi-red/vitepress-plugins.git"
-  },
-  "keywords": [
-    "vitepress",
-    "vitepress-plugin"
-  ],
-  "author": "sapphi-red (https://github.com/sapphi-red)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sapphi-red/vitepress-plugins/issues"
-  },
-  "homepage": "https://vitepress-plugins.sapphi.red/tabs/",
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/sapphi-red"
-  },
-  "peerDependencies": {
-    "vitepress": "^1.0.0",
-    "vue": "^3.5.0"
   },
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
@@ -50,5 +46,9 @@
     "unplugin-vue": "^7.1.1",
     "vue": "^3.5.27",
     "vue-tsc": "^3.2.4"
+  },
+  "peerDependencies": {
+    "vitepress": "^1.0.0",
+    "vue": "^3.5.0"
   }
 }

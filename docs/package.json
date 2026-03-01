@@ -1,7 +1,7 @@
 {
   "name": "vitepress-plugins-monorepo-docs",
-  "type": "module",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",

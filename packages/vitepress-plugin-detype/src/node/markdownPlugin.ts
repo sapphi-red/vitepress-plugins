@@ -6,9 +6,9 @@ import type { SupportedType } from './parseDetypeInfo'
 import { parseDetypeInfo } from './parseDetypeInfo'
 import { klona } from 'klona'
 
-const { transform, removeMagicComments } = module.createRequire(
-  import.meta.url,
-)('detype') as typeof import('detype')
+const { transform, removeMagicComments } = module.createRequire(import.meta.url)(
+  'detype',
+) as typeof import('detype')
 
 const tabsShareStateKey = '~detype'
 const langs = ['ts', 'js'] as const
@@ -34,9 +34,7 @@ export const detypePlugin = (
   prettierOptions: PrettierOptions,
   contentMap: ContentMap,
 ) => {
-  const shareStateKeyProp = `sharedStateKey="${md.utils.escapeHtml(
-    tabsShareStateKey,
-  )}"`
+  const shareStateKeyProp = `sharedStateKey="${md.utils.escapeHtml(tabsShareStateKey)}"`
 
   const originalFence = md.renderer.rules.fence!
   md.renderer.rules.fence = (...args) => {
@@ -56,28 +54,19 @@ export const detypePlugin = (
         try {
           const content =
             lang === 'ts'
-              ? await removeMagicComments(
-                  token.content,
-                  `foo.${type}`,
-                  prettierOptions,
-                )
+              ? await removeMagicComments(token.content, `foo.${type}`, prettierOptions)
               : await transform(token.content, `foo.${type}`, {
                   prettierOptions,
                   removeTsComments: true,
                 })
           const langForRender = getLangForRender(type, lang)
-          const codeWithFence =
-            `${token.markup}${langForRender}${attrs}\n` + content + token.markup
+          const codeWithFence = `${token.markup}${langForRender}${attrs}\n` + content + token.markup
           return { result: md.render(codeWithFence, klona(env)) }
         } catch (e) {
           return { error: e }
         }
       })()
-      const key = contentMap.add(
-        `${type}_${token.markup}_${lang}_${attrs}`,
-        token.content,
-        output,
-      )
+      const key = contentMap.add(`${type}_${token.markup}_${lang}_${attrs}`, token.content, output)
       return `<PluginTabsTab label="${lang}">${key}</PluginTabsTab>`
     })
 

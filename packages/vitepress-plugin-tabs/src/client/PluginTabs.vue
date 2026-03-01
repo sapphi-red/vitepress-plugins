@@ -15,10 +15,7 @@ const isPrint = useIsPrint()
 
 const tabLabels = useTabLabels()
 
-const { selected, select } = useTabsSelectedState(
-  tabLabels,
-  toRef(props, 'sharedStateKey'),
-)
+const { selected, select } = useTabsSelectedState(tabLabels, toRef(props, 'sharedStateKey'))
 
 const tablist = ref<HTMLDivElement>()
 const { stabilizeScrollPosition } = useStabilizeScrollPosition(tablist)
@@ -31,11 +28,9 @@ const onKeydown = (e: KeyboardEvent) => {
   let selectIndex: number | undefined
 
   if (e.key === 'ArrowLeft') {
-    selectIndex =
-      currentIndex >= 1 ? currentIndex - 1 : tabLabels.value.length - 1
+    selectIndex = currentIndex >= 1 ? currentIndex - 1 : tabLabels.value.length - 1
   } else if (e.key === 'ArrowRight') {
-    selectIndex =
-      currentIndex < tabLabels.value.length - 1 ? currentIndex + 1 : 0
+    selectIndex = currentIndex < tabLabels.value.length - 1 ? currentIndex + 1 : 0
   }
 
   if (selectIndex !== undefined) {
@@ -51,12 +46,7 @@ provideTabsSingleState({ uid, selected })
 
 <template>
   <div class="plugin-tabs" :data-variant="props.variant">
-    <div
-      ref="tablist"
-      class="plugin-tabs--tab-list"
-      role="tablist"
-      @keydown="onKeydown"
-    >
+    <div ref="tablist" class="plugin-tabs--tab-list" role="tablist" @keydown="onKeydown">
       <button
         v-for="tabLabel in tabLabels"
         :id="`tab-${tabLabel}-${uid}`"
@@ -183,8 +173,7 @@ provideTabsSingleState({ uid, selected })
   color: var(--vp-code-tab-hover-text-color);
 }
 
-.plugin-tabs[data-variant='code']
-  .plugin-tabs--tab[aria-selected='true']::after {
+.plugin-tabs[data-variant='code'] .plugin-tabs--tab[aria-selected='true']::after {
   background-color: var(--vp-code-tab-active-bar-color);
 }
 </style>

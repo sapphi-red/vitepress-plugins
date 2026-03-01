@@ -115,10 +115,7 @@ export default defineConfig({
               // modify rendered SVG (e.g., set max width)
               const maxWidth = attrs.maxWidth
               if (maxWidth) {
-                return svg.replace(
-                  '<svg',
-                  `<svg style="max-width:${maxWidth}px"`,
-                )
+                return svg.replace('<svg', `<svg style="max-width:${maxWidth}px"`)
               }
               return svg
             },

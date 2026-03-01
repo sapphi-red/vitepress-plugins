@@ -6,11 +6,7 @@ export type ContentMap = {
   /**
    * @returns key
    */
-  add(
-    frontmatter: string,
-    inputValue: string,
-    outputContent: Promise<ResultOrError>,
-  ): string
+  add(frontmatter: string, inputValue: string, outputContent: Promise<ResultOrError>): string
   get(key: string): Promise<ResultOrError | undefined>
 }
 

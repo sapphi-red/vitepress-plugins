@@ -5,15 +5,8 @@ defineProps<{
 </script>
 
 <template>
-  <a
-    :href="`https://npmx.dev/package/${package}`"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img
-      :src="`https://img.shields.io/npm/v/${package}.svg`"
-      alt="NPM version"
-    />
+  <a :href="`https://npmx.dev/package/${package}`" target="_blank" rel="noopener noreferrer">
+    <img :src="`https://img.shields.io/npm/v/${package}.svg`" alt="NPM version" />
   </a>
 </template>
 

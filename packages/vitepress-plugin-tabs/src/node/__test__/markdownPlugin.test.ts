@@ -4,9 +4,7 @@ import { tabsPlugin } from '../markdownPlugin'
 import dedent from 'ts-dedent'
 import container from 'markdown-it-container'
 
-const setup = ({
-  withTipContainer = false,
-}: { withTipContainer?: boolean } = {}) => {
+const setup = ({ withTipContainer = false }: { withTipContainer?: boolean } = {}) => {
   const md = MarkdownIt()
   md.use(tabsPlugin)
   if (withTipContainer) {
