@@ -13,7 +13,7 @@
     "vitepress-plugin-graphviz": "workspace:*",
     "vitepress-plugin-npm-commands": "workspace:*",
     "vitepress-plugin-tabs": "workspace:*",
-    "vue": "^3.5.27",
-    "wrangler": "^4.61.1"
+    "vue": "^3.5.29",
+    "wrangler": "^4.69.0"
   }
 }

@@ -40,12 +40,12 @@
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
     "@vue/test-utils": "^2.4.6",
-    "markdown-it": "^14.1.0",
+    "markdown-it": "^14.1.1",
     "prettier": "^3.8.1",
-    "tsdown": "^0.20.1",
+    "tsdown": "^0.20.3",
     "vitepress": "^1.6.4",
     "vitepress-plugin-tabs": "workspace:*",
-    "vue": "^3.5.27"
+    "vue": "^3.5.29"
   },
   "peerDependencies": {
     "vitepress": "^1.0.0",
