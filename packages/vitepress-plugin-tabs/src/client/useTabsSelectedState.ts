@@ -6,8 +6,7 @@ type TabsSharedState = {
 }
 type TabsSharedStateContent = Record<string, string>
 
-const injectionKey: InjectionKey<TabsSharedState> =
-  'vitepress:tabSharedState' as unknown as symbol
+const injectionKey: InjectionKey<TabsSharedState> = 'vitepress:tabSharedState' as unknown as symbol
 const ls = typeof localStorage !== 'undefined' ? localStorage : null
 const localStorageKey = 'vitepress:tabsSharedState'
 
@@ -47,9 +46,7 @@ export const useTabsSelectedState = <T extends string>(
 ) => {
   const sharedState = inject(injectionKey)
   if (!sharedState) {
-    throw new Error(
-      '[vitepress-plugin-tabs] TabsSharedState should be injected',
-    )
+    throw new Error('[vitepress-plugin-tabs] TabsSharedState should be injected')
   }
 
   onMounted(() => {

@@ -5,9 +5,7 @@ type StabilizeScrollPosition = <Args extends readonly unknown[], Return>(
   func: (...args: Args) => Return,
 ) => (...args: Args) => Promise<Return>
 
-export const useStabilizeScrollPosition = (
-  targetEle: Ref<HTMLElement | undefined>,
-) => {
+export const useStabilizeScrollPosition = (targetEle: Ref<HTMLElement | undefined>) => {
   if (typeof document === 'undefined') {
     const mock: StabilizeScrollPosition =
       (f) =>

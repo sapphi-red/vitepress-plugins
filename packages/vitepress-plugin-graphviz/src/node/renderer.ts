@@ -7,13 +7,11 @@ export async function initGraphviz(): Promise<void> {
 }
 
 export function getGraphvizVersion(): string {
-  if (!graphviz)
-    throw new Error('Graphviz not initialized. Call initGraphviz() first.')
+  if (!graphviz) throw new Error('Graphviz not initialized. Call initGraphviz() first.')
   return graphviz.version()
 }
 
 export function renderDot(dot: string): string {
-  if (!graphviz)
-    throw new Error('Graphviz not initialized. Call initGraphviz() first.')
+  if (!graphviz) throw new Error('Graphviz not initialized. Call initGraphviz() first.')
   return graphviz.dot(dot, 'svg_inline')
 }

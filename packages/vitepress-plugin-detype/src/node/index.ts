@@ -7,10 +7,8 @@ import type { PrettierOptions } from 'detype'
 export const createDetypePlugin = () => {
   const contentMap = createContentMap()
 
-  const detypeMarkdownPlugin = (
-    md: MarkdownIt,
-    prettierOptions: PrettierOptions,
-  ) => rawDetypeMarkdownPlugin(md, prettierOptions, contentMap)
+  const detypeMarkdownPlugin = (md: MarkdownIt, prettierOptions: PrettierOptions) =>
+    rawDetypeMarkdownPlugin(md, prettierOptions, contentMap)
   const detypeVitePlugin = () => rawDetypeVitePlugin(contentMap)
 
   return {

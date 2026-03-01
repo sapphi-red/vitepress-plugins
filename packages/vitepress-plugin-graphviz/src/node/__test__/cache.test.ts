@@ -17,12 +17,7 @@ const test = baseTest.extend<{ tmpDir: string }>({
 
 test('renders and caches SVG files on miss', ({ tmpDir }) => {
   const cache = createCacheManager(tmpDir)
-  const result = cache.getOrRender(
-    'dot-light',
-    'dot-dark',
-    '1.0.0',
-    (dot) => `<svg>${dot}</svg>`,
-  )
+  const result = cache.getOrRender('dot-light', 'dot-dark', '1.0.0', (dot) => `<svg>${dot}</svg>`)
 
   expect(result.lightSvg).toBe('<svg>dot-light</svg>')
   expect(result.darkSvg).toBe('<svg>dot-dark</svg>')
@@ -50,9 +45,7 @@ test('writeManifest saves used hashes', ({ tmpDir }) => {
   cache.getOrRender('a', 'b', '1.0.0', (d) => `<svg>${d}</svg>`)
   cache.writeManifest()
 
-  const manifest = JSON.parse(
-    fs.readFileSync(path.join(tmpDir, 'manifest.json'), 'utf8'),
-  )
+  const manifest = JSON.parse(fs.readFileSync(path.join(tmpDir, 'manifest.json'), 'utf8'))
   expect(manifest.hashes).toHaveLength(1)
 })
 

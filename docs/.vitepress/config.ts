@@ -16,8 +16,7 @@ export default defineConfig({
       indexName: 'vitepress-plugins-sapphi',
     },
     editLink: {
-      pattern:
-        'https://github.com/sapphi-red/vitepress-plugins/edit/main/docs/:path',
+      pattern: 'https://github.com/sapphi-red/vitepress-plugins/edit/main/docs/:path',
       text: 'Suggest changes to this page',
     },
     socialLinks: [

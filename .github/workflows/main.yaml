@@ -31,7 +31,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - name: run format
-        run: pnpm exec prettier --check .
+        run: pnpm format --check
   type-check:
     name: run type-check
     runs-on: ubuntu-latest

@@ -17,11 +17,7 @@ export type Processor = {
   /** Transform content before rendering (DOT → DOT). */
   preprocess?: (content: string, attrs: FenceAttrs) => string
   /** Transform SVG after rendering (SVG → SVG). */
-  postprocess?: (
-    svg: string,
-    mode: 'light' | 'dark',
-    attrs: FenceAttrs,
-  ) => string
+  postprocess?: (svg: string, mode: 'light' | 'dark', attrs: FenceAttrs) => string
 }
 
 export type GraphvizPluginOptions = {
@@ -48,8 +44,7 @@ export async function graphvizPlugin(
   await initGraphviz()
   const graphvizVersion = getGraphvizVersion()
 
-  const cacheDir =
-    options?.cacheDir ?? path.join(process.cwd(), '.vitepress/cache/graphviz')
+  const cacheDir = options?.cacheDir ?? path.join(process.cwd(), '.vitepress/cache/graphviz')
   const cache = createCacheManager(cacheDir)
   const processors = options?.processors ?? {}
 
@@ -91,12 +86,7 @@ export async function graphvizPlugin(
     const darkDot = interpolateTheme(content, 'dark')
 
     try {
-      let { lightSvg, darkSvg } = cache.getOrRender(
-        lightDot,
-        darkDot,
-        graphvizVersion,
-        renderDot,
-      )
+      let { lightSvg, darkSvg } = cache.getOrRender(lightDot, darkDot, graphvizVersion, renderDot)
 
       if (processor?.postprocess) {
         lightSvg = processor.postprocess(lightSvg, 'light', attrs)

@@ -14,15 +14,13 @@ export default tseslint.config(
     },
   },
   eslint.configs.recommended,
-  ...[...tseslint.configs.recommended, ...tseslint.configs.stylistic].map(
-    (c) => {
-      if (c.name === 'typescript-eslint/eslint-recommended') {
-        // apply to `<script lang='ts'>` in `.vue` files
-        c.files = ['**/*.{c|m|}ts', '**/*.vue']
-      }
-      return c
-    },
-  ),
+  ...[...tseslint.configs.recommended, ...tseslint.configs.stylistic].map((c) => {
+    if (c.name === 'typescript-eslint/eslint-recommended') {
+      // apply to `<script lang='ts'>` in `.vue` files
+      c.files = ['**/*.{c|m|}ts', '**/*.vue']
+    }
+    return c
+  }),
   ...vue.configs['flat/recommended'],
   {
     files: ['**/*.vue'],
