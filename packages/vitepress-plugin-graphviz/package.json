@@ -41,8 +41,8 @@
   },
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
-    "markdown-it": "^14.1.0",
-    "tsdown": "^0.20.1"
+    "markdown-it": "^14.1.1",
+    "tsdown": "^0.20.3"
   },
   "peerDependencies": {
     "vitepress": "^1.0.0"
