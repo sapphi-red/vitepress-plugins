@@ -1,10 +1,12 @@
 # vitepress-plugin-detype
 
-## 1.0.0
+## 0.9.0
 
-### Patch Changes
+### Minor Changes
 
 - [#107](https://github.com/sapphi-red/vitepress-plugins/pull/107) [`03cf70a`](https://github.com/sapphi-red/vitepress-plugins/commit/03cf70a2cd4081200e5d60aa7227425ce79fb18f) Thanks [@sapphi-red](https://github.com/sapphi-red)! - Add `variant=code` to tabs, which has a style aligned with vitepress's builtin code group feature. detype and npm-commands now uses that variant.
+
+### Patch Changes
 
 - Updated dependencies [[`03cf70a`](https://github.com/sapphi-red/vitepress-plugins/commit/03cf70a2cd4081200e5d60aa7227425ce79fb18f)]:
   - vitepress-plugin-tabs@0.8.0
