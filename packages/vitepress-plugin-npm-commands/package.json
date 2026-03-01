@@ -1,6 +1,6 @@
 {
   "name": "vitepress-plugin-npm-commands",
-  "version": "0.8.1",
+  "version": "1.0.0",
   "description": "A plugin that adds syntax for showing `npm`, `yarn`, `pnpm`, `bun` commands in tabs.",
   "keywords": [
     "vitepress",
@@ -46,6 +46,6 @@
   },
   "peerDependencies": {
     "vitepress": "^1.0.0",
-    "vitepress-plugin-tabs": "workspace:^0.7.1"
+    "vitepress-plugin-tabs": "workspace:^0.8.0"
   }
 }
