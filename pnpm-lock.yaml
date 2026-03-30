@@ -162,8 +162,8 @@ importers:
   packages/vitepress-plugin-tabs:
     dependencies:
       vitepress:
-        specifier: ^1.0.0
-        version: 1.6.3(@algolia/client-search@5.20.0)(@types/node@22.19.13)(lightningcss@1.31.1)(postcss@8.5.6)(search-insights@2.6.0)(typescript@5.9.3)
+        specifier: ^1.0.0 || ^2.0.0-alpha.1
+        version: 1.6.4(@algolia/client-search@5.20.0)(@types/node@22.19.13)(lightningcss@1.31.1)(postcss@8.5.6)(search-insights@2.6.0)(typescript@5.9.3)
     devDependencies:
       '@types/markdown-it':
         specifier: ^14.1.2
