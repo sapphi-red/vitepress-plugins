@@ -43,7 +43,7 @@
     "markdown-it": "^14.1.1",
     "prettier": "^3.8.1",
     "tsdown": "^0.20.3",
-    "vitepress": "^2.0.0-alpha.1",
+    "vitepress": "^2.0.0-alpha.17",
     "vitepress-plugin-tabs": "workspace:*",
     "vue": "^3.5.29"
   },
