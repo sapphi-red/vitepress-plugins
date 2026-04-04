@@ -61,7 +61,11 @@ export const detypePlugin = (
                 })
           const langForRender = getLangForRender(type, lang)
           const codeWithFence = `${token.markup}${langForRender}${attrs}\n` + content + token.markup
-          return { result: md.render(codeWithFence, klona(env)) }
+          const rendered =
+            'renderAsync' in md
+              ? await (md as any).renderAsync(codeWithFence, klona(env))
+              : md.render(codeWithFence, klona(env))
+          return { result: rendered as string }
         } catch (e) {
           return { error: e }
         }
