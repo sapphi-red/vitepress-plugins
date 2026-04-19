@@ -48,7 +48,7 @@
     "vue": "^3.5.29"
   },
   "peerDependencies": {
-    "vitepress": "^1.0.0",
+    "vitepress": "^1.0.0 || ^2.0.0-alpha.17",
     "vitepress-plugin-tabs": "workspace:^0.8.0",
     "vue": "^3.5.0"
   }
