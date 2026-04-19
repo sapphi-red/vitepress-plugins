@@ -41,11 +41,11 @@
     "@types/markdown-it": "^14.1.2",
     "@vue/test-utils": "^2.4.6",
     "markdown-it": "^14.1.1",
-    "prettier": "^3.8.1",
-    "tsdown": "^0.20.3",
+    "prettier": "^3.8.3",
+    "tsdown": "^0.21.9",
     "vitepress": "^2.0.0-alpha.17",
     "vitepress-plugin-tabs": "workspace:*",
-    "vue": "^3.5.29"
+    "vue": "^3.5.32"
   },
   "peerDependencies": {
     "vitepress": "^1.0.0 || ^2.0.0-alpha.17",

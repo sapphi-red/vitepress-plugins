@@ -22,7 +22,7 @@ export default defineConfig([
         outDir: `dist/client/${name}`,
         fixedExtension: false,
         outputOptions: {
-          banner: name === 'browser' ? 'import "./index.css"' : undefined,
+          banner: name === 'browser' ? 'import "./style.css"' : undefined,
         },
       }) satisfies UserConfig,
   ),
