@@ -5,6 +5,7 @@ import type { ContentMap } from './contentMap'
 import type { SupportedType } from './parseDetypeInfo'
 import { parseDetypeInfo } from './parseDetypeInfo'
 import { klona } from 'klona'
+import type { MarkdownRenderer } from 'vitepress'
 
 const { transform, removeMagicComments } = module.createRequire(import.meta.url)(
   'detype',
@@ -61,7 +62,11 @@ export const detypePlugin = (
                 })
           const langForRender = getLangForRender(type, lang)
           const codeWithFence = `${token.markup}${langForRender}${attrs}\n` + content + token.markup
-          return { result: md.render(codeWithFence, klona(env)) }
+          const rendered =
+            'renderAsync' in md
+              ? await (md as MarkdownRenderer).renderAsync(codeWithFence, klona(env))
+              : md.render(codeWithFence, klona(env))
+          return { result: rendered }
         } catch (e) {
           return { error: e }
         }
