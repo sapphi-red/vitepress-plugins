@@ -37,12 +37,12 @@
     "build": "tsdown"
   },
   "dependencies": {
-    "@hpcc-js/wasm-graphviz": "^1.21.2"
+    "@hpcc-js/wasm-graphviz": "^1.21.5"
   },
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
     "markdown-it": "^14.1.1",
-    "tsdown": "^0.21.9"
+    "tsdown": "^0.21.10"
   },
   "peerDependencies": {
     "vitepress": "^1.0.0 || ^2.0.0-alpha.17"
