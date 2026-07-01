@@ -14,19 +14,19 @@
     "@changesets/changelog-github": "^0.7.0",
     "@changesets/cli": "^2.31.0",
     "@eslint/js": "^9.39.4",
-    "@types/node": "^22.19.17",
+    "@types/node": "^22.20.0",
     "eslint": "^9.39.4",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-vue": "^10.9.1",
-    "oxfmt": "^0.48.0",
-    "ts-dedent": "^2.2.0",
-    "tsx": "^4.21.0",
+    "eslint-plugin-vue": "^10.9.2",
+    "oxfmt": "^0.57.0",
+    "ts-dedent": "^2.3.0",
+    "tsx": "^4.22.4",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.59.2",
-    "vitest": "^4.1.5",
-    "vue-tsc": "^3.2.8"
+    "typescript-eslint": "^8.62.1",
+    "vitest": "^4.1.9",
+    "vue-tsc": "^3.3.6"
   },
-  "packageManager": "pnpm@10.33.4",
+  "packageManager": "pnpm@10.34.4",
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
