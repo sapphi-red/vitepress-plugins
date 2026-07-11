@@ -45,7 +45,10 @@ const isPrint = useIsPrint()
   margin: 16px 0px;
 }
 
-:root:not(.dark) .plugin-tabs--content :deep(div[class*='language-']) {
+:root:not(.dark)
+  .plugin-tabs:not([data-variant='code'])
+  .plugin-tabs--content
+  :deep(div[class*='language-']) {
   background-color: var(--vp-c-bg);
 }
 
