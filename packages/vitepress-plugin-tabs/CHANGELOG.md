@@ -1,5 +1,11 @@
 # vitepress-plugin-tabs
 
+## 0.9.1
+
+### Patch Changes
+
+- [#125](https://github.com/sapphi-red/vitepress-plugins/pull/125) [`6cce7b2`](https://github.com/sapphi-red/vitepress-plugins/commit/6cce7b26ed2800e97c98d504db635165bbf7a1ef) Thanks [@senekor](https://github.com/senekor)! - Restore light-theme code block background for variant:code
+
 ## 0.9.0
 
 ### Minor Changes
