@@ -40,7 +40,7 @@
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
     "@vue/test-utils": "^2.4.11",
-    "markdown-it": "^14.2.0",
+    "markdown-it": "^15.0.0",
     "prettier": "^3.9.4",
     "tsdown": "^0.22.3",
     "vitepress": "^2.0.0-alpha.17",

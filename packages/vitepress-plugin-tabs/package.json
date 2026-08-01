@@ -41,7 +41,7 @@
     "@tsdown/css": "^0.22.3",
     "@types/markdown-it": "^14.1.2",
     "@types/markdown-it-container": "^4.0.0",
-    "markdown-it": "^14.2.0",
+    "markdown-it": "^15.0.0",
     "markdown-it-container": "^4.0.0",
     "tsdown": "^0.22.3",
     "unplugin-vue": "^7.2.0",
