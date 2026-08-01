@@ -24,6 +24,18 @@ const setLocalStorageValue = (v: TabsSharedStateContent) => {
   ls.setItem(localStorageKey, JSON.stringify(v))
 }
 
+const getUrlParamValue = (key: string): string | null => {
+  if (typeof location === 'undefined') return null
+  return new URLSearchParams(location.search).get(key)
+}
+const setUrlParamValue = (key: string, value: string) => {
+  if (typeof location === 'undefined' || typeof history === 'undefined') return
+  const url = new URL(location.href)
+  if (url.searchParams.get(key) === value) return
+  url.searchParams.set(key, value)
+  history.replaceState(history.state, '', url.toString())
+}
+
 export const provideTabsSharedState = (app: App) => {
   const state = reactive<TabsSharedState>({})
   watch(
@@ -53,6 +65,13 @@ export const useTabsSelectedState = <T extends string>(
     if (!sharedState.content) {
       sharedState.content = getLocalStorageValue()
     }
+    const key = sharedStateKey.value
+    if (key && sharedState.content) {
+      const urlValue = getUrlParamValue(key)
+      if (urlValue !== null && (acceptValues.value as string[]).includes(urlValue)) {
+        sharedState.content[key] = urlValue
+      }
+    }
   })
 
   const nonSharedState = ref<T | undefined>()
@@ -80,6 +99,7 @@ export const useTabsSelectedState = <T extends string>(
         if (sharedState.content) {
           sharedState.content[key] = v
         }
+        setUrlParamValue(key, v)
       } else {
         nonSharedState.value = v
       }
