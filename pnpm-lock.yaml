@@ -153,8 +153,8 @@ importers:
         specifier: ^14.2.0
         version: 14.2.0
       markdown-it-attrs:
-        specifier: ^4.5.0
-        version: 4.5.0(markdown-it@14.2.0)
+        specifier: ^5.0.1
+        version: 5.0.1(markdown-it@14.2.0)
       tsdown:
         specifier: ^0.22.3
         version: 0.22.3(@tsdown/css@0.22.3)(tsx@4.22.4)(typescript@6.0.3)(unrun@0.2.37)(vue-tsc@3.3.6(typescript@6.0.3))
@@ -2845,8 +2845,8 @@ packages:
   mark.js@8.11.1:
     resolution: {integrity: sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==}
 
-  markdown-it-attrs@4.5.0:
-    resolution: {integrity: sha512-dsuEyK/MDAYsdZLDIaDAQXz5+gP0AAbJ4ZjOSB0w+ZGe4lLbzyCgGg0LApC6j9zUK2F+2SA9VkzXfyNG9hL/8g==}
+  markdown-it-attrs@5.0.1:
+    resolution: {integrity: sha512-dTP49/FLERwbgqmfIG5LwnC99qecIJYalKQbl3pY+7Hajk+Z+cazeEZaKwofpM9KFxvfRVF0UN9GYxKKAakfNg==}
     engines: {node: '>=6'}
     peerDependencies:
       markdown-it: '>= 9.0.0'
@@ -6383,7 +6383,7 @@ snapshots:
 
   mark.js@8.11.1: {}
 
-  markdown-it-attrs@4.5.0(markdown-it@14.2.0):
+  markdown-it-attrs@5.0.1(markdown-it@14.2.0):
     dependencies:
       markdown-it: 14.2.0
 
@@ -7370,7 +7370,7 @@ snapshots:
       eslint-visitor-keys: 5.0.1
       espree: 10.4.0
       esquery: 1.6.0
-      semver: 7.7.4
+      semver: 7.8.5
     transitivePeerDependencies:
       - supports-color
 
