@@ -38,15 +38,15 @@
     "build": "tsdown"
   },
   "devDependencies": {
-    "@tsdown/css": "^0.22.3",
+    "@tsdown/css": "^0.22.14",
     "@types/markdown-it": "^14.1.2",
     "@types/markdown-it-container": "^4.0.0",
-    "markdown-it": "^14.2.0",
+    "markdown-it": "^14.3.0",
     "markdown-it-container": "^4.0.0",
-    "tsdown": "^0.22.3",
+    "tsdown": "^0.22.14",
     "unplugin-vue": "^7.2.0",
-    "vue": "^3.5.39",
-    "vue-tsc": "^3.3.6"
+    "vue": "^3.5.40",
+    "vue-tsc": "^3.3.9"
   },
   "peerDependencies": {
     "vitepress": "^1.0.0 || ^2.0.0-alpha.17",

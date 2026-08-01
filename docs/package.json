@@ -8,12 +8,12 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
-    "vitepress": "^2.0.0-alpha.17",
+    "vitepress": "^2.0.0-alpha.18",
     "vitepress-plugin-detype": "workspace:*",
     "vitepress-plugin-graphviz": "workspace:*",
     "vitepress-plugin-npm-commands": "workspace:*",
     "vitepress-plugin-tabs": "workspace:*",
-    "vue": "^3.5.39",
-    "wrangler": "^4.106.0"
+    "vue": "^3.5.40",
+    "wrangler": "^4.118.0"
   }
 }
