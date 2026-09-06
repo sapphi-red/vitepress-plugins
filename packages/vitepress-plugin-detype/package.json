@@ -38,14 +38,14 @@
     "klona": "^2.0.6"
   },
   "devDependencies": {
-    "@types/markdown-it": "^14.1.2",
-    "@vue/test-utils": "^2.4.11",
-    "markdown-it": "^14.3.0",
+    "@types/markdown-it": "^14.2.0",
+    "@vue/test-utils": "^2.5.0",
+    "markdown-it": "^14.3.1",
     "prettier": "^3.9.6",
-    "tsdown": "^0.22.14",
-    "vitepress": "^2.0.0-alpha.18",
+    "tsdown": "^0.23.0",
+    "vitepress": "^2.0.0-alpha.20",
     "vitepress-plugin-tabs": "workspace:*",
-    "vue": "^3.5.40"
+    "vue": "^3.5.42"
   },
   "peerDependencies": {
     "vitepress": "^1.0.0 || ^2.0.0-alpha.17",
