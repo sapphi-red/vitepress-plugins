@@ -5,7 +5,7 @@ exports[`should work 1`] = `
   <plugin-tabs-stub sharedStateKey="~detype" variant="code"
     ><plugin-tabs-tab-stub label="ts"
       ><div class="language-ts">
-        <button title="Copy Code" class="copy"></button
+        <button title="Copy code" data-copied="Copied" class="copy"></button
         ><span class="lang">ts</span>
         <pre
           class="shiki shiki-themes github-light github-dark"
@@ -25,7 +25,7 @@ exports[`should work 1`] = `
       </div></plugin-tabs-tab-stub
     ><plugin-tabs-tab-stub label="js"
       ><div class="language-js">
-        <button title="Copy Code" class="copy"></button
+        <button title="Copy code" data-copied="Copied" class="copy"></button
         ><span class="lang">js</span>
         <pre
           class="shiki shiki-themes github-light github-dark"
@@ -50,7 +50,7 @@ exports[`vue 1`] = `
   <plugin-tabs-stub sharedStateKey="~detype" variant="code"
     ><plugin-tabs-tab-stub label="ts"
       ><div class="language-vue">
-        <button title="Copy Code" class="copy"></button
+        <button title="Copy code" data-copied="Copied" class="copy"></button
         ><span class="lang">vue</span>
         <pre
           class="shiki shiki-themes github-light github-dark"
@@ -76,7 +76,7 @@ exports[`vue 1`] = `
       </div></plugin-tabs-tab-stub
     ><plugin-tabs-tab-stub label="js"
       ><div class="language-vue">
-        <button title="Copy Code" class="copy"></button
+        <button title="Copy code" data-copied="Copied" class="copy"></button
         ><span class="lang">vue</span>
         <pre
           class="shiki shiki-themes github-light github-dark"
@@ -107,7 +107,7 @@ exports[`with highlight lines 1`] = `
   <plugin-tabs-stub sharedStateKey="~detype" variant="code"
     ><plugin-tabs-tab-stub label="ts"
       ><div class="language-ts">
-        <button title="Copy Code" class="copy"></button
+        <button title="Copy code" data-copied="Copied" class="copy"></button
         ><span class="lang">ts</span>
         <pre
           class="shiki shiki-themes github-light github-dark"
@@ -127,7 +127,7 @@ exports[`with highlight lines 1`] = `
       </div></plugin-tabs-tab-stub
     ><plugin-tabs-tab-stub label="js"
       ><div class="language-js">
-        <button title="Copy Code" class="copy"></button
+        <button title="Copy code" data-copied="Copied" class="copy"></button
         ><span class="lang">js</span>
         <pre
           class="shiki shiki-themes github-light github-dark"

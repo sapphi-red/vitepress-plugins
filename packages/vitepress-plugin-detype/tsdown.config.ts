@@ -6,4 +6,7 @@ export default defineConfig({
   dts: true,
   target: 'node18',
   fixedExtension: false,
+  deps: {
+    neverBundle: ['vite'],
+  },
 })
