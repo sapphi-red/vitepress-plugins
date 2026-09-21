@@ -1,0 +1,13 @@
+diff --git a/dist/index.cjs.d.ts b/dist/index.cjs.d.ts
+index 3af194c26afe0bc4dd10b5eb4640b5efe691d0d1..2c31d99f0ee3b2abf2b55eca836c732ecb6748c6 100644
+--- a/dist/index.cjs.d.ts
++++ b/dist/index.cjs.d.ts
+@@ -685,6 +685,8 @@ declare namespace MarkdownIt {
+          */
+         isPunctChar(ch: string): boolean;
+ 
++        isPunctCharCode(code: number): boolean;
++
+         escapeRE(str: string): string;
+ 
+         /**

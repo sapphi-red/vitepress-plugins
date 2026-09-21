@@ -32,6 +32,9 @@
       "ignoreMissing": [
         "@algolia/client-search"
       ]
+    },
+    "patchedDependencies": {
+      "@types/markdown-it@14.2.0": "patches/@types__markdown-it@14.2.0.patch"
     }
   }
 }
