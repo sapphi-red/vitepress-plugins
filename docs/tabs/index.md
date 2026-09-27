@@ -108,6 +108,8 @@ a content 2
 b content 2
 :::
 
+Tabs with a `key:` are also synced to the URL query string. Sharing a link like `?ab=tab%20b` opens the page with `tab b` pre-selected, and clicking a tab updates the URL (via `history.replaceState`) so the current URL always reflects the visible tab.
+
 ### Code variant
 
 Use `variant:code` to style tabs like VitePress's built-in [code groups](https://vitepress.dev/guide/markdown#code-groups). This is useful when your tab content is primarily code blocks.
