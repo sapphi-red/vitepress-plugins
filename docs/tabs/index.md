@@ -227,3 +227,31 @@ inner tab b content
 === outer tab b
 outer tab b content
 ::::
+
+### Markdown labels
+
+You can use Markdown in the tab labels.
+
+```md
+:::tabs
+== _italic_
+The tab label uses _italic_.
+== **bold**
+The tab label uses **bold**.
+== `code`
+The tab label uses `code`.
+== [link](#)
+The tab label uses [link](#).
+:::
+```
+
+:::tabs
+== _italic_
+The tab label uses _italic_.
+== **bold**
+The tab label uses **bold**.
+== `code`
+The tab label uses `code`.
+== [link](#)
+The tab label uses [link](#).
+:::

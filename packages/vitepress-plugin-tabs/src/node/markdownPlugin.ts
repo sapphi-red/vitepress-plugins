@@ -37,11 +37,11 @@ export const tabsPlugin = (md: MarkdownIt) => {
   })
 
   md.block.ruler.after('container_tabs', 'tab', ruleBlockTab)
-  const renderTab: Renderer.RenderRule = (tokens, index) => {
+  const renderTab: Renderer.RenderRule = (tokens, index, _options, env) => {
     const token = tokens[index]
     if (token.nesting === 1) {
       const label = token.info
-      const labelProp = `label="${md.utils.escapeHtml(label)}"`
+      const labelProp = `label="${md.utils.escapeHtml(md.renderInline(label, env))}"`
       return `<PluginTabsTab ${labelProp}>\n`
     } else {
       return `</PluginTabsTab>\n`
