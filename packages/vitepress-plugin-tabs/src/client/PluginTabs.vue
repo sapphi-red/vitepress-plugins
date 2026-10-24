@@ -47,6 +47,7 @@ provideTabsSingleState({ uid, selected })
 <template>
   <div class="plugin-tabs" :data-variant="props.variant">
     <div ref="tablist" class="plugin-tabs--tab-list" role="tablist" @keydown="onKeydown">
+      <!-- eslint-disable vue/no-v-html -->
       <button
         v-for="tabLabel in tabLabels"
         :id="`tab-${tabLabel}-${uid}`"
@@ -58,9 +59,9 @@ provideTabsSingleState({ uid, selected })
         :aria-controls="`panel-${tabLabel}-${uid}`"
         :tabindex="tabLabel === selected ? 0 : -1"
         @click="() => selectStable(tabLabel)"
-      >
-        {{ tabLabel }}
-      </button>
+        v-html="tabLabel"
+      />
+      <!-- eslint-enable vue/no-v-html -->
     </div>
     <slot />
   </div>
