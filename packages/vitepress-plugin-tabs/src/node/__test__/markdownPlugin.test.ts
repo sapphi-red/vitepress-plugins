@@ -137,3 +137,30 @@ describe('render tab with nested block correctly', () => {
     expect(result).toMatchSnapshot()
   })
 })
+
+describe('render tab labels as markdown', () => {
+  const md = setup()
+
+  const labels = [
+    '**bold** and _italic_',
+    '`code`',
+    '[link](https://example.com)',
+    '![alt](/image.png) image',
+    ':tada: emoji',
+    'A & B < C',
+    'With "quotes"',
+    '<b>some html</b>',
+  ]
+
+  const render = (label: string) =>
+    md.render(dedent`
+      :::tabs
+      == ${label}
+      a
+      :::
+    `)
+
+  test.each(labels)('render label %s', (label) => {
+    expect(render(label)).toMatchSnapshot()
+  })
+})
