@@ -4,7 +4,7 @@ exports[`should work 1`] = `
 "<div>
   <plugin-tabs-stub sharedStateKey="~detype" variant="code"
     ><plugin-tabs-tab-stub label="ts"
-      ><div class="language-ts">
+      ><div class="language-ts" dir="ltr">
         <button title="Copy code" data-copied="Copied" class="copy"></button
         ><span class="lang">ts</span>
         <pre
@@ -24,7 +24,7 @@ exports[`should work 1`] = `
 <span class="line"><span style="--shiki-light:#c62739;--shiki-dark:#F97583;">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> fooList</span><span style="--shiki-light:#c62739;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Foo</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[] </span><span style="--shiki-light:#c62739;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> [];</span></span></code></pre>
       </div></plugin-tabs-tab-stub
     ><plugin-tabs-tab-stub label="js"
-      ><div class="language-js">
+      ><div class="language-js" dir="ltr">
         <button title="Copy code" data-copied="Copied" class="copy"></button
         ><span class="lang">js</span>
         <pre
@@ -49,7 +49,7 @@ exports[`vue 1`] = `
 "<div>
   <plugin-tabs-stub sharedStateKey="~detype" variant="code"
     ><plugin-tabs-tab-stub label="ts"
-      ><div class="language-vue">
+      ><div class="language-vue" dir="ltr">
         <button title="Copy code" data-copied="Copied" class="copy"></button
         ><span class="lang">vue</span>
         <pre
@@ -75,7 +75,7 @@ exports[`vue 1`] = `
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;/</span><span style="--shiki-light:#11782a;--shiki-dark:#85E89D;">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span></code></pre>
       </div></plugin-tabs-tab-stub
     ><plugin-tabs-tab-stub label="js"
-      ><div class="language-vue">
+      ><div class="language-vue" dir="ltr">
         <button title="Copy code" data-copied="Copied" class="copy"></button
         ><span class="lang">vue</span>
         <pre
@@ -106,7 +106,7 @@ exports[`with highlight lines 1`] = `
 "<div>
   <plugin-tabs-stub sharedStateKey="~detype" variant="code"
     ><plugin-tabs-tab-stub label="ts"
-      ><div class="language-ts">
+      ><div class="language-ts" dir="ltr">
         <button title="Copy code" data-copied="Copied" class="copy"></button
         ><span class="lang">ts</span>
         <pre
@@ -126,7 +126,7 @@ exports[`with highlight lines 1`] = `
 <span class="line highlighted"><span style="--shiki-light:#c62739;--shiki-dark:#F97583;">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> fooList</span><span style="--shiki-light:#c62739;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Foo</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[] </span><span style="--shiki-light:#c62739;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> [];</span></span></code></pre>
       </div></plugin-tabs-tab-stub
     ><plugin-tabs-tab-stub label="js"
-      ><div class="language-js">
+      ><div class="language-js" dir="ltr">
         <button title="Copy code" data-copied="Copied" class="copy"></button
         ><span class="lang">js</span>
         <pre
