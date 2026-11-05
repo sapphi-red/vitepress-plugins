@@ -177,6 +177,7 @@ const x: number = 1
 ```
 
 :::
+
 :::tabs key:lang variant:code
 == JavaScript
 
